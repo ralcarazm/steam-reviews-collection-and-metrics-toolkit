@@ -1,4 +1,4 @@
-token,negative_frequency,positive_frequency,negative_relative_per_1000,positive_relative_per_1000,difference_per_1000,log_ratio
+﻿token,negative_frequency,positive_frequency,negative_relative_per_1000,positive_relative_per_1000,difference_per_1000,log_ratio
 h3,12,4,9.404389,0.79984,8.604549,3.555551
 que,65,214,50.940439,42.791442,8.148997,0.251489
 te,13,11,10.188088,2.19956,7.988528,2.211596
