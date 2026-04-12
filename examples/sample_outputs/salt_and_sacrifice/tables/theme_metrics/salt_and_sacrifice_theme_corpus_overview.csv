@@ -1,0 +1,24 @@
+﻿metric,value
+app_id,1437400
+game_slug,salt_and_sacrifice
+game_title,Salt and Sacrifice
+target_language,english
+rows_in_cleaned_dataset,1823
+rows_in_target_language,743
+reviews_with_usable_text,729
+reviews_with_any_theme_match,400
+total_tokens_analysed,57361
+total_theme_matches,3432
+reviews_with_difficulty_signal,108
+reviews_with_combat_signal,263
+reviews_with_bosses_signal,216
+reviews_with_exploration_signal,193
+reviews_with_story_signal,103
+reviews_with_worldbuilding_signal,35
+reviews_with_music_audio_signal,37
+reviews_with_graphics_visuals_signal,114
+reviews_with_performance_technical_signal,21
+reviews_with_controls_gamefeel_signal,35
+reviews_with_replayability_builds_signal,100
+reviews_with_price_value_signal,74
+reviews_with_bugs_issues_signal,84
