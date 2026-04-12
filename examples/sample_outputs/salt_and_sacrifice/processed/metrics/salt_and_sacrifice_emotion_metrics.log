@@ -1,0 +1,17 @@
+2026-04-12 08:58:39,506 | INFO | Starting emotion metrics computation.
+2026-04-12 08:58:39,506 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:39,506 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:39,506 | INFO | App ID: 1437400
+2026-04-12 08:58:39,506 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:39,506 | INFO | Target language: english
+2026-04-12 08:58:39,611 | INFO | NRC entries loaded: 6468
+2026-04-12 08:58:39,664 | INFO | Rows in target language with usable text: 729
+2026-04-12 08:58:39,825 | INFO | Review-level enriched CSV written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\enriched\salt_and_sacrifice_english_emotion_enriched.csv
+2026-04-12 08:58:39,920 | INFO | Exported table: salt_and_sacrifice_emotion_corpus_overview.csv
+2026-04-12 08:58:39,923 | INFO | Exported table: salt_and_sacrifice_emotion_distribution_summary.csv
+2026-04-12 08:58:39,924 | INFO | Exported table: salt_and_sacrifice_emotion_by_polarity.csv
+2026-04-12 08:58:39,925 | INFO | Exported table: salt_and_sacrifice_emotion_by_playtime_band.csv
+2026-04-12 08:58:39,926 | INFO | Exported table: salt_and_sacrifice_emotion_by_month.csv
+2026-04-12 08:58:39,929 | INFO | Exported table: salt_and_sacrifice_emotion_top_terms_by_emotion.csv
+2026-04-12 08:58:39,957 | INFO | Summary JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_emotion_metrics_summary.json
+2026-04-12 08:58:39,957 | INFO | Emotion metrics computation complete.

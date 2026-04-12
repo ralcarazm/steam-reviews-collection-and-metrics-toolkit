@@ -1,0 +1,299 @@
+{
+  "app_id": 1437400,
+  "game_slug": "salt_and_sacrifice",
+  "game_title": "Salt and Sacrifice",
+  "generated_at_utc": "2026-04-12T06:58:38.989948+00:00",
+  "parameters": {
+    "min_reviews_per_language": 100,
+    "min_share_per_language": 1.0,
+    "top_n_unigrams": 200,
+    "top_n_bigrams": 100,
+    "top_n_trigrams": 50,
+    "min_token_length": 2,
+    "remove_stopwords": true,
+    "use_lemmatisation": false,
+    "export_per_language": true
+  },
+  "corpus_summary": {
+    "rows_loaded_from_cleaned_csv": 1823,
+    "rows_with_usable_text": 1780,
+    "languages_with_usable_text": 23,
+    "selected_languages_for_separate_output": [
+      "english",
+      "schinese",
+      "russian",
+      "brazilian",
+      "spanish",
+      "japanese",
+      "tchinese",
+      "koreana",
+      "german",
+      "french"
+    ]
+  },
+  "language_selection_table": [
+    {
+      "language": "english",
+      "review_count": 729,
+      "review_percentage": 40.9551
+    },
+    {
+      "language": "schinese",
+      "review_count": 500,
+      "review_percentage": 28.0899
+    },
+    {
+      "language": "russian",
+      "review_count": 133,
+      "review_percentage": 7.4719
+    },
+    {
+      "language": "brazilian",
+      "review_count": 117,
+      "review_percentage": 6.573
+    },
+    {
+      "language": "spanish",
+      "review_count": 69,
+      "review_percentage": 3.8764
+    },
+    {
+      "language": "japanese",
+      "review_count": 44,
+      "review_percentage": 2.4719
+    },
+    {
+      "language": "tchinese",
+      "review_count": 40,
+      "review_percentage": 2.2472
+    },
+    {
+      "language": "koreana",
+      "review_count": 32,
+      "review_percentage": 1.7978
+    },
+    {
+      "language": "german",
+      "review_count": 21,
+      "review_percentage": 1.1798
+    },
+    {
+      "language": "french",
+      "review_count": 18,
+      "review_percentage": 1.0112
+    },
+    {
+      "language": "polish",
+      "review_count": 16,
+      "review_percentage": 0.8989
+    },
+    {
+      "language": "italian",
+      "review_count": 11,
+      "review_percentage": 0.618
+    },
+    {
+      "language": "turkish",
+      "review_count": 10,
+      "review_percentage": 0.5618
+    },
+    {
+      "language": "ukrainian",
+      "review_count": 9,
+      "review_percentage": 0.5056
+    },
+    {
+      "language": "latam",
+      "review_count": 9,
+      "review_percentage": 0.5056
+    },
+    {
+      "language": "thai",
+      "review_count": 8,
+      "review_percentage": 0.4494
+    },
+    {
+      "language": "portuguese",
+      "review_count": 3,
+      "review_percentage": 0.1685
+    },
+    {
+      "language": "czech",
+      "review_count": 3,
+      "review_percentage": 0.1685
+    },
+    {
+      "language": "hungarian",
+      "review_count": 2,
+      "review_percentage": 0.1124
+    },
+    {
+      "language": "finnish",
+      "review_count": 2,
+      "review_percentage": 0.1124
+    },
+    {
+      "language": "vietnamese",
+      "review_count": 2,
+      "review_percentage": 0.1124
+    },
+    {
+      "language": "dutch",
+      "review_count": 1,
+      "review_percentage": 0.0562
+    },
+    {
+      "language": "danish",
+      "review_count": 1,
+      "review_percentage": 0.0562
+    }
+  ],
+  "global_outputs": {
+    "text_corpus_overview.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\text_corpus_overview.csv",
+    "text_metrics_by_polarity.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\text_metrics_by_polarity.csv",
+    "text_metrics_by_playtime_band.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\text_metrics_by_playtime_band.csv",
+    "text_metrics_by_language.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\text_metrics_by_language.csv",
+    "top_terms_by_language.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_terms_by_language.csv",
+    "top_unigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_unigrams_overall.csv",
+    "top_unigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_unigrams_positive.csv",
+    "top_unigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_unigrams_negative.csv",
+    "top_bigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_bigrams_overall.csv",
+    "top_bigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_bigrams_positive.csv",
+    "top_bigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_bigrams_negative.csv",
+    "top_trigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_trigrams_overall.csv",
+    "distinctive_terms_positive_vs_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\distinctive_terms_positive_vs_negative.csv",
+    "distinctive_terms_negative_vs_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\distinctive_terms_negative_vs_positive.csv"
+  },
+  "per_language_outputs": {
+    "english": {
+      "text_corpus_overview.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\text_corpus_overview.csv",
+      "text_metrics_by_polarity.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\text_metrics_by_polarity.csv",
+      "text_metrics_by_playtime_band.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\text_metrics_by_playtime_band.csv",
+      "top_unigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\top_unigrams_overall.csv",
+      "top_unigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\top_unigrams_positive.csv",
+      "top_unigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\top_unigrams_negative.csv",
+      "top_bigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\top_bigrams_overall.csv",
+      "top_bigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\top_bigrams_positive.csv",
+      "top_bigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\top_bigrams_negative.csv",
+      "distinctive_terms_positive_vs_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\distinctive_terms_positive_vs_negative.csv",
+      "distinctive_terms_negative_vs_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\distinctive_terms_negative_vs_positive.csv"
+    },
+    "schinese": {
+      "text_corpus_overview.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\text_corpus_overview.csv",
+      "text_metrics_by_polarity.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\text_metrics_by_polarity.csv",
+      "text_metrics_by_playtime_band.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\text_metrics_by_playtime_band.csv",
+      "top_unigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\top_unigrams_overall.csv",
+      "top_unigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\top_unigrams_positive.csv",
+      "top_unigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\top_unigrams_negative.csv",
+      "top_bigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\top_bigrams_overall.csv",
+      "top_bigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\top_bigrams_positive.csv",
+      "top_bigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\top_bigrams_negative.csv",
+      "distinctive_terms_positive_vs_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\distinctive_terms_positive_vs_negative.csv",
+      "distinctive_terms_negative_vs_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\distinctive_terms_negative_vs_positive.csv"
+    },
+    "russian": {
+      "text_corpus_overview.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\text_corpus_overview.csv",
+      "text_metrics_by_polarity.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\text_metrics_by_polarity.csv",
+      "text_metrics_by_playtime_band.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\text_metrics_by_playtime_band.csv",
+      "top_unigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\top_unigrams_overall.csv",
+      "top_unigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\top_unigrams_positive.csv",
+      "top_unigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\top_unigrams_negative.csv",
+      "top_bigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\top_bigrams_overall.csv",
+      "top_bigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\top_bigrams_positive.csv",
+      "top_bigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\top_bigrams_negative.csv",
+      "distinctive_terms_positive_vs_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\distinctive_terms_positive_vs_negative.csv",
+      "distinctive_terms_negative_vs_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\distinctive_terms_negative_vs_positive.csv"
+    },
+    "brazilian": {
+      "text_corpus_overview.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\text_corpus_overview.csv",
+      "text_metrics_by_polarity.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\text_metrics_by_polarity.csv",
+      "text_metrics_by_playtime_band.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\text_metrics_by_playtime_band.csv",
+      "top_unigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\top_unigrams_overall.csv",
+      "top_unigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\top_unigrams_positive.csv",
+      "top_unigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\top_unigrams_negative.csv",
+      "top_bigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\top_bigrams_overall.csv",
+      "top_bigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\top_bigrams_positive.csv",
+      "top_bigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\top_bigrams_negative.csv",
+      "distinctive_terms_positive_vs_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\distinctive_terms_positive_vs_negative.csv",
+      "distinctive_terms_negative_vs_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\distinctive_terms_negative_vs_positive.csv"
+    },
+    "spanish": {
+      "text_corpus_overview.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\text_corpus_overview.csv",
+      "text_metrics_by_polarity.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\text_metrics_by_polarity.csv",
+      "text_metrics_by_playtime_band.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\text_metrics_by_playtime_band.csv",
+      "top_unigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\top_unigrams_overall.csv",
+      "top_unigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\top_unigrams_positive.csv",
+      "top_unigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\top_unigrams_negative.csv",
+      "top_bigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\top_bigrams_overall.csv",
+      "top_bigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\top_bigrams_positive.csv",
+      "top_bigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\top_bigrams_negative.csv",
+      "distinctive_terms_positive_vs_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\distinctive_terms_positive_vs_negative.csv",
+      "distinctive_terms_negative_vs_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\distinctive_terms_negative_vs_positive.csv"
+    },
+    "japanese": {
+      "text_corpus_overview.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\text_corpus_overview.csv",
+      "text_metrics_by_polarity.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\text_metrics_by_polarity.csv",
+      "text_metrics_by_playtime_band.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\text_metrics_by_playtime_band.csv",
+      "top_unigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\top_unigrams_overall.csv",
+      "top_unigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\top_unigrams_positive.csv",
+      "top_unigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\top_unigrams_negative.csv",
+      "top_bigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\top_bigrams_overall.csv",
+      "top_bigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\top_bigrams_positive.csv",
+      "top_bigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\top_bigrams_negative.csv",
+      "distinctive_terms_positive_vs_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\distinctive_terms_positive_vs_negative.csv",
+      "distinctive_terms_negative_vs_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\distinctive_terms_negative_vs_positive.csv"
+    },
+    "tchinese": {
+      "text_corpus_overview.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\text_corpus_overview.csv",
+      "text_metrics_by_polarity.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\text_metrics_by_polarity.csv",
+      "text_metrics_by_playtime_band.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\text_metrics_by_playtime_band.csv",
+      "top_unigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\top_unigrams_overall.csv",
+      "top_unigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\top_unigrams_positive.csv",
+      "top_unigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\top_unigrams_negative.csv",
+      "top_bigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\top_bigrams_overall.csv",
+      "top_bigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\top_bigrams_positive.csv",
+      "top_bigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\top_bigrams_negative.csv",
+      "distinctive_terms_positive_vs_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\distinctive_terms_positive_vs_negative.csv",
+      "distinctive_terms_negative_vs_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\distinctive_terms_negative_vs_positive.csv"
+    },
+    "koreana": {
+      "text_corpus_overview.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\text_corpus_overview.csv",
+      "text_metrics_by_polarity.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\text_metrics_by_polarity.csv",
+      "text_metrics_by_playtime_band.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\text_metrics_by_playtime_band.csv",
+      "top_unigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\top_unigrams_overall.csv",
+      "top_unigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\top_unigrams_positive.csv",
+      "top_unigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\top_unigrams_negative.csv",
+      "top_bigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\top_bigrams_overall.csv",
+      "top_bigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\top_bigrams_positive.csv",
+      "top_bigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\top_bigrams_negative.csv",
+      "distinctive_terms_positive_vs_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\distinctive_terms_positive_vs_negative.csv",
+      "distinctive_terms_negative_vs_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\distinctive_terms_negative_vs_positive.csv"
+    },
+    "german": {
+      "text_corpus_overview.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\text_corpus_overview.csv",
+      "text_metrics_by_polarity.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\text_metrics_by_polarity.csv",
+      "text_metrics_by_playtime_band.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\text_metrics_by_playtime_band.csv",
+      "top_unigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\top_unigrams_overall.csv",
+      "top_unigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\top_unigrams_positive.csv",
+      "top_unigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\top_unigrams_negative.csv",
+      "top_bigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\top_bigrams_overall.csv",
+      "top_bigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\top_bigrams_positive.csv",
+      "top_bigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\top_bigrams_negative.csv",
+      "distinctive_terms_positive_vs_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\distinctive_terms_positive_vs_negative.csv",
+      "distinctive_terms_negative_vs_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\distinctive_terms_negative_vs_positive.csv"
+    },
+    "french": {
+      "text_corpus_overview.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\text_corpus_overview.csv",
+      "text_metrics_by_polarity.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\text_metrics_by_polarity.csv",
+      "text_metrics_by_playtime_band.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\text_metrics_by_playtime_band.csv",
+      "top_unigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\top_unigrams_overall.csv",
+      "top_unigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\top_unigrams_positive.csv",
+      "top_unigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\top_unigrams_negative.csv",
+      "top_bigrams_overall.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\top_bigrams_overall.csv",
+      "top_bigrams_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\top_bigrams_positive.csv",
+      "top_bigrams_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\top_bigrams_negative.csv",
+      "distinctive_terms_positive_vs_negative.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\distinctive_terms_positive_vs_negative.csv",
+      "distinctive_terms_negative_vs_positive.csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\distinctive_terms_negative_vs_positive.csv"
+    }
+  }
+}

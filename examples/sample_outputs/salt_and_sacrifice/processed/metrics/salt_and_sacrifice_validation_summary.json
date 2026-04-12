@@ -1,0 +1,748 @@
+{
+  "app_id": 1437400,
+  "game_slug": "salt_and_sacrifice",
+  "game_title": "Salt and Sacrifice",
+  "generated_at_utc": "2026-04-12T06:58:52.801873+00:00",
+  "check_count_total": 59,
+  "check_count_passed": 59,
+  "check_count_failed": 0,
+  "error_failures": 0,
+  "warning_failures": 0,
+  "final_status": "passed",
+  "checks": [
+    {
+      "check_id": "required_raw_combined_csv",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice\\combined\\salt_and_sacrifice_reviews_all.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice\\combined\\salt_and_sacrifice_reviews_all.csv"
+      }
+    },
+    {
+      "check_id": "required_cleaned_csv",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\cleaned\\salt_and_sacrifice_reviews_cleaned.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\cleaned\\salt_and_sacrifice_reviews_cleaned.csv"
+      }
+    },
+    {
+      "check_id": "required_basic_metrics_summary",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_basic_metrics_summary.json",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_basic_metrics_summary.json"
+      }
+    },
+    {
+      "check_id": "required_temporal_metrics_summary",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_temporal_metrics_summary.json",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_temporal_metrics_summary.json"
+      }
+    },
+    {
+      "check_id": "required_text_metrics_summary",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_text_metrics_summary.json",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_text_metrics_summary.json"
+      }
+    },
+    {
+      "check_id": "required_emotion_metrics_summary",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_emotion_metrics_summary.json",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_emotion_metrics_summary.json"
+      }
+    },
+    {
+      "check_id": "required_theme_metrics_summary",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_theme_metrics_summary.json",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_theme_metrics_summary.json"
+      }
+    },
+    {
+      "check_id": "required_figures_summary",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_figures_summary.json",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_figures_summary.json"
+      }
+    },
+    {
+      "check_id": "required_wordcloud_summary",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_word_cloud_summary.json",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_word_cloud_summary.json"
+      }
+    },
+    {
+      "check_id": "required_figure_index_csv",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\salt_and_sacrifice_figure_index.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\salt_and_sacrifice_figure_index.csv"
+      }
+    },
+    {
+      "check_id": "required_polarity_summary_csv",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_polarity_summary.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_polarity_summary.csv"
+      }
+    },
+    {
+      "check_id": "required_monthly_polarity_trends_csv",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_polarity_trends.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_polarity_trends.csv"
+      }
+    },
+    {
+      "check_id": "required_emotion_by_polarity_csv",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\emotion_metrics\\salt_and_sacrifice_emotion_by_polarity.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\emotion_metrics\\salt_and_sacrifice_emotion_by_polarity.csv"
+      }
+    },
+    {
+      "check_id": "required_theme_by_polarity_csv",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\theme_metrics\\salt_and_sacrifice_theme_by_polarity.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\theme_metrics\\salt_and_sacrifice_theme_by_polarity.csv"
+      }
+    },
+    {
+      "check_id": "cleaned_csv_required_columns",
+      "passed": true,
+      "severity": "error",
+      "message": "Required columns present in salt_and_sacrifice_reviews_cleaned.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\cleaned\\salt_and_sacrifice_reviews_cleaned.csv",
+        "required_columns": [
+          "recommendationid",
+          "review",
+          "language",
+          "voted_up"
+        ],
+        "missing_columns": []
+      }
+    },
+    {
+      "check_id": "cleaned_csv_non_empty",
+      "passed": true,
+      "severity": "error",
+      "message": "salt_and_sacrifice_reviews_cleaned.csv contains rows",
+      "details": {
+        "row_count": 1823,
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\cleaned\\salt_and_sacrifice_reviews_cleaned.csv"
+      }
+    },
+    {
+      "check_id": "cleaned_csv_recommendationid_uniqueness",
+      "passed": true,
+      "severity": "warning",
+      "message": "No duplicated recommendation IDs in cleaned CSV",
+      "details": {
+        "duplicated_count": 0,
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\cleaned\\salt_and_sacrifice_reviews_cleaned.csv"
+      }
+    },
+    {
+      "check_id": "basic_polarity_summary_required_columns",
+      "passed": true,
+      "severity": "error",
+      "message": "Required columns present in salt_and_sacrifice_polarity_summary.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_polarity_summary.csv",
+        "required_columns": [
+          "metric",
+          "value"
+        ],
+        "missing_columns": []
+      }
+    },
+    {
+      "check_id": "basic_polarity_total_consistency",
+      "passed": true,
+      "severity": "warning",
+      "message": "Basic polarity totals are consistent",
+      "details": {
+        "total_reviews": 1823,
+        "positive_reviews": 1141,
+        "negative_reviews": 682
+      }
+    },
+    {
+      "check_id": "temporal_monthly_polarity_trends_required_columns",
+      "passed": true,
+      "severity": "error",
+      "message": "Required columns present in salt_and_sacrifice_monthly_polarity_trends.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_polarity_trends.csv",
+        "required_columns": [
+          "review_created_date_month",
+          "review_count",
+          "positive_reviews",
+          "negative_reviews",
+          "positive_percentage"
+        ],
+        "missing_columns": []
+      }
+    },
+    {
+      "check_id": "temporal_monthly_polarity_trends_non_empty",
+      "passed": true,
+      "severity": "warning",
+      "message": "Temporal monthly polarity trends contain rows",
+      "details": {
+        "row_count": 30,
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_polarity_trends.csv"
+      }
+    },
+    {
+      "check_id": "text_top_unigrams_positive_exists",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_unigrams_positive.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_unigrams_positive.csv"
+      }
+    },
+    {
+      "check_id": "text_top_unigrams_negative_exists",
+      "passed": true,
+      "severity": "error",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_unigrams_negative.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_unigrams_negative.csv"
+      }
+    },
+    {
+      "check_id": "text_top_unigrams_positive_required_columns",
+      "passed": true,
+      "severity": "error",
+      "message": "Required columns present in top_unigrams_positive.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_unigrams_positive.csv",
+        "required_columns": [
+          "rank",
+          "token",
+          "frequency"
+        ],
+        "missing_columns": []
+      }
+    },
+    {
+      "check_id": "text_top_unigrams_negative_required_columns",
+      "passed": true,
+      "severity": "error",
+      "message": "Required columns present in top_unigrams_negative.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_unigrams_negative.csv",
+        "required_columns": [
+          "rank",
+          "token",
+          "frequency"
+        ],
+        "missing_columns": []
+      }
+    },
+    {
+      "check_id": "emotion_by_polarity_required_columns",
+      "passed": true,
+      "severity": "error",
+      "message": "Required columns present in salt_and_sacrifice_emotion_by_polarity.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\emotion_metrics\\salt_and_sacrifice_emotion_by_polarity.csv",
+        "required_columns": [
+          "segment",
+          "review_count",
+          "total_tokens",
+          "emotion_token_count"
+        ],
+        "missing_columns": []
+      }
+    },
+    {
+      "check_id": "emotion_by_polarity_expected_segments",
+      "passed": true,
+      "severity": "warning",
+      "message": "Emotion by polarity contains expected segments",
+      "details": {
+        "present_segments": [
+          "negative",
+          "overall",
+          "positive"
+        ],
+        "missing_segments": []
+      }
+    },
+    {
+      "check_id": "theme_by_polarity_required_columns",
+      "passed": true,
+      "severity": "error",
+      "message": "Required columns present in salt_and_sacrifice_theme_by_polarity.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\theme_metrics\\salt_and_sacrifice_theme_by_polarity.csv",
+        "required_columns": [
+          "segment",
+          "review_count",
+          "total_tokens",
+          "theme_match_count_total"
+        ],
+        "missing_columns": []
+      }
+    },
+    {
+      "check_id": "theme_by_polarity_expected_segments",
+      "passed": true,
+      "severity": "warning",
+      "message": "Theme by polarity contains expected segments",
+      "details": {
+        "present_segments": [
+          "negative",
+          "overall",
+          "positive"
+        ],
+        "missing_segments": []
+      }
+    },
+    {
+      "check_id": "figure_index_required_columns",
+      "passed": true,
+      "severity": "error",
+      "message": "Required columns present in salt_and_sacrifice_figure_index.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\salt_and_sacrifice_figure_index.csv",
+        "required_columns": [
+          "figure_id",
+          "filename",
+          "family",
+          "title",
+          "chart_type",
+          "source_table",
+          "output_file",
+          "row_count",
+          "column_count",
+          "notes"
+        ],
+        "missing_columns": []
+      }
+    },
+    {
+      "check_id": "figure_index_non_empty",
+      "passed": true,
+      "severity": "warning",
+      "message": "Figure index contains rows",
+      "details": {
+        "row_count": 18,
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\salt_and_sacrifice_figure_index.csv"
+      }
+    },
+    {
+      "check_id": "figure_workbooks_exist",
+      "passed": true,
+      "severity": "warning",
+      "message": "All figure workbooks listed in the figure index exist",
+      "details": {
+        "existing_count": 18,
+        "missing_count": 0,
+        "missing_workbooks": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_1",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_01_polarity_distribution.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\basic_metrics\\figure_01_polarity_distribution.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_2",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_02_language_distribution_top10.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\basic_metrics\\figure_02_language_distribution_top10.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_3",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_03_polarity_by_playtime_band.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\basic_metrics\\figure_03_polarity_by_playtime_band.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_4",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_04_monthly_review_volume.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\temporal_metrics\\figure_04_monthly_review_volume.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_5",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_05_monthly_polarity_trends.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\temporal_metrics\\figure_05_monthly_polarity_trends.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_6",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_06_monthly_positive_percentage.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\temporal_metrics\\figure_06_monthly_positive_percentage.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_7",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_07_monthly_language_trends_top5.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\temporal_metrics\\figure_07_monthly_language_trends_top5.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_8",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_08_developer_response_timeline.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\temporal_metrics\\figure_08_developer_response_timeline.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_9",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_09_top_unigrams_positive.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\text_metrics\\figure_09_top_unigrams_positive.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_10",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_10_top_unigrams_negative.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\text_metrics\\figure_10_top_unigrams_negative.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_11",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_11_distinctive_terms_positive_vs_negative.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\text_metrics\\figure_11_distinctive_terms_positive_vs_negative.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_12",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_12_distinctive_terms_negative_vs_positive.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\text_metrics\\figure_12_distinctive_terms_negative_vs_positive.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_13",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_13_emotion_distribution_summary.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\emotion_metrics\\figure_13_emotion_distribution_summary.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_14",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_14_emotion_by_polarity.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\emotion_metrics\\figure_14_emotion_by_polarity.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_15",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_15_emotion_by_month_selected.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\emotion_metrics\\figure_15_emotion_by_month_selected.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_16",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_16_theme_distribution_summary.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\theme_metrics\\figure_16_theme_distribution_summary.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_17",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_17_theme_by_polarity.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\theme_metrics\\figure_17_theme_by_polarity.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "figure_workbook_required_sheets_18",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required worksheets present in figure_18_theme_by_month_selected.xlsx",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\theme_metrics\\figure_18_theme_by_month_selected.xlsx",
+        "sheet_names": [
+          "data",
+          "chart",
+          "metadata"
+        ],
+        "missing_worksheets": []
+      }
+    },
+    {
+      "check_id": "wordcloud_expected_file_1",
+      "passed": true,
+      "severity": "warning",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_unigrams.png",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_unigrams.png"
+      }
+    },
+    {
+      "check_id": "wordcloud_expected_file_2",
+      "passed": true,
+      "severity": "warning",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_bigrams.png",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_bigrams.png"
+      }
+    },
+    {
+      "check_id": "wordcloud_expected_file_3",
+      "passed": true,
+      "severity": "warning",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_trigrams.png",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_trigrams.png"
+      }
+    },
+    {
+      "check_id": "wordcloud_expected_file_4",
+      "passed": true,
+      "severity": "warning",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_unigrams_frequencies.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_unigrams_frequencies.csv"
+      }
+    },
+    {
+      "check_id": "wordcloud_expected_file_5",
+      "passed": true,
+      "severity": "warning",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_bigrams_frequencies.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_bigrams_frequencies.csv"
+      }
+    },
+    {
+      "check_id": "wordcloud_expected_file_6",
+      "passed": true,
+      "severity": "warning",
+      "message": "Found: C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_trigrams_frequencies.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_trigrams_frequencies.csv"
+      }
+    },
+    {
+      "check_id": "wordcloud_unigram_frequency_columns",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required columns present in salt_and_sacrifice_wordcloud_unigrams_frequencies.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_unigrams_frequencies.csv",
+        "required_columns": [
+          "rank",
+          "unigram",
+          "frequency"
+        ],
+        "missing_columns": []
+      }
+    },
+    {
+      "check_id": "wordcloud_bigram_frequency_columns",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required columns present in salt_and_sacrifice_wordcloud_bigrams_frequencies.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_bigrams_frequencies.csv",
+        "required_columns": [
+          "rank",
+          "bigram",
+          "frequency"
+        ],
+        "missing_columns": []
+      }
+    },
+    {
+      "check_id": "wordcloud_trigram_frequency_columns",
+      "passed": true,
+      "severity": "warning",
+      "message": "Required columns present in salt_and_sacrifice_wordcloud_trigrams_frequencies.csv",
+      "details": {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_trigrams_frequencies.csv",
+        "required_columns": [
+          "rank",
+          "trigram",
+          "frequency"
+        ],
+        "missing_columns": []
+      }
+    }
+  ]
+}

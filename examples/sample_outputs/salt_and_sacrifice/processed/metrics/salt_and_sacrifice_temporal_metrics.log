@@ -1,0 +1,24 @@
+2026-04-12 08:58:36,192 | INFO | Starting temporal metrics computation.
+2026-04-12 08:58:36,192 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:36,192 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:36,192 | INFO | App ID: 1437400
+2026-04-12 08:58:36,192 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:36,297 | INFO | Rows loaded: 1823
+2026-04-12 08:58:36,297 | INFO | Columns loaded: 70
+2026-04-12 08:58:37,010 | INFO | Exported table: salt_and_sacrifice_temporal_coverage.csv
+2026-04-12 08:58:37,014 | INFO | Exported table: salt_and_sacrifice_daily_review_volume.csv
+2026-04-12 08:58:37,016 | INFO | Exported table: salt_and_sacrifice_weekly_review_volume.csv
+2026-04-12 08:58:37,017 | INFO | Exported table: salt_and_sacrifice_monthly_review_volume_extended.csv
+2026-04-12 08:58:37,018 | INFO | Exported table: salt_and_sacrifice_monthly_polarity_trends.csv
+2026-04-12 08:58:37,019 | INFO | Exported table: salt_and_sacrifice_monthly_language_trends.csv
+2026-04-12 08:58:37,021 | INFO | Exported table: salt_and_sacrifice_monthly_text_length_trends.csv
+2026-04-12 08:58:37,023 | INFO | Exported table: salt_and_sacrifice_monthly_playtime_trends.csv
+2026-04-12 08:58:37,024 | INFO | Exported table: salt_and_sacrifice_monthly_reviewer_profile_trends.csv
+2026-04-12 08:58:37,026 | INFO | Exported table: salt_and_sacrifice_monthly_interaction_trends.csv
+2026-04-12 08:58:37,027 | INFO | Exported table: salt_and_sacrifice_review_update_metrics.csv
+2026-04-12 08:58:37,028 | INFO | Exported table: salt_and_sacrifice_developer_response_timeline.csv
+2026-04-12 08:58:37,031 | INFO | Exported table: salt_and_sacrifice_monthly_polarity_by_language.csv
+2026-04-12 08:58:37,032 | INFO | Exported table: salt_and_sacrifice_monthly_polarity_by_playtime_band.csv
+2026-04-12 08:58:37,033 | INFO | Exported table: salt_and_sacrifice_peak_activity_summary.csv
+2026-04-12 08:58:37,113 | INFO | Summary JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_temporal_metrics_summary.json
+2026-04-12 08:58:37,113 | INFO | Temporal metrics computation complete.

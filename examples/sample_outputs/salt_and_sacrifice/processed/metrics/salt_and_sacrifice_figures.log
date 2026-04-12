@@ -1,0 +1,27 @@
+2026-04-12 08:58:41,854 | INFO | Starting Excel figure generation.
+2026-04-12 08:58:41,855 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:41,855 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:41,855 | INFO | App ID: 1437400
+2026-04-12 08:58:41,855 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:41,855 | INFO | Figure specs loaded: 18
+2026-04-12 08:58:41,855 | INFO | Creating figure workbook: figure_01_polarity_distribution.xlsx
+2026-04-12 08:58:41,873 | INFO | Creating figure workbook: figure_02_language_distribution_top10.xlsx
+2026-04-12 08:58:41,886 | INFO | Creating figure workbook: figure_03_polarity_by_playtime_band.xlsx
+2026-04-12 08:58:41,898 | INFO | Creating figure workbook: figure_04_monthly_review_volume.xlsx
+2026-04-12 08:58:41,910 | INFO | Creating figure workbook: figure_05_monthly_polarity_trends.xlsx
+2026-04-12 08:58:41,923 | INFO | Creating figure workbook: figure_06_monthly_positive_percentage.xlsx
+2026-04-12 08:58:41,935 | INFO | Creating figure workbook: figure_07_monthly_language_trends_top5.xlsx
+2026-04-12 08:58:41,955 | INFO | Creating figure workbook: figure_08_developer_response_timeline.xlsx
+2026-04-12 08:58:41,968 | INFO | Creating figure workbook: figure_09_top_unigrams_positive.xlsx
+2026-04-12 08:58:41,980 | INFO | Creating figure workbook: figure_10_top_unigrams_negative.xlsx
+2026-04-12 08:58:41,992 | INFO | Creating figure workbook: figure_11_distinctive_terms_positive_vs_negative.xlsx
+2026-04-12 08:58:42,005 | INFO | Creating figure workbook: figure_12_distinctive_terms_negative_vs_positive.xlsx
+2026-04-12 08:58:42,021 | INFO | Creating figure workbook: figure_13_emotion_distribution_summary.xlsx
+2026-04-12 08:58:42,032 | INFO | Creating figure workbook: figure_14_emotion_by_polarity.xlsx
+2026-04-12 08:58:42,052 | INFO | Creating figure workbook: figure_15_emotion_by_month_selected.xlsx
+2026-04-12 08:58:42,066 | INFO | Creating figure workbook: figure_16_theme_distribution_summary.xlsx
+2026-04-12 08:58:42,079 | INFO | Creating figure workbook: figure_17_theme_by_polarity.xlsx
+2026-04-12 08:58:42,099 | INFO | Creating figure workbook: figure_18_theme_by_month_selected.xlsx
+2026-04-12 08:58:42,121 | INFO | Figure index CSV written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\figures\salt_and_sacrifice_figure_index.csv
+2026-04-12 08:58:42,121 | INFO | Summary JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_figures_summary.json
+2026-04-12 08:58:42,121 | INFO | Excel figure generation complete.

@@ -1,0 +1,2015 @@
+{
+  "app_id": 1437400,
+  "game_slug": "salt_and_sacrifice",
+  "game_title": "Salt and Sacrifice",
+  "generated_at_utc": "2026-04-12T06:58:52.861958+00:00",
+  "roots": {
+    "raw_root": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice",
+    "processed_root": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice",
+    "results_root": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice"
+  },
+  "stage_results": [
+    {
+      "stage_id": "collection",
+      "stage_label": "Data collection",
+      "script_path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\scripts\\01_data_collection\\collect_steam_reviews.py",
+      "enabled": true,
+      "status": "success",
+      "return_code": 0,
+      "started_at_utc": "2026-04-12T06:57:53.765553+00:00",
+      "finished_at_utc": "2026-04-12T06:58:33.993856+00:00"
+    },
+    {
+      "stage_id": "preparation",
+      "stage_label": "Data preparation",
+      "script_path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\scripts\\02_data_preparation\\prepare_reviews.py",
+      "enabled": true,
+      "status": "success",
+      "return_code": 0,
+      "started_at_utc": "2026-04-12T06:58:33.994607+00:00",
+      "finished_at_utc": "2026-04-12T06:58:34.994884+00:00"
+    },
+    {
+      "stage_id": "basic_metrics",
+      "stage_label": "Basic descriptive metrics",
+      "script_path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\scripts\\03_analysis\\compute_basic_metrics.py",
+      "enabled": true,
+      "status": "success",
+      "return_code": 0,
+      "started_at_utc": "2026-04-12T06:58:34.995555+00:00",
+      "finished_at_utc": "2026-04-12T06:58:35.736063+00:00"
+    },
+    {
+      "stage_id": "temporal_metrics",
+      "stage_label": "Temporal metrics",
+      "script_path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\scripts\\03_analysis\\compute_temporal_metrics.py",
+      "enabled": true,
+      "status": "success",
+      "return_code": 0,
+      "started_at_utc": "2026-04-12T06:58:35.737267+00:00",
+      "finished_at_utc": "2026-04-12T06:58:37.166226+00:00"
+    },
+    {
+      "stage_id": "text_metrics",
+      "stage_label": "Text metrics",
+      "script_path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\scripts\\03_analysis\\compute_text_metrics.py",
+      "enabled": true,
+      "status": "success",
+      "return_code": 0,
+      "started_at_utc": "2026-04-12T06:58:37.166798+00:00",
+      "finished_at_utc": "2026-04-12T06:58:39.056334+00:00"
+    },
+    {
+      "stage_id": "emotion_metrics",
+      "stage_label": "Emotion metrics",
+      "script_path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\scripts\\03_analysis\\compute_emotion_metrics.py",
+      "enabled": true,
+      "status": "success",
+      "return_code": 0,
+      "started_at_utc": "2026-04-12T06:58:39.057017+00:00",
+      "finished_at_utc": "2026-04-12T06:58:40.013616+00:00"
+    },
+    {
+      "stage_id": "theme_metrics",
+      "stage_label": "Theme metrics",
+      "script_path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\scripts\\03_analysis\\compute_theme_metrics.py",
+      "enabled": true,
+      "status": "success",
+      "return_code": 0,
+      "started_at_utc": "2026-04-12T06:58:40.014211+00:00",
+      "finished_at_utc": "2026-04-12T06:58:40.981548+00:00"
+    },
+    {
+      "stage_id": "excel_figures",
+      "stage_label": "Excel figure generation",
+      "script_path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\scripts\\04_visualisation\\create_excel_figures.py",
+      "enabled": true,
+      "status": "success",
+      "return_code": 0,
+      "started_at_utc": "2026-04-12T06:58:40.982215+00:00",
+      "finished_at_utc": "2026-04-12T06:58:42.183905+00:00"
+    },
+    {
+      "stage_id": "word_cloud",
+      "stage_label": "Word-cloud generation",
+      "script_path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\scripts\\04_visualisation\\create_word_clouds.py",
+      "enabled": true,
+      "status": "success",
+      "return_code": 0,
+      "started_at_utc": "2026-04-12T06:58:42.184576+00:00",
+      "finished_at_utc": "2026-04-12T06:58:52.061064+00:00"
+    },
+    {
+      "stage_id": "validation",
+      "stage_label": "Output validation",
+      "script_path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\scripts\\validate_outputs.py",
+      "enabled": true,
+      "status": "success",
+      "return_code": 0,
+      "started_at_utc": "2026-04-12T06:58:52.061674+00:00",
+      "finished_at_utc": "2026-04-12T06:58:52.861514+00:00"
+    }
+  ],
+  "important_outputs": {
+    "raw_combined_csv": {
+      "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice\\combined\\salt_and_sacrifice_reviews_all.csv",
+      "exists": true,
+      "is_file": true,
+      "is_dir": false,
+      "size_bytes": 1452050,
+      "modified_at_utc": "2026-04-12T06:58:33.877753+00:00"
+    },
+    "cleaned_csv": {
+      "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\cleaned\\salt_and_sacrifice_reviews_cleaned.csv",
+      "exists": true,
+      "is_file": true,
+      "is_dir": false,
+      "size_bytes": 1964157,
+      "modified_at_utc": "2026-04-12T06:58:34.729781+00:00"
+    },
+    "basic_metrics_summary_json": {
+      "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_basic_metrics_summary.json",
+      "exists": true,
+      "is_file": true,
+      "is_dir": false,
+      "size_bytes": 40615,
+      "modified_at_utc": "2026-04-12T06:58:35.665199+00:00"
+    },
+    "temporal_metrics_summary_json": {
+      "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_temporal_metrics_summary.json",
+      "exists": true,
+      "is_file": true,
+      "is_dir": false,
+      "size_bytes": 750787,
+      "modified_at_utc": "2026-04-12T06:58:37.098675+00:00"
+    },
+    "text_metrics_summary_json": {
+      "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_text_metrics_summary.json",
+      "exists": true,
+      "is_file": true,
+      "is_dir": false,
+      "size_bytes": 29381,
+      "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+    },
+    "emotion_metrics_summary_json": {
+      "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_emotion_metrics_summary.json",
+      "exists": true,
+      "is_file": true,
+      "is_dir": false,
+      "size_bytes": 249491,
+      "modified_at_utc": "2026-04-12T06:58:39.950782+00:00"
+    },
+    "theme_metrics_summary_json": {
+      "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_theme_metrics_summary.json",
+      "exists": true,
+      "is_file": true,
+      "is_dir": false,
+      "size_bytes": 105162,
+      "modified_at_utc": "2026-04-12T06:58:40.926115+00:00"
+    },
+    "figures_summary_json": {
+      "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_figures_summary.json",
+      "exists": true,
+      "is_file": true,
+      "is_dir": false,
+      "size_bytes": 12976,
+      "modified_at_utc": "2026-04-12T06:58:42.106637+00:00"
+    },
+    "word_cloud_summary_json": {
+      "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_word_cloud_summary.json",
+      "exists": true,
+      "is_file": true,
+      "is_dir": false,
+      "size_bytes": 1939,
+      "modified_at_utc": "2026-04-12T06:58:51.951734+00:00"
+    },
+    "validation_summary_json": {
+      "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_validation_summary.json",
+      "exists": true,
+      "is_file": true,
+      "is_dir": false,
+      "size_bytes": 31366,
+      "modified_at_utc": "2026-04-12T06:58:52.799669+00:00"
+    },
+    "figure_index_csv": {
+      "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\salt_and_sacrifice_figure_index.csv",
+      "exists": true,
+      "is_file": true,
+      "is_dir": false,
+      "size_bytes": 8332,
+      "modified_at_utc": "2026-04-12T06:58:42.106637+00:00"
+    }
+  },
+  "directories": {
+    "raw_combined": [
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice\\combined\\salt_and_sacrifice_reviews_all.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1452050,
+        "modified_at_utc": "2026-04-12T06:58:33.877753+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice\\combined\\salt_and_sacrifice_reviews_all.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2617621,
+        "modified_at_utc": "2026-04-12T06:58:33.929728+00:00"
+      }
+    ],
+    "raw_chunks": [
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice\\chunks\\salt_and_sacrifice_reviews_part_0001.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 751155,
+        "modified_at_utc": "2026-04-12T06:58:15.273347+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice\\chunks\\salt_and_sacrifice_reviews_part_0001.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1389978,
+        "modified_at_utc": "2026-04-12T06:58:15.258828+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice\\chunks\\salt_and_sacrifice_reviews_part_0002.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 701289,
+        "modified_at_utc": "2026-04-12T06:58:33.846176+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice\\chunks\\salt_and_sacrifice_reviews_part_0002.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1227646,
+        "modified_at_utc": "2026-04-12T06:58:33.830378+00:00"
+      }
+    ],
+    "raw_metadata": [
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice\\metadata\\salt_and_sacrifice_master_index.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 259,
+        "modified_at_utc": "2026-04-12T06:58:33.846176+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice\\metadata\\salt_and_sacrifice_progress.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 490,
+        "modified_at_utc": "2026-04-12T06:58:33.929728+00:00"
+      }
+    ],
+    "raw_logs": [
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\raw\\steam_reviews\\salt_and_sacrifice\\logs\\salt_and_sacrifice_collection.log",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9401,
+        "modified_at_utc": "2026-04-12T06:58:33.929728+00:00"
+      }
+    ],
+    "processed_cleaned": [
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\cleaned\\salt_and_sacrifice_preparation.log",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1332,
+        "modified_at_utc": "2026-04-12T06:58:34.940018+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\cleaned\\salt_and_sacrifice_preparation_metadata.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 340,
+        "modified_at_utc": "2026-04-12T06:58:34.940018+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\cleaned\\salt_and_sacrifice_reviews_cleaned.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1964157,
+        "modified_at_utc": "2026-04-12T06:58:34.729781+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\cleaned\\salt_and_sacrifice_reviews_cleaned.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 5231287,
+        "modified_at_utc": "2026-04-12T06:58:34.940018+00:00"
+      }
+    ],
+    "processed_enriched": [
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\enriched\\salt_and_sacrifice_english_emotion_enriched.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1471265,
+        "modified_at_utc": "2026-04-12T06:58:39.820244+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\enriched\\salt_and_sacrifice_english_theme_enriched.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1569243,
+        "modified_at_utc": "2026-04-12T06:58:40.778884+00:00"
+      }
+    ],
+    "processed_metrics": [
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_basic_metrics.log",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2354,
+        "modified_at_utc": "2026-04-12T06:58:35.665199+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_basic_metrics_summary.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 40615,
+        "modified_at_utc": "2026-04-12T06:58:35.665199+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_emotion_metrics.log",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1703,
+        "modified_at_utc": "2026-04-12T06:58:39.950782+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_emotion_metrics_summary.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 249491,
+        "modified_at_utc": "2026-04-12T06:58:39.950782+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_figures.log",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2745,
+        "modified_at_utc": "2026-04-12T06:58:42.106637+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_figures_summary.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 12976,
+        "modified_at_utc": "2026-04-12T06:58:42.106637+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_pipeline.log",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 42182,
+        "modified_at_utc": "2026-04-12T06:58:52.858901+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_temporal_metrics.log",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2272,
+        "modified_at_utc": "2026-04-12T06:58:37.098675+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_temporal_metrics_summary.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 750787,
+        "modified_at_utc": "2026-04-12T06:58:37.098675+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_text_metrics.log",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1908,
+        "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_text_metrics_summary.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 29381,
+        "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_theme_metrics.log",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1674,
+        "modified_at_utc": "2026-04-12T06:58:40.926115+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_theme_metrics_summary.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 105162,
+        "modified_at_utc": "2026-04-12T06:58:40.926115+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_validation.log",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 540,
+        "modified_at_utc": "2026-04-12T06:58:52.799669+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_validation_summary.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 31366,
+        "modified_at_utc": "2026-04-12T06:58:52.799669+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_word_cloud.log",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1300,
+        "modified_at_utc": "2026-04-12T06:58:51.951734+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_word_cloud_summary.json",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1939,
+        "modified_at_utc": "2026-04-12T06:58:51.951734+00:00"
+      }
+    ],
+    "results_tables": [
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_concentration_summary.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 312,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_cross_tab_polarity_by_language.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 709,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_cross_tab_polarity_by_library_size_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 229,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_cross_tab_polarity_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 309,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_cross_tab_polarity_by_reviewer_activity_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 188,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_dataset_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 216,
+        "modified_at_utc": "2026-04-12T06:58:35.633807+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_interaction_summary.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 347,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_language_distribution.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 477,
+        "modified_at_utc": "2026-04-12T06:58:35.647477+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_missingness_summary.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2468,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_monthly_review_volume.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1122,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_playtime_summary.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 670,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_polarity_summary.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 177,
+        "modified_at_utc": "2026-04-12T06:58:35.647477+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_purchase_and_access_summary.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 370,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_reviewer_profile_summary.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 299,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_temporal_interval_summary.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 489,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\basic_metrics\\salt_and_sacrifice_text_summary.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 524,
+        "modified_at_utc": "2026-04-12T06:58:35.649513+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\emotion_metrics\\salt_and_sacrifice_emotion_by_month.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8263,
+        "modified_at_utc": "2026-04-12T06:58:39.922751+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\emotion_metrics\\salt_and_sacrifice_emotion_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2700,
+        "modified_at_utc": "2026-04-12T06:58:39.922751+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\emotion_metrics\\salt_and_sacrifice_emotion_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1581,
+        "modified_at_utc": "2026-04-12T06:58:39.922751+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\emotion_metrics\\salt_and_sacrifice_emotion_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 635,
+        "modified_at_utc": "2026-04-12T06:58:39.919133+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\emotion_metrics\\salt_and_sacrifice_emotion_distribution_summary.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 669,
+        "modified_at_utc": "2026-04-12T06:58:39.922751+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\emotion_metrics\\salt_and_sacrifice_emotion_top_terms_by_emotion.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 30693,
+        "modified_at_utc": "2026-04-12T06:58:39.929238+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_daily_review_volume.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 30018,
+        "modified_at_utc": "2026-04-12T06:58:37.011187+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_developer_response_timeline.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1567,
+        "modified_at_utc": "2026-04-12T06:58:37.026877+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_interaction_trends.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 5472,
+        "modified_at_utc": "2026-04-12T06:58:37.011187+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_language_trends.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 10258,
+        "modified_at_utc": "2026-04-12T06:58:37.011187+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_playtime_trends.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8179,
+        "modified_at_utc": "2026-04-12T06:58:37.011187+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_polarity_by_language.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9487,
+        "modified_at_utc": "2026-04-12T06:58:37.026877+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_polarity_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 6771,
+        "modified_at_utc": "2026-04-12T06:58:37.026877+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_polarity_trends.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1860,
+        "modified_at_utc": "2026-04-12T06:58:37.011187+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_review_volume_extended.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2626,
+        "modified_at_utc": "2026-04-12T06:58:37.011187+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_reviewer_profile_trends.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4328,
+        "modified_at_utc": "2026-04-12T06:58:37.011187+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_monthly_text_length_trends.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 6482,
+        "modified_at_utc": "2026-04-12T06:58:37.011187+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_peak_activity_summary.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 195,
+        "modified_at_utc": "2026-04-12T06:58:37.026877+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_review_update_metrics.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1164,
+        "modified_at_utc": "2026-04-12T06:58:37.026877+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_temporal_coverage.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 236,
+        "modified_at_utc": "2026-04-12T06:58:37.009417+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\temporal_metrics\\salt_and_sacrifice_weekly_review_volume.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8460,
+        "modified_at_utc": "2026-04-12T06:58:37.011187+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\distinctive_terms_negative_vs_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9379,
+        "modified_at_utc": "2026-04-12T06:58:38.719992+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\distinctive_terms_positive_vs_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8723,
+        "modified_at_utc": "2026-04-12T06:58:38.719992+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\text_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 422,
+        "modified_at_utc": "2026-04-12T06:58:38.719992+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\text_metrics_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 382,
+        "modified_at_utc": "2026-04-12T06:58:38.719992+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\text_metrics_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 353,
+        "modified_at_utc": "2026-04-12T06:58:38.719992+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\top_bigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2810,
+        "modified_at_utc": "2026-04-12T06:58:38.719992+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\top_bigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2665,
+        "modified_at_utc": "2026-04-12T06:58:38.719992+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\top_bigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2665,
+        "modified_at_utc": "2026-04-12T06:58:38.719992+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\top_unigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4529,
+        "modified_at_utc": "2026-04-12T06:58:38.719992+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\top_unigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4524,
+        "modified_at_utc": "2026-04-12T06:58:38.719992+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\brazilian\\top_unigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4279,
+        "modified_at_utc": "2026-04-12T06:58:38.719992+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\distinctive_terms_negative_vs_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9820,
+        "modified_at_utc": "2026-04-12T06:58:38.505138+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\distinctive_terms_positive_vs_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9875,
+        "modified_at_utc": "2026-04-12T06:58:38.505138+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\text_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 424,
+        "modified_at_utc": "2026-04-12T06:58:38.491375+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\text_metrics_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 458,
+        "modified_at_utc": "2026-04-12T06:58:38.491375+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\text_metrics_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 357,
+        "modified_at_utc": "2026-04-12T06:58:38.491375+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\top_bigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2677,
+        "modified_at_utc": "2026-04-12T06:58:38.505138+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\top_bigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2763,
+        "modified_at_utc": "2026-04-12T06:58:38.491375+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\top_bigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2752,
+        "modified_at_utc": "2026-04-12T06:58:38.491375+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\top_unigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4551,
+        "modified_at_utc": "2026-04-12T06:58:38.491375+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\top_unigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4655,
+        "modified_at_utc": "2026-04-12T06:58:38.491375+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\english\\top_unigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4594,
+        "modified_at_utc": "2026-04-12T06:58:38.491375+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\distinctive_terms_negative_vs_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8972,
+        "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\distinctive_terms_positive_vs_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9041,
+        "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\text_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 416,
+        "modified_at_utc": "2026-04-12T06:58:38.980155+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\text_metrics_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 331,
+        "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\text_metrics_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 341,
+        "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\top_bigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2715,
+        "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\top_bigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2615,
+        "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\top_bigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2665,
+        "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\top_unigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4453,
+        "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\top_unigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4372,
+        "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\french\\top_unigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4485,
+        "modified_at_utc": "2026-04-12T06:58:38.981162+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\distinctive_terms_negative_vs_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9244,
+        "modified_at_utc": "2026-04-12T06:58:38.944808+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\distinctive_terms_positive_vs_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9126,
+        "modified_at_utc": "2026-04-12T06:58:38.944808+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\text_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 419,
+        "modified_at_utc": "2026-04-12T06:58:38.928983+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\text_metrics_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 343,
+        "modified_at_utc": "2026-04-12T06:58:38.928983+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\text_metrics_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 345,
+        "modified_at_utc": "2026-04-12T06:58:38.928983+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\top_bigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 3016,
+        "modified_at_utc": "2026-04-12T06:58:38.944808+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\top_bigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2737,
+        "modified_at_utc": "2026-04-12T06:58:38.944808+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\top_bigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2766,
+        "modified_at_utc": "2026-04-12T06:58:38.944808+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\top_unigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4454,
+        "modified_at_utc": "2026-04-12T06:58:38.944808+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\top_unigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4380,
+        "modified_at_utc": "2026-04-12T06:58:38.928983+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\german\\top_unigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4454,
+        "modified_at_utc": "2026-04-12T06:58:38.944808+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\distinctive_terms_negative_vs_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 17649,
+        "modified_at_utc": "2026-04-12T06:58:38.818553+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\distinctive_terms_positive_vs_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 17815,
+        "modified_at_utc": "2026-04-12T06:58:38.818553+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\text_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 420,
+        "modified_at_utc": "2026-04-12T06:58:38.802872+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\text_metrics_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 419,
+        "modified_at_utc": "2026-04-12T06:58:38.802872+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\text_metrics_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 342,
+        "modified_at_utc": "2026-04-12T06:58:38.802872+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\top_bigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9803,
+        "modified_at_utc": "2026-04-12T06:58:38.818553+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\top_bigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9803,
+        "modified_at_utc": "2026-04-12T06:58:38.818553+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\top_bigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 14280,
+        "modified_at_utc": "2026-04-12T06:58:38.818553+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\top_unigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 13496,
+        "modified_at_utc": "2026-04-12T06:58:38.818553+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\top_unigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 14261,
+        "modified_at_utc": "2026-04-12T06:58:38.802872+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\japanese\\top_unigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 14084,
+        "modified_at_utc": "2026-04-12T06:58:38.802872+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\distinctive_terms_negative_vs_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9631,
+        "modified_at_utc": "2026-04-12T06:58:38.913193+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\distinctive_terms_positive_vs_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9485,
+        "modified_at_utc": "2026-04-12T06:58:38.912188+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\text_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 417,
+        "modified_at_utc": "2026-04-12T06:58:38.901443+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\text_metrics_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 393,
+        "modified_at_utc": "2026-04-12T06:58:38.901443+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\text_metrics_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 341,
+        "modified_at_utc": "2026-04-12T06:58:38.901443+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\top_bigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 3699,
+        "modified_at_utc": "2026-04-12T06:58:38.910181+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\top_bigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 3650,
+        "modified_at_utc": "2026-04-12T06:58:38.908174+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\top_bigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 3677,
+        "modified_at_utc": "2026-04-12T06:58:38.910181+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\top_unigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 5220,
+        "modified_at_utc": "2026-04-12T06:58:38.908174+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\top_unigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 5140,
+        "modified_at_utc": "2026-04-12T06:58:38.901443+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\koreana\\top_unigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 5284,
+        "modified_at_utc": "2026-04-12T06:58:38.908174+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\distinctive_terms_negative_vs_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 10059,
+        "modified_at_utc": "2026-04-12T06:58:38.672861+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\distinctive_terms_positive_vs_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 10331,
+        "modified_at_utc": "2026-04-12T06:58:38.672861+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\text_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 421,
+        "modified_at_utc": "2026-04-12T06:58:38.652103+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\text_metrics_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 427,
+        "modified_at_utc": "2026-04-12T06:58:38.652103+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\text_metrics_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 356,
+        "modified_at_utc": "2026-04-12T06:58:38.652103+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\top_bigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 3714,
+        "modified_at_utc": "2026-04-12T06:58:38.672861+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\top_bigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 3569,
+        "modified_at_utc": "2026-04-12T06:58:38.671845+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\top_bigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 3661,
+        "modified_at_utc": "2026-04-12T06:58:38.672861+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\top_unigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 5199,
+        "modified_at_utc": "2026-04-12T06:58:38.670631+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\top_unigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 5334,
+        "modified_at_utc": "2026-04-12T06:58:38.668137+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\russian\\top_unigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 5403,
+        "modified_at_utc": "2026-04-12T06:58:38.669495+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\distinctive_terms_negative_vs_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 11893,
+        "modified_at_utc": "2026-04-12T06:58:38.588881+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\distinctive_terms_positive_vs_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 10760,
+        "modified_at_utc": "2026-04-12T06:58:38.588881+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\text_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 417,
+        "modified_at_utc": "2026-04-12T06:58:38.587877+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\text_metrics_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 426,
+        "modified_at_utc": "2026-04-12T06:58:38.588881+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\text_metrics_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 342,
+        "modified_at_utc": "2026-04-12T06:58:38.588881+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\top_bigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 6408,
+        "modified_at_utc": "2026-04-12T06:58:38.588881+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\top_bigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 6342,
+        "modified_at_utc": "2026-04-12T06:58:38.588881+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\top_bigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 7659,
+        "modified_at_utc": "2026-04-12T06:58:38.588881+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\top_unigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 7784,
+        "modified_at_utc": "2026-04-12T06:58:38.588881+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\top_unigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 6797,
+        "modified_at_utc": "2026-04-12T06:58:38.588881+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\schinese\\top_unigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8278,
+        "modified_at_utc": "2026-04-12T06:58:38.588881+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\distinctive_terms_negative_vs_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8838,
+        "modified_at_utc": "2026-04-12T06:58:38.780124+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\distinctive_terms_positive_vs_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9078,
+        "modified_at_utc": "2026-04-12T06:58:38.780124+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\text_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 418,
+        "modified_at_utc": "2026-04-12T06:58:38.771483+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\text_metrics_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 410,
+        "modified_at_utc": "2026-04-12T06:58:38.771483+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\text_metrics_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 346,
+        "modified_at_utc": "2026-04-12T06:58:38.771483+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\top_bigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2859,
+        "modified_at_utc": "2026-04-12T06:58:38.780124+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\top_bigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2725,
+        "modified_at_utc": "2026-04-12T06:58:38.780124+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\top_bigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2875,
+        "modified_at_utc": "2026-04-12T06:58:38.780124+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\top_unigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4454,
+        "modified_at_utc": "2026-04-12T06:58:38.780124+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\top_unigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4422,
+        "modified_at_utc": "2026-04-12T06:58:38.771483+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\spanish\\top_unigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4455,
+        "modified_at_utc": "2026-04-12T06:58:38.771483+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\distinctive_terms_negative_vs_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 14104,
+        "modified_at_utc": "2026-04-12T06:58:38.872155+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\distinctive_terms_positive_vs_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 13303,
+        "modified_at_utc": "2026-04-12T06:58:38.872155+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\text_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 411,
+        "modified_at_utc": "2026-04-12T06:58:38.861110+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\text_metrics_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 379,
+        "modified_at_utc": "2026-04-12T06:58:38.863118+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\text_metrics_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 333,
+        "modified_at_utc": "2026-04-12T06:58:38.861110+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\top_bigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 7912,
+        "modified_at_utc": "2026-04-12T06:58:38.870147+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\top_bigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 7954,
+        "modified_at_utc": "2026-04-12T06:58:38.868139+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\top_bigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 7542,
+        "modified_at_utc": "2026-04-12T06:58:38.868139+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\top_unigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9685,
+        "modified_at_utc": "2026-04-12T06:58:38.866131+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\top_unigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9002,
+        "modified_at_utc": "2026-04-12T06:58:38.863118+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\by_language\\tchinese\\top_unigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9327,
+        "modified_at_utc": "2026-04-12T06:58:38.865125+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\distinctive_terms_negative_vs_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9868,
+        "modified_at_utc": "2026-04-12T06:58:38.322813+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\distinctive_terms_positive_vs_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9812,
+        "modified_at_utc": "2026-04-12T06:58:38.322813+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\text_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 561,
+        "modified_at_utc": "2026-04-12T06:58:38.307086+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\text_metrics_by_language.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1227,
+        "modified_at_utc": "2026-04-12T06:58:38.307086+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\text_metrics_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 461,
+        "modified_at_utc": "2026-04-12T06:58:38.307086+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\text_metrics_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 362,
+        "modified_at_utc": "2026-04-12T06:58:38.307086+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_bigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2771,
+        "modified_at_utc": "2026-04-12T06:58:38.322813+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_bigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2834,
+        "modified_at_utc": "2026-04-12T06:58:38.307086+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_bigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2750,
+        "modified_at_utc": "2026-04-12T06:58:38.322813+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_terms_by_language.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 130642,
+        "modified_at_utc": "2026-04-12T06:58:38.307086+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_trigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 1779,
+        "modified_at_utc": "2026-04-12T06:58:38.322813+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_unigrams_negative.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4559,
+        "modified_at_utc": "2026-04-12T06:58:38.307086+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_unigrams_overall.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4636,
+        "modified_at_utc": "2026-04-12T06:58:38.307086+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\text_metrics\\global\\top_unigrams_positive.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 4581,
+        "modified_at_utc": "2026-04-12T06:58:38.307086+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\theme_metrics\\salt_and_sacrifice_theme_by_month.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9695,
+        "modified_at_utc": "2026-04-12T06:58:40.894735+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\theme_metrics\\salt_and_sacrifice_theme_by_playtime_band.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 3536,
+        "modified_at_utc": "2026-04-12T06:58:40.894735+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\theme_metrics\\salt_and_sacrifice_theme_by_polarity.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2208,
+        "modified_at_utc": "2026-04-12T06:58:40.894735+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\theme_metrics\\salt_and_sacrifice_theme_corpus_overview.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 787,
+        "modified_at_utc": "2026-04-12T06:58:40.894735+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\theme_metrics\\salt_and_sacrifice_theme_distribution_summary.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 855,
+        "modified_at_utc": "2026-04-12T06:58:40.894735+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\tables\\theme_metrics\\salt_and_sacrifice_theme_top_terms_by_theme.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 3622,
+        "modified_at_utc": "2026-04-12T06:58:40.910414+00:00"
+      }
+    ],
+    "results_figures": [
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\basic_metrics\\figure_01_polarity_distribution.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 7894,
+        "modified_at_utc": "2026-04-12T06:58:41.871826+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\basic_metrics\\figure_02_language_distribution_top10.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8064,
+        "modified_at_utc": "2026-04-12T06:58:41.882790+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\basic_metrics\\figure_03_polarity_by_playtime_band.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8117,
+        "modified_at_utc": "2026-04-12T06:58:41.887830+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\emotion_metrics\\figure_13_emotion_distribution_summary.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8082,
+        "modified_at_utc": "2026-04-12T06:58:42.018646+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\emotion_metrics\\figure_14_emotion_by_polarity.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8219,
+        "modified_at_utc": "2026-04-12T06:58:42.050111+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\emotion_metrics\\figure_15_emotion_by_month_selected.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 9320,
+        "modified_at_utc": "2026-04-12T06:58:42.066093+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\salt_and_sacrifice_figure_index.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8332,
+        "modified_at_utc": "2026-04-12T06:58:42.106637+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\temporal_metrics\\figure_04_monthly_review_volume.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8309,
+        "modified_at_utc": "2026-04-12T06:58:41.903863+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\temporal_metrics\\figure_05_monthly_polarity_trends.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8514,
+        "modified_at_utc": "2026-04-12T06:58:41.919681+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\temporal_metrics\\figure_06_monthly_positive_percentage.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8433,
+        "modified_at_utc": "2026-04-12T06:58:41.919681+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\temporal_metrics\\figure_07_monthly_language_trends_top5.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8941,
+        "modified_at_utc": "2026-04-12T06:58:41.940101+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\temporal_metrics\\figure_08_developer_response_timeline.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8282,
+        "modified_at_utc": "2026-04-12T06:58:41.955837+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\text_metrics\\figure_09_top_unigrams_positive.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8185,
+        "modified_at_utc": "2026-04-12T06:58:41.971570+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\text_metrics\\figure_10_top_unigrams_negative.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8177,
+        "modified_at_utc": "2026-04-12T06:58:41.987260+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\text_metrics\\figure_11_distinctive_terms_positive_vs_negative.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8300,
+        "modified_at_utc": "2026-04-12T06:58:42.002948+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\text_metrics\\figure_12_distinctive_terms_negative_vs_positive.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8290,
+        "modified_at_utc": "2026-04-12T06:58:42.018646+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\theme_metrics\\figure_16_theme_distribution_summary.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8195,
+        "modified_at_utc": "2026-04-12T06:58:42.075260+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\theme_metrics\\figure_17_theme_by_polarity.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8316,
+        "modified_at_utc": "2026-04-12T06:58:42.098509+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\theme_metrics\\figure_18_theme_by_month_selected.xlsx",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 8963,
+        "modified_at_utc": "2026-04-12T06:58:42.106637+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_bigrams.png",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 598997,
+        "modified_at_utc": "2026-04-12T06:58:50.031839+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_bigrams_frequencies.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2812,
+        "modified_at_utc": "2026-04-12T06:58:51.951734+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_trigrams.png",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 477584,
+        "modified_at_utc": "2026-04-12T06:58:51.951734+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_trigrams_frequencies.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2536,
+        "modified_at_utc": "2026-04-12T06:58:51.951734+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_unigrams.png",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 593086,
+        "modified_at_utc": "2026-04-12T06:58:47.373986+00:00"
+      },
+      {
+        "path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_unigrams_frequencies.csv",
+        "exists": true,
+        "is_file": true,
+        "is_dir": false,
+        "size_bytes": 2834,
+        "modified_at_utc": "2026-04-12T06:58:51.951734+00:00"
+      }
+    ]
+  }
+}

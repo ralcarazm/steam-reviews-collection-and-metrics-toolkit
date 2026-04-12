@@ -1,0 +1,39 @@
+{
+  "app_id": 1437400,
+  "game_slug": "salt_and_sacrifice",
+  "game_title": "Salt and Sacrifice",
+  "generated_at_utc": "2026-04-12T06:58:51.961574+00:00",
+  "parameters": {
+    "target_language": "english",
+    "min_token_length": 2,
+    "remove_stopwords": true,
+    "max_words_unigrams": 200,
+    "max_words_bigrams": 150,
+    "max_words_trigrams": 100,
+    "min_frequency_unigrams": 2,
+    "min_frequency_bigrams": 2,
+    "min_frequency_trigrams": 2,
+    "width": 1800,
+    "height": 1200,
+    "background_colour": "white",
+    "collocations": false
+  },
+  "corpus_summary": {
+    "rows_in_cleaned_dataset": 1823,
+    "rows_used_for_word_clouds": 729,
+    "total_tokens_used": 55501
+  },
+  "outputs": {
+    "unigram_png": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_unigrams.png",
+    "bigram_png": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_bigrams.png",
+    "trigram_png": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_trigrams.png",
+    "unigram_csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_unigrams_frequencies.csv",
+    "bigram_csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_bigrams_frequencies.csv",
+    "trigram_csv": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\results\\salt_and_sacrifice\\figures\\word_cloud\\salt_and_sacrifice_wordcloud_trigrams_frequencies.csv"
+  },
+  "frequency_counts": {
+    "unigrams": 200,
+    "bigrams": 150,
+    "trigrams": 100
+  }
+}

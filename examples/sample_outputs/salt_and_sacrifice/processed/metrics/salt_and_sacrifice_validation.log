@@ -1,0 +1,6 @@
+2026-04-12 08:58:52,553 | INFO | Starting output validation.
+2026-04-12 08:58:52,553 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:52,553 | INFO | App ID: 1437400
+2026-04-12 08:58:52,553 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:52,803 | INFO | Validation summary written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_validation_summary.json
+2026-04-12 08:58:52,803 | INFO | Validation complete. final_status=passed

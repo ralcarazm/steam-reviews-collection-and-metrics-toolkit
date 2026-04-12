@@ -1,0 +1,15 @@
+{
+  "app_id": 1437400,
+  "game_slug": "salt_and_sacrifice",
+  "game_title": "Salt and Sacrifice",
+  "generated_at_utc": "2026-04-12T06:58:52.926051+00:00",
+  "config_path": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\config\\games\\game_03.json",
+  "pipeline_log": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_pipeline.log",
+  "output_manifest": "C:\\laragon\\www\\steam-reviews-collection-and-metrics-toolkit\\data\\processed\\steam_reviews\\salt_and_sacrifice\\metrics\\salt_and_sacrifice_output_manifest.json",
+  "stage_count_total": 10,
+  "stage_count_executed": 10,
+  "stage_count_success": 10,
+  "stage_count_failed": 0,
+  "stage_count_skipped": 0,
+  "final_status": "success"
+}

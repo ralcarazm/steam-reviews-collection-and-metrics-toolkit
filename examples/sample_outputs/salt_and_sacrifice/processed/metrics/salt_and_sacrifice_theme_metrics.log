@@ -1,0 +1,17 @@
+2026-04-12 08:58:40,459 | INFO | Starting theme metrics computation.
+2026-04-12 08:58:40,459 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:40,459 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:40,459 | INFO | App ID: 1437400
+2026-04-12 08:58:40,459 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:40,459 | INFO | Target language: english
+2026-04-12 08:58:40,503 | INFO | Themes loaded: 13
+2026-04-12 08:58:40,558 | INFO | Rows in target language with usable text: 729
+2026-04-12 08:58:40,781 | INFO | Review-level enriched CSV written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\enriched\salt_and_sacrifice_english_theme_enriched.csv
+2026-04-12 08:58:40,904 | INFO | Exported table: salt_and_sacrifice_theme_corpus_overview.csv
+2026-04-12 08:58:40,905 | INFO | Exported table: salt_and_sacrifice_theme_distribution_summary.csv
+2026-04-12 08:58:40,906 | INFO | Exported table: salt_and_sacrifice_theme_by_polarity.csv
+2026-04-12 08:58:40,907 | INFO | Exported table: salt_and_sacrifice_theme_by_playtime_band.csv
+2026-04-12 08:58:40,909 | INFO | Exported table: salt_and_sacrifice_theme_by_month.csv
+2026-04-12 08:58:40,911 | INFO | Exported table: salt_and_sacrifice_theme_top_terms_by_theme.csv
+2026-04-12 08:58:40,929 | INFO | Summary JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_theme_metrics_summary.json
+2026-04-12 08:58:40,930 | INFO | Theme metrics computation complete.

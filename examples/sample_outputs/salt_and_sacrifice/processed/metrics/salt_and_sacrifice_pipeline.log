@@ -1,0 +1,423 @@
+2026-04-12 08:57:53,764 | INFO | Starting pipeline run.
+2026-04-12 08:57:53,764 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:57:53,764 | INFO | App ID: 1437400
+2026-04-12 08:57:53,765 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:57:53,765 | INFO | Python executable: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\.venv\Scripts\python.exe
+2026-04-12 08:57:53,765 | INFO | Continue on error: False
+2026-04-12 08:57:53,765 | INFO | Starting stage: Data collection
+2026-04-12 08:57:53,765 | INFO | Command: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\.venv\Scripts\python.exe C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\01_data_collection\collect_steam_reviews.py --config C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:33,993 | INFO | Stage stdout (collection):
+2026-04-12 08:57:57,355 | INFO | Starting Steam review collection.
+2026-04-12 08:57:57,355 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:57:57,355 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:57:57,355 | INFO | App ID: 1437400
+2026-04-12 08:57:57,355 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:57:57,355 | INFO | Downloading page 1 for 'Salt and Sacrifice'...
+2026-04-12 08:57:58,412 | INFO | Reviews received on this page: 100
+2026-04-12 08:57:58,414 | INFO | New reviews added on this page: 100
+2026-04-12 08:57:58,414 | INFO | Reviews currently in memory chunk: 100
+2026-04-12 08:57:58,414 | INFO | Unique reviews collected so far: 100
+2026-04-12 08:57:59,614 | INFO | Downloading page 2 for 'Salt and Sacrifice'...
+2026-04-12 08:58:00,231 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:00,232 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:00,232 | INFO | Reviews currently in memory chunk: 200
+2026-04-12 08:58:00,233 | INFO | Unique reviews collected so far: 200
+2026-04-12 08:58:01,439 | INFO | Downloading page 3 for 'Salt and Sacrifice'...
+2026-04-12 08:58:02,284 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:02,285 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:02,285 | INFO | Reviews currently in memory chunk: 300
+2026-04-12 08:58:02,285 | INFO | Unique reviews collected so far: 300
+2026-04-12 08:58:03,486 | INFO | Downloading page 4 for 'Salt and Sacrifice'...
+2026-04-12 08:58:04,203 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:04,204 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:04,204 | INFO | Reviews currently in memory chunk: 400
+2026-04-12 08:58:04,204 | INFO | Unique reviews collected so far: 400
+2026-04-12 08:58:05,405 | INFO | Downloading page 5 for 'Salt and Sacrifice'...
+2026-04-12 08:58:06,071 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:06,073 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:06,073 | INFO | Reviews currently in memory chunk: 500
+2026-04-12 08:58:06,073 | INFO | Unique reviews collected so far: 500
+2026-04-12 08:58:07,274 | INFO | Downloading page 6 for 'Salt and Sacrifice'...
+2026-04-12 08:58:07,842 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:07,843 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:07,843 | INFO | Reviews currently in memory chunk: 600
+2026-04-12 08:58:07,843 | INFO | Unique reviews collected so far: 600
+2026-04-12 08:58:09,043 | INFO | Downloading page 7 for 'Salt and Sacrifice'...
+2026-04-12 08:58:09,727 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:09,728 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:09,728 | INFO | Reviews currently in memory chunk: 700
+2026-04-12 08:58:09,728 | INFO | Unique reviews collected so far: 700
+2026-04-12 08:58:10,928 | INFO | Downloading page 8 for 'Salt and Sacrifice'...
+2026-04-12 08:58:11,520 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:11,522 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:11,523 | INFO | Reviews currently in memory chunk: 800
+2026-04-12 08:58:11,523 | INFO | Unique reviews collected so far: 800
+2026-04-12 08:58:12,723 | INFO | Downloading page 9 for 'Salt and Sacrifice'...
+2026-04-12 08:58:13,447 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:13,449 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:13,449 | INFO | Reviews currently in memory chunk: 900
+2026-04-12 08:58:13,449 | INFO | Unique reviews collected so far: 900
+2026-04-12 08:58:14,649 | INFO | Downloading page 10 for 'Salt and Sacrifice'...
+2026-04-12 08:58:15,226 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:15,284 | INFO | Chunk 1 exported with 1000 reviews. Total exported: 1000
+2026-04-12 08:58:15,285 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:15,285 | INFO | Reviews currently in memory chunk: 0
+2026-04-12 08:58:15,285 | INFO | Unique reviews collected so far: 1000
+2026-04-12 08:58:16,486 | INFO | Downloading page 11 for 'Salt and Sacrifice'...
+2026-04-12 08:58:17,118 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:17,119 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:17,119 | INFO | Reviews currently in memory chunk: 100
+2026-04-12 08:58:17,119 | INFO | Unique reviews collected so far: 1100
+2026-04-12 08:58:18,320 | INFO | Downloading page 12 for 'Salt and Sacrifice'...
+2026-04-12 08:58:19,248 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:19,249 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:19,250 | INFO | Reviews currently in memory chunk: 200
+2026-04-12 08:58:19,250 | INFO | Unique reviews collected so far: 1200
+2026-04-12 08:58:20,450 | INFO | Downloading page 13 for 'Salt and Sacrifice'...
+2026-04-12 08:58:21,119 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:21,120 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:21,120 | INFO | Reviews currently in memory chunk: 300
+2026-04-12 08:58:21,120 | INFO | Unique reviews collected so far: 1300
+2026-04-12 08:58:22,321 | INFO | Downloading page 14 for 'Salt and Sacrifice'...
+2026-04-12 08:58:22,944 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:22,945 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:22,946 | INFO | Reviews currently in memory chunk: 400
+2026-04-12 08:58:22,946 | INFO | Unique reviews collected so far: 1400
+2026-04-12 08:58:24,146 | INFO | Downloading page 15 for 'Salt and Sacrifice'...
+2026-04-12 08:58:24,856 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:24,857 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:24,857 | INFO | Reviews currently in memory chunk: 500
+2026-04-12 08:58:24,857 | INFO | Unique reviews collected so far: 1500
+2026-04-12 08:58:26,058 | INFO | Downloading page 16 for 'Salt and Sacrifice'...
+2026-04-12 08:58:26,630 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:26,631 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:26,631 | INFO | Reviews currently in memory chunk: 600
+2026-04-12 08:58:26,631 | INFO | Unique reviews collected so far: 1600
+2026-04-12 08:58:27,832 | INFO | Downloading page 17 for 'Salt and Sacrifice'...
+2026-04-12 08:58:28,626 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:28,627 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:28,627 | INFO | Reviews currently in memory chunk: 700
+2026-04-12 08:58:28,627 | INFO | Unique reviews collected so far: 1700
+2026-04-12 08:58:29,828 | INFO | Downloading page 18 for 'Salt and Sacrifice'...
+2026-04-12 08:58:30,416 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:30,418 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:30,418 | INFO | Reviews currently in memory chunk: 800
+2026-04-12 08:58:30,418 | INFO | Unique reviews collected so far: 1800
+2026-04-12 08:58:31,619 | INFO | Downloading page 19 for 'Salt and Sacrifice'...
+2026-04-12 08:58:32,112 | INFO | Reviews received on this page: 23
+2026-04-12 08:58:32,112 | INFO | New reviews added on this page: 23
+2026-04-12 08:58:32,112 | INFO | Reviews currently in memory chunk: 823
+2026-04-12 08:58:32,112 | INFO | Unique reviews collected so far: 1823
+2026-04-12 08:58:33,312 | INFO | Downloading page 20 for 'Salt and Sacrifice'...
+2026-04-12 08:58:33,810 | INFO | Reviews received on this page: 0
+2026-04-12 08:58:33,810 | INFO | No more reviews returned. Pagination finished.
+2026-04-12 08:58:33,853 | INFO | Final chunk 2 exported with 823 reviews. Final exported total: 1823
+2026-04-12 08:58:33,883 | INFO | Combined CSV written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\combined\salt_and_sacrifice_reviews_all.csv
+2026-04-12 08:58:33,933 | INFO | Combined JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\combined\salt_and_sacrifice_reviews_all.json
+2026-04-12 08:58:33,934 | INFO | Collection complete.
+2026-04-12 08:58:33,934 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:33,934 | INFO | App ID: 1437400
+2026-04-12 08:58:33,934 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:33,934 | INFO | Total unique reviews exported: 1823
+2026-04-12 08:58:33,934 | INFO | Chunks directory: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\chunks
+2026-04-12 08:58:33,934 | INFO | Combined CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\combined\salt_and_sacrifice_reviews_all.csv
+2026-04-12 08:58:33,934 | INFO | Combined JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\combined\salt_and_sacrifice_reviews_all.json
+2026-04-12 08:58:33,934 | INFO | Master index CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\metadata\salt_and_sacrifice_master_index.csv
+2026-04-12 08:58:33,934 | INFO | Progress JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\metadata\salt_and_sacrifice_progress.json
+2026-04-12 08:58:33,994 | WARNING | Stage stderr (collection):
+C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\01_data_collection\collect_steam_reviews.py:652: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  "updated_at_utc": pd.Timestamp.utcnow().isoformat(),
+C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\01_data_collection\collect_steam_reviews.py:720: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  "updated_at_utc": pd.Timestamp.utcnow().isoformat(),
+2026-04-12 08:58:33,994 | INFO | Finished stage: Data collection | status=success | return_code=0
+2026-04-12 08:58:33,994 | INFO | Starting stage: Data preparation
+2026-04-12 08:58:33,994 | INFO | Command: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\.venv\Scripts\python.exe C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\02_data_preparation\prepare_reviews.py --config C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:34,994 | INFO | Stage stdout (preparation):
+[INFO] Loading configuration: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+[INFO] Repository root: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit
+[INFO] Game slug: salt_and_sacrifice
+[INFO] Input CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\combined\salt_and_sacrifice_reviews_all.csv
+[INFO] Output CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_reviews_cleaned.csv
+2026-04-12 08:58:34,456 | INFO | Starting review preparation.
+2026-04-12 08:58:34,456 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:34,456 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:34,457 | INFO | App ID: 1437400
+2026-04-12 08:58:34,457 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:34,483 | INFO | Raw rows loaded: 1823
+2026-04-12 08:58:34,483 | INFO | Raw columns loaded: 24
+2026-04-12 08:58:34,674 | INFO | Cleaned rows prepared: 1823
+2026-04-12 08:58:34,674 | INFO | Cleaned columns prepared: 61
+2026-04-12 08:58:34,739 | INFO | Cleaned CSV written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_reviews_cleaned.csv
+2026-04-12 08:58:34,943 | INFO | Cleaned JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_reviews_cleaned.json
+2026-04-12 08:58:34,945 | INFO | Preparation metadata written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_preparation_metadata.json
+2026-04-12 08:58:34,945 | INFO | Preparation complete.
+[INFO] Preparation complete.
+2026-04-12 08:58:34,995 | WARNING | Stage stderr (preparation):
+C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\02_data_preparation\prepare_reviews.py:622: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  "prepared_at_utc": pd.Timestamp.utcnow().isoformat(),
+2026-04-12 08:58:34,995 | INFO | Finished stage: Data preparation | status=success | return_code=0
+2026-04-12 08:58:34,995 | INFO | Starting stage: Basic descriptive metrics
+2026-04-12 08:58:34,995 | INFO | Command: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\.venv\Scripts\python.exe C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\03_analysis\compute_basic_metrics.py --config C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:35,736 | INFO | Stage stdout (basic_metrics):
+[INFO] Loading configuration: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+[INFO] Repository root: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit
+[INFO] Game slug: salt_and_sacrifice
+[INFO] Input CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_reviews_cleaned.csv
+[INFO] Output tables: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\tables\basic_metrics
+[INFO] Output summary JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_basic_metrics_summary.json
+2026-04-12 08:58:35,498 | INFO | Starting basic metrics computation.
+2026-04-12 08:58:35,499 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:35,499 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:35,499 | INFO | App ID: 1437400
+2026-04-12 08:58:35,499 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:35,555 | INFO | Rows loaded: 1823
+2026-04-12 08:58:35,555 | INFO | Columns loaded: 65
+2026-04-12 08:58:35,646 | INFO | Exported table: salt_and_sacrifice_dataset_overview.csv
+2026-04-12 08:58:35,648 | INFO | Exported table: salt_and_sacrifice_polarity_summary.csv
+2026-04-12 08:58:35,649 | INFO | Exported table: salt_and_sacrifice_language_distribution.csv
+2026-04-12 08:58:35,650 | INFO | Exported table: salt_and_sacrifice_reviewer_profile_summary.csv
+2026-04-12 08:58:35,651 | INFO | Exported table: salt_and_sacrifice_playtime_summary.csv
+2026-04-12 08:58:35,651 | INFO | Exported table: salt_and_sacrifice_interaction_summary.csv
+2026-04-12 08:58:35,652 | INFO | Exported table: salt_and_sacrifice_text_summary.csv
+2026-04-12 08:58:35,653 | INFO | Exported table: salt_and_sacrifice_temporal_interval_summary.csv
+2026-04-12 08:58:35,654 | INFO | Exported table: salt_and_sacrifice_purchase_and_access_summary.csv
+2026-04-12 08:58:35,654 | INFO | Exported table: salt_and_sacrifice_missingness_summary.csv
+2026-04-12 08:58:35,655 | INFO | Exported table: salt_and_sacrifice_concentration_summary.csv
+2026-04-12 08:58:35,656 | INFO | Exported table: salt_and_sacrifice_cross_tab_polarity_by_language.csv
+2026-04-12 08:58:35,657 | INFO | Exported table: salt_and_sacrifice_cross_tab_polarity_by_playtime_band.csv
+2026-04-12 08:58:35,658 | INFO | Exported table: salt_and_sacrifice_cross_tab_polarity_by_reviewer_activity_band.csv
+2026-04-12 08:58:35,658 | INFO | Exported table: salt_and_sacrifice_cross_tab_polarity_by_library_size_band.csv
+2026-04-12 08:58:35,660 | INFO | Exported table: salt_and_sacrifice_monthly_review_volume.csv
+2026-04-12 08:58:35,675 | INFO | Summary JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_basic_metrics_summary.json
+2026-04-12 08:58:35,675 | INFO | Basic metrics computation complete.
+[INFO] Basic metrics computation complete.
+2026-04-12 08:58:35,736 | WARNING | Stage stderr (basic_metrics):
+C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\03_analysis\compute_basic_metrics.py:757: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  "generated_at_utc": pd.Timestamp.utcnow().isoformat(),
+2026-04-12 08:58:35,736 | INFO | Finished stage: Basic descriptive metrics | status=success | return_code=0
+2026-04-12 08:58:35,737 | INFO | Starting stage: Temporal metrics
+2026-04-12 08:58:35,737 | INFO | Command: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\.venv\Scripts\python.exe C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\03_analysis\compute_temporal_metrics.py --config C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:37,166 | INFO | Stage stdout (temporal_metrics):
+[INFO] Loading configuration: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+[INFO] Repository root: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit
+[INFO] Game slug: salt_and_sacrifice
+[INFO] Input CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_reviews_cleaned.csv
+[INFO] Output tables: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\tables\temporal_metrics
+[INFO] Output summary JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_temporal_metrics_summary.json
+2026-04-12 08:58:36,192 | INFO | Starting temporal metrics computation.
+2026-04-12 08:58:36,192 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:36,192 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:36,192 | INFO | App ID: 1437400
+2026-04-12 08:58:36,192 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:36,297 | INFO | Rows loaded: 1823
+2026-04-12 08:58:36,297 | INFO | Columns loaded: 70
+2026-04-12 08:58:37,010 | INFO | Exported table: salt_and_sacrifice_temporal_coverage.csv
+2026-04-12 08:58:37,014 | INFO | Exported table: salt_and_sacrifice_daily_review_volume.csv
+2026-04-12 08:58:37,016 | INFO | Exported table: salt_and_sacrifice_weekly_review_volume.csv
+2026-04-12 08:58:37,017 | INFO | Exported table: salt_and_sacrifice_monthly_review_volume_extended.csv
+2026-04-12 08:58:37,018 | INFO | Exported table: salt_and_sacrifice_monthly_polarity_trends.csv
+2026-04-12 08:58:37,019 | INFO | Exported table: salt_and_sacrifice_monthly_language_trends.csv
+2026-04-12 08:58:37,021 | INFO | Exported table: salt_and_sacrifice_monthly_text_length_trends.csv
+2026-04-12 08:58:37,023 | INFO | Exported table: salt_and_sacrifice_monthly_playtime_trends.csv
+2026-04-12 08:58:37,024 | INFO | Exported table: salt_and_sacrifice_monthly_reviewer_profile_trends.csv
+2026-04-12 08:58:37,026 | INFO | Exported table: salt_and_sacrifice_monthly_interaction_trends.csv
+2026-04-12 08:58:37,027 | INFO | Exported table: salt_and_sacrifice_review_update_metrics.csv
+2026-04-12 08:58:37,028 | INFO | Exported table: salt_and_sacrifice_developer_response_timeline.csv
+2026-04-12 08:58:37,031 | INFO | Exported table: salt_and_sacrifice_monthly_polarity_by_language.csv
+2026-04-12 08:58:37,032 | INFO | Exported table: salt_and_sacrifice_monthly_polarity_by_playtime_band.csv
+2026-04-12 08:58:37,033 | INFO | Exported table: salt_and_sacrifice_peak_activity_summary.csv
+2026-04-12 08:58:37,113 | INFO | Summary JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_temporal_metrics_summary.json
+2026-04-12 08:58:37,113 | INFO | Temporal metrics computation complete.
+[INFO] Temporal metrics computation complete.
+2026-04-12 08:58:37,166 | WARNING | Stage stderr (temporal_metrics):
+C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\03_analysis\compute_temporal_metrics.py:334: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  df["review_created_date_week"] = dt.dt.to_period("W-MON").astype("string")
+C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\03_analysis\compute_temporal_metrics.py:1057: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  "generated_at_utc": pd.Timestamp.utcnow().isoformat(),
+2026-04-12 08:58:37,166 | INFO | Finished stage: Temporal metrics | status=success | return_code=0
+2026-04-12 08:58:37,166 | INFO | Starting stage: Text metrics
+2026-04-12 08:58:37,166 | INFO | Command: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\.venv\Scripts\python.exe C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\03_analysis\compute_text_metrics.py --config C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:39,056 | INFO | Stage stdout (text_metrics):
+[INFO] Loading configuration: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+[INFO] Repository root: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit
+[INFO] Game slug: salt_and_sacrifice
+[INFO] Input CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_reviews_cleaned.csv
+[INFO] Global output dir: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\tables\text_metrics\global
+[INFO] Per-language output dir: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\tables\text_metrics\by_language
+[INFO] Summary JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_text_metrics_summary.json
+2026-04-12 08:58:37,600 | INFO | Starting text metrics computation.
+2026-04-12 08:58:37,600 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:37,600 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:37,600 | INFO | App ID: 1437400
+2026-04-12 08:58:37,600 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:37,646 | INFO | Rows loaded: 1823
+2026-04-12 08:58:37,646 | INFO | Columns loaded: 62
+2026-04-12 08:58:37,729 | INFO | Rows with usable text: 1780
+2026-04-12 08:58:37,729 | INFO | Languages with usable text: 23
+2026-04-12 08:58:37,732 | INFO | Selected languages for separate output: english, schinese, russian, brazilian, spanish, japanese, tchinese, koreana, german, french
+2026-04-12 08:58:38,333 | INFO | Exporting per-language text metrics for: english
+2026-04-12 08:58:38,510 | INFO | Exporting per-language text metrics for: schinese
+2026-04-12 08:58:38,598 | INFO | Exporting per-language text metrics for: russian
+2026-04-12 08:58:38,677 | INFO | Exporting per-language text metrics for: brazilian
+2026-04-12 08:58:38,731 | INFO | Exporting per-language text metrics for: spanish
+2026-04-12 08:58:38,786 | INFO | Exporting per-language text metrics for: japanese
+2026-04-12 08:58:38,827 | INFO | Exporting per-language text metrics for: tchinese
+2026-04-12 08:58:38,873 | INFO | Exporting per-language text metrics for: koreana
+2026-04-12 08:58:38,914 | INFO | Exporting per-language text metrics for: german
+2026-04-12 08:58:38,954 | INFO | Exporting per-language text metrics for: french
+2026-04-12 08:58:38,991 | INFO | Summary JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_text_metrics_summary.json
+2026-04-12 08:58:38,992 | INFO | Text metrics computation complete.
+[INFO] Text metrics computation complete.
+2026-04-12 08:58:39,056 | WARNING | Stage stderr (text_metrics):
+C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\03_analysis\compute_text_metrics.py:1118: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  "generated_at_utc": pd.Timestamp.utcnow().isoformat(),
+2026-04-12 08:58:39,056 | INFO | Finished stage: Text metrics | status=success | return_code=0
+2026-04-12 08:58:39,057 | INFO | Starting stage: Emotion metrics
+2026-04-12 08:58:39,057 | INFO | Command: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\.venv\Scripts\python.exe C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\03_analysis\compute_emotion_metrics.py --config C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:40,013 | INFO | Stage stdout (emotion_metrics):
+[INFO] Loading configuration: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+[INFO] Repository root: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit
+[INFO] Game slug: salt_and_sacrifice
+[INFO] Input CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_reviews_cleaned.csv
+[INFO] NRC lexicon: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\resources\lexicons\nrc\NRC-Emotion-Lexicon-Wordlevel-v0.92.txt
+[INFO] Output tables: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\tables\emotion_metrics
+[INFO] Summary JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_emotion_metrics_summary.json
+2026-04-12 08:58:39,506 | INFO | Starting emotion metrics computation.
+2026-04-12 08:58:39,506 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:39,506 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:39,506 | INFO | App ID: 1437400
+2026-04-12 08:58:39,506 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:39,506 | INFO | Target language: english
+2026-04-12 08:58:39,611 | INFO | NRC entries loaded: 6468
+2026-04-12 08:58:39,664 | INFO | Rows in target language with usable text: 729
+2026-04-12 08:58:39,825 | INFO | Review-level enriched CSV written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\enriched\salt_and_sacrifice_english_emotion_enriched.csv
+2026-04-12 08:58:39,920 | INFO | Exported table: salt_and_sacrifice_emotion_corpus_overview.csv
+2026-04-12 08:58:39,923 | INFO | Exported table: salt_and_sacrifice_emotion_distribution_summary.csv
+2026-04-12 08:58:39,924 | INFO | Exported table: salt_and_sacrifice_emotion_by_polarity.csv
+2026-04-12 08:58:39,925 | INFO | Exported table: salt_and_sacrifice_emotion_by_playtime_band.csv
+2026-04-12 08:58:39,926 | INFO | Exported table: salt_and_sacrifice_emotion_by_month.csv
+2026-04-12 08:58:39,929 | INFO | Exported table: salt_and_sacrifice_emotion_top_terms_by_emotion.csv
+2026-04-12 08:58:39,957 | INFO | Summary JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_emotion_metrics_summary.json
+2026-04-12 08:58:39,957 | INFO | Emotion metrics computation complete.
+[INFO] Emotion metrics computation complete.
+2026-04-12 08:58:40,013 | WARNING | Stage stderr (emotion_metrics):
+C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\03_analysis\compute_emotion_metrics.py:746: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  "generated_at_utc": pd.Timestamp.utcnow().isoformat(),
+2026-04-12 08:58:40,014 | INFO | Finished stage: Emotion metrics | status=success | return_code=0
+2026-04-12 08:58:40,014 | INFO | Starting stage: Theme metrics
+2026-04-12 08:58:40,014 | INFO | Command: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\.venv\Scripts\python.exe C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\03_analysis\compute_theme_metrics.py --config C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:40,981 | INFO | Stage stdout (theme_metrics):
+[INFO] Loading configuration: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+[INFO] Repository root: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit
+[INFO] Game slug: salt_and_sacrifice
+[INFO] Input CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_reviews_cleaned.csv
+[INFO] Theme dictionary: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\resources\dictionaries\themes\general_game_themes.json
+[INFO] Output tables: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\tables\theme_metrics
+[INFO] Summary JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_theme_metrics_summary.json
+2026-04-12 08:58:40,459 | INFO | Starting theme metrics computation.
+2026-04-12 08:58:40,459 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:40,459 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:40,459 | INFO | App ID: 1437400
+2026-04-12 08:58:40,459 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:40,459 | INFO | Target language: english
+2026-04-12 08:58:40,503 | INFO | Themes loaded: 13
+2026-04-12 08:58:40,558 | INFO | Rows in target language with usable text: 729
+2026-04-12 08:58:40,781 | INFO | Review-level enriched CSV written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\enriched\salt_and_sacrifice_english_theme_enriched.csv
+2026-04-12 08:58:40,904 | INFO | Exported table: salt_and_sacrifice_theme_corpus_overview.csv
+2026-04-12 08:58:40,905 | INFO | Exported table: salt_and_sacrifice_theme_distribution_summary.csv
+2026-04-12 08:58:40,906 | INFO | Exported table: salt_and_sacrifice_theme_by_polarity.csv
+2026-04-12 08:58:40,907 | INFO | Exported table: salt_and_sacrifice_theme_by_playtime_band.csv
+2026-04-12 08:58:40,909 | INFO | Exported table: salt_and_sacrifice_theme_by_month.csv
+2026-04-12 08:58:40,911 | INFO | Exported table: salt_and_sacrifice_theme_top_terms_by_theme.csv
+2026-04-12 08:58:40,929 | INFO | Summary JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_theme_metrics_summary.json
+2026-04-12 08:58:40,930 | INFO | Theme metrics computation complete.
+[INFO] Theme metrics computation complete.
+2026-04-12 08:58:40,981 | WARNING | Stage stderr (theme_metrics):
+C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\03_analysis\compute_theme_metrics.py:783: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  "generated_at_utc": pd.Timestamp.utcnow().isoformat(),
+2026-04-12 08:58:40,981 | INFO | Finished stage: Theme metrics | status=success | return_code=0
+2026-04-12 08:58:40,982 | INFO | Starting stage: Excel figure generation
+2026-04-12 08:58:40,982 | INFO | Command: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\.venv\Scripts\python.exe C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\04_visualisation\create_excel_figures.py --config C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:42,183 | INFO | Stage stdout (excel_figures):
+[INFO] Loading configuration: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+[INFO] Repository root: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit
+[INFO] Game slug: salt_and_sacrifice
+[INFO] Figures root: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\figures
+[INFO] Figure index CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\figures\salt_and_sacrifice_figure_index.csv
+[INFO] Summary JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_figures_summary.json
+2026-04-12 08:58:41,854 | INFO | Starting Excel figure generation.
+2026-04-12 08:58:41,855 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:41,855 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:41,855 | INFO | App ID: 1437400
+2026-04-12 08:58:41,855 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:41,855 | INFO | Figure specs loaded: 18
+2026-04-12 08:58:41,855 | INFO | Creating figure workbook: figure_01_polarity_distribution.xlsx
+2026-04-12 08:58:41,873 | INFO | Creating figure workbook: figure_02_language_distribution_top10.xlsx
+2026-04-12 08:58:41,886 | INFO | Creating figure workbook: figure_03_polarity_by_playtime_band.xlsx
+2026-04-12 08:58:41,898 | INFO | Creating figure workbook: figure_04_monthly_review_volume.xlsx
+2026-04-12 08:58:41,910 | INFO | Creating figure workbook: figure_05_monthly_polarity_trends.xlsx
+2026-04-12 08:58:41,923 | INFO | Creating figure workbook: figure_06_monthly_positive_percentage.xlsx
+2026-04-12 08:58:41,935 | INFO | Creating figure workbook: figure_07_monthly_language_trends_top5.xlsx
+2026-04-12 08:58:41,955 | INFO | Creating figure workbook: figure_08_developer_response_timeline.xlsx
+2026-04-12 08:58:41,968 | INFO | Creating figure workbook: figure_09_top_unigrams_positive.xlsx
+2026-04-12 08:58:41,980 | INFO | Creating figure workbook: figure_10_top_unigrams_negative.xlsx
+2026-04-12 08:58:41,992 | INFO | Creating figure workbook: figure_11_distinctive_terms_positive_vs_negative.xlsx
+2026-04-12 08:58:42,005 | INFO | Creating figure workbook: figure_12_distinctive_terms_negative_vs_positive.xlsx
+2026-04-12 08:58:42,021 | INFO | Creating figure workbook: figure_13_emotion_distribution_summary.xlsx
+2026-04-12 08:58:42,032 | INFO | Creating figure workbook: figure_14_emotion_by_polarity.xlsx
+2026-04-12 08:58:42,052 | INFO | Creating figure workbook: figure_15_emotion_by_month_selected.xlsx
+2026-04-12 08:58:42,066 | INFO | Creating figure workbook: figure_16_theme_distribution_summary.xlsx
+2026-04-12 08:58:42,079 | INFO | Creating figure workbook: figure_17_theme_by_polarity.xlsx
+2026-04-12 08:58:42,099 | INFO | Creating figure workbook: figure_18_theme_by_month_selected.xlsx
+2026-04-12 08:58:42,121 | INFO | Figure index CSV written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\figures\salt_and_sacrifice_figure_index.csv
+2026-04-12 08:58:42,121 | INFO | Summary JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_figures_summary.json
+2026-04-12 08:58:42,121 | INFO | Excel figure generation complete.
+[INFO] Excel figure generation complete.
+2026-04-12 08:58:42,184 | WARNING | Stage stderr (excel_figures):
+C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\04_visualisation\create_excel_figures.py:921: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  "generated_at_utc": pd.Timestamp.utcnow().isoformat(),
+2026-04-12 08:58:42,184 | INFO | Finished stage: Excel figure generation | status=success | return_code=0
+2026-04-12 08:58:42,184 | INFO | Starting stage: Word-cloud generation
+2026-04-12 08:58:42,184 | INFO | Command: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\.venv\Scripts\python.exe C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\04_visualisation\create_word_clouds.py --config C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:52,061 | INFO | Stage stdout (word_cloud):
+[INFO] Loading configuration: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+[INFO] Repository root: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit
+[INFO] Game slug: salt_and_sacrifice
+[INFO] Input CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_reviews_cleaned.csv
+[INFO] Output directory: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\figures\word_cloud
+[INFO] Summary JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_word_cloud_summary.json
+2026-04-12 08:58:43,122 | INFO | Starting word-cloud generation.
+2026-04-12 08:58:43,122 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:43,122 | INFO | App ID: 1437400
+2026-04-12 08:58:43,122 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:43,122 | INFO | Target language: english
+2026-04-12 08:58:43,213 | INFO | Rows loaded from cleaned dataset: 1823
+2026-04-12 08:58:43,213 | INFO | Rows used for word clouds: 729
+2026-04-12 08:58:51,962 | INFO | Word clouds created successfully.
+2026-04-12 08:58:51,962 | INFO | Unigram PNG: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\figures\word_cloud\salt_and_sacrifice_wordcloud_unigrams.png
+2026-04-12 08:58:51,962 | INFO | Bigram PNG: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\figures\word_cloud\salt_and_sacrifice_wordcloud_bigrams.png
+2026-04-12 08:58:51,962 | INFO | Trigram PNG: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\figures\word_cloud\salt_and_sacrifice_wordcloud_trigrams.png
+2026-04-12 08:58:51,962 | INFO | Summary JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_word_cloud_summary.json
+[INFO] Word-cloud generation complete.
+2026-04-12 08:58:52,061 | WARNING | Stage stderr (word_cloud):
+C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\04_visualisation\create_word_clouds.py:507: Pandas4Warning: Timestamp.utcnow is deprecated and will be removed in a future version. Use Timestamp.now('UTC') instead.
+  "generated_at_utc": pd.Timestamp.utcnow().isoformat(),
+2026-04-12 08:58:52,061 | INFO | Finished stage: Word-cloud generation | status=success | return_code=0
+2026-04-12 08:58:52,061 | INFO | Starting stage: Output validation
+2026-04-12 08:58:52,061 | INFO | Command: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\.venv\Scripts\python.exe C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\scripts\validate_outputs.py --config C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:52,861 | INFO | Stage stdout (validation):
+[INFO] Loading configuration: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+[INFO] Repository root: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit
+[INFO] Game slug: salt_and_sacrifice
+[INFO] Validation log: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_validation.log
+[INFO] Validation summary: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_validation_summary.json
+2026-04-12 08:58:52,553 | INFO | Starting output validation.
+2026-04-12 08:58:52,553 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:52,553 | INFO | App ID: 1437400
+2026-04-12 08:58:52,553 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:52,803 | INFO | Validation summary written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_validation_summary.json
+2026-04-12 08:58:52,803 | INFO | Validation complete. final_status=passed
+[INFO] Validation finished successfully.
+2026-04-12 08:58:52,861 | INFO | Finished stage: Output validation | status=success | return_code=0
+2026-04-12 08:58:52,926 | INFO | Output manifest written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_output_manifest.json
+2026-04-12 08:58:52,926 | INFO | Pipeline summary written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_pipeline_summary.json

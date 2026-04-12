@@ -1,0 +1,12 @@
+2026-04-12 08:58:43,122 | INFO | Starting word-cloud generation.
+2026-04-12 08:58:43,122 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:43,122 | INFO | App ID: 1437400
+2026-04-12 08:58:43,122 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:43,122 | INFO | Target language: english
+2026-04-12 08:58:43,213 | INFO | Rows loaded from cleaned dataset: 1823
+2026-04-12 08:58:43,213 | INFO | Rows used for word clouds: 729
+2026-04-12 08:58:51,962 | INFO | Word clouds created successfully.
+2026-04-12 08:58:51,962 | INFO | Unigram PNG: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\figures\word_cloud\salt_and_sacrifice_wordcloud_unigrams.png
+2026-04-12 08:58:51,962 | INFO | Bigram PNG: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\figures\word_cloud\salt_and_sacrifice_wordcloud_bigrams.png
+2026-04-12 08:58:51,962 | INFO | Trigram PNG: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\results\salt_and_sacrifice\figures\word_cloud\salt_and_sacrifice_wordcloud_trigrams.png
+2026-04-12 08:58:51,962 | INFO | Summary JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_word_cloud_summary.json

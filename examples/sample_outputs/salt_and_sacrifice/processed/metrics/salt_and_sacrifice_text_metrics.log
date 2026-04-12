@@ -1,0 +1,22 @@
+2026-04-12 08:58:37,600 | INFO | Starting text metrics computation.
+2026-04-12 08:58:37,600 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:37,600 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:37,600 | INFO | App ID: 1437400
+2026-04-12 08:58:37,600 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:37,646 | INFO | Rows loaded: 1823
+2026-04-12 08:58:37,646 | INFO | Columns loaded: 62
+2026-04-12 08:58:37,729 | INFO | Rows with usable text: 1780
+2026-04-12 08:58:37,729 | INFO | Languages with usable text: 23
+2026-04-12 08:58:37,732 | INFO | Selected languages for separate output: english, schinese, russian, brazilian, spanish, japanese, tchinese, koreana, german, french
+2026-04-12 08:58:38,333 | INFO | Exporting per-language text metrics for: english
+2026-04-12 08:58:38,510 | INFO | Exporting per-language text metrics for: schinese
+2026-04-12 08:58:38,598 | INFO | Exporting per-language text metrics for: russian
+2026-04-12 08:58:38,677 | INFO | Exporting per-language text metrics for: brazilian
+2026-04-12 08:58:38,731 | INFO | Exporting per-language text metrics for: spanish
+2026-04-12 08:58:38,786 | INFO | Exporting per-language text metrics for: japanese
+2026-04-12 08:58:38,827 | INFO | Exporting per-language text metrics for: tchinese
+2026-04-12 08:58:38,873 | INFO | Exporting per-language text metrics for: koreana
+2026-04-12 08:58:38,914 | INFO | Exporting per-language text metrics for: german
+2026-04-12 08:58:38,954 | INFO | Exporting per-language text metrics for: french
+2026-04-12 08:58:38,991 | INFO | Summary JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_text_metrics_summary.json
+2026-04-12 08:58:38,992 | INFO | Text metrics computation complete.

@@ -1,0 +1,1565 @@
+{
+  "app_id": 1437400,
+  "game_slug": "salt_and_sacrifice",
+  "game_title": "Salt and Sacrifice",
+  "generated_at_utc": "2026-04-12T06:58:35.660750+00:00",
+  "tables": {
+    "dataset_overview": [
+      {
+        "metric": "app_id",
+        "value": 1437400
+      },
+      {
+        "metric": "game_slug",
+        "value": "salt_and_sacrifice"
+      },
+      {
+        "metric": "game_title",
+        "value": "Salt and Sacrifice"
+      },
+      {
+        "metric": "total_reviews",
+        "value": 1823
+      },
+      {
+        "metric": "unique_recommendation_ids",
+        "value": 1823
+      },
+      {
+        "metric": "unique_reviewers",
+        "value": 1823
+      },
+      {
+        "metric": "reviews_with_text",
+        "value": 1820
+      },
+      {
+        "metric": "languages_detected",
+        "value": 23
+      }
+    ],
+    "polarity_summary": [
+      {
+        "metric": "total_reviews",
+        "value": 1823.0
+      },
+      {
+        "metric": "positive_reviews",
+        "value": 1141.0
+      },
+      {
+        "metric": "negative_reviews",
+        "value": 682.0
+      },
+      {
+        "metric": "positive_percentage",
+        "value": 62.5891
+      },
+      {
+        "metric": "negative_percentage",
+        "value": 37.4109
+      },
+      {
+        "metric": "positive_negative_ratio",
+        "value": 1.673
+      }
+    ],
+    "language_distribution": [
+      {
+        "language": "english",
+        "review_count": 743,
+        "review_percentage": 40.757
+      },
+      {
+        "language": "schinese",
+        "review_count": 515,
+        "review_percentage": 28.2501
+      },
+      {
+        "language": "russian",
+        "review_count": 139,
+        "review_percentage": 7.6248
+      },
+      {
+        "language": "brazilian",
+        "review_count": 118,
+        "review_percentage": 6.4728
+      },
+      {
+        "language": "spanish",
+        "review_count": 70,
+        "review_percentage": 3.8398
+      },
+      {
+        "language": "japanese",
+        "review_count": 45,
+        "review_percentage": 2.4685
+      },
+      {
+        "language": "tchinese",
+        "review_count": 41,
+        "review_percentage": 2.249
+      },
+      {
+        "language": "koreana",
+        "review_count": 32,
+        "review_percentage": 1.7553
+      },
+      {
+        "language": "german",
+        "review_count": 22,
+        "review_percentage": 1.2068
+      },
+      {
+        "language": "french",
+        "review_count": 18,
+        "review_percentage": 0.9874
+      },
+      {
+        "language": "polish",
+        "review_count": 17,
+        "review_percentage": 0.9325
+      },
+      {
+        "language": "turkish",
+        "review_count": 11,
+        "review_percentage": 0.6034
+      },
+      {
+        "language": "italian",
+        "review_count": 11,
+        "review_percentage": 0.6034
+      },
+      {
+        "language": "ukrainian",
+        "review_count": 9,
+        "review_percentage": 0.4937
+      },
+      {
+        "language": "latam",
+        "review_count": 9,
+        "review_percentage": 0.4937
+      },
+      {
+        "language": "thai",
+        "review_count": 8,
+        "review_percentage": 0.4388
+      },
+      {
+        "language": "czech",
+        "review_count": 4,
+        "review_percentage": 0.2194
+      },
+      {
+        "language": "portuguese",
+        "review_count": 3,
+        "review_percentage": 0.1646
+      },
+      {
+        "language": "hungarian",
+        "review_count": 2,
+        "review_percentage": 0.1097
+      },
+      {
+        "language": "finnish",
+        "review_count": 2,
+        "review_percentage": 0.1097
+      },
+      {
+        "language": "vietnamese",
+        "review_count": 2,
+        "review_percentage": 0.1097
+      },
+      {
+        "language": "dutch",
+        "review_count": 1,
+        "review_percentage": 0.0549
+      },
+      {
+        "language": "danish",
+        "review_count": 1,
+        "review_percentage": 0.0549
+      }
+    ],
+    "reviewer_profile_summary": [
+      {
+        "variable": "num_games_owned",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 833,
+        "mean": 246.4257,
+        "median": 55.0,
+        "std": 884.0354,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "p50": 55.0,
+        "p75": 252.0,
+        "p90": 594.8,
+        "p95": 944.9,
+        "max": 30424.0,
+        "sum": 449234.0
+      },
+      {
+        "variable": "num_reviews",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 0,
+        "mean": 56.7356,
+        "median": 17.0,
+        "std": 408.361,
+        "min": 1.0,
+        "p10": 3.0,
+        "p25": 6.0,
+        "p50": 17.0,
+        "p75": 46.0,
+        "p90": 105.8,
+        "p95": 172.9,
+        "max": 16648.0,
+        "sum": 103429.0
+      }
+    ],
+    "playtime_summary": [
+      {
+        "variable": "playtime_forever",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 0,
+        "mean": 2511.2095,
+        "median": 1535.0,
+        "std": 6353.3584,
+        "min": 8.0,
+        "p10": 299.2,
+        "p25": 806.5,
+        "p50": 1535.0,
+        "p75": 2682.5,
+        "p90": 4476.4,
+        "p95": 6797.5,
+        "max": 207157.0,
+        "sum": 4577935.0
+      },
+      {
+        "variable": "playtime_last_two_weeks",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 1761,
+        "mean": 19.6637,
+        "median": 0.0,
+        "std": 166.4499,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "p50": 0.0,
+        "p75": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "max": 2662.0,
+        "sum": 35847.0
+      },
+      {
+        "variable": "playtime_at_review",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 0,
+        "mean": 1340.8969,
+        "median": 888.0,
+        "std": 2322.6185,
+        "min": 5.0,
+        "p10": 130.4,
+        "p25": 339.0,
+        "p50": 888.0,
+        "p75": 1695.0,
+        "p90": 2761.2,
+        "p95": 3737.0,
+        "max": 64966.0,
+        "sum": 2444455.0
+      },
+      {
+        "variable": "deck_playtime_at_review",
+        "count_non_null": 99,
+        "count_null": 1724,
+        "count_zero": 0,
+        "mean": 870.8788,
+        "median": 442.0,
+        "std": 1229.4982,
+        "min": 1.0,
+        "p10": 27.2,
+        "p25": 137.5,
+        "p50": 442.0,
+        "p75": 1086.0,
+        "p90": 2153.0,
+        "p95": 3245.2,
+        "max": 6967.0,
+        "sum": 86217.0
+      },
+      {
+        "variable": "playtime_post_review",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 598,
+        "mean": 1170.3127,
+        "median": 203.0,
+        "std": 5763.1282,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "p50": 203.0,
+        "p75": 1099.0,
+        "p90": 2480.4,
+        "p95": 3906.7,
+        "max": 207131.0,
+        "sum": 2133480.0
+      }
+    ],
+    "interaction_summary": [
+      {
+        "variable": "votes_up",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 773,
+        "mean": 4.3116,
+        "median": 1.0,
+        "std": 15.0441,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "p50": 1.0,
+        "p75": 3.0,
+        "p90": 9.0,
+        "p95": 17.0,
+        "max": 296.0,
+        "sum": 7860.0
+      },
+      {
+        "variable": "votes_funny",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 1463,
+        "mean": 0.4888,
+        "median": 0.0,
+        "std": 1.929,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "p50": 0.0,
+        "p75": 0.0,
+        "p90": 1.0,
+        "p95": 2.0,
+        "max": 32.0,
+        "sum": 891.0
+      },
+      {
+        "variable": "comment_count",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 1750,
+        "mean": 0.09,
+        "median": 0.0,
+        "std": 0.6681,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "p50": 0.0,
+        "p75": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "max": 18.0,
+        "sum": 164.0
+      }
+    ],
+    "text_summary": [
+      {
+        "variable": "review_length_chars",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 3,
+        "mean": 492.0236,
+        "median": 121.0,
+        "std": 1014.6153,
+        "min": 0.0,
+        "p10": 8.0,
+        "p25": 29.0,
+        "p50": 121.0,
+        "p75": 450.5,
+        "p90": 1329.0,
+        "p95": 2218.9,
+        "max": 7997.0,
+        "sum": 896959.0
+      },
+      {
+        "variable": "review_length_chars_no_spaces",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 3,
+        "mean": 413.8206,
+        "median": 106.0,
+        "std": 838.2309,
+        "min": 0.0,
+        "p10": 8.0,
+        "p25": 27.0,
+        "p50": 106.0,
+        "p75": 387.0,
+        "p90": 1122.8,
+        "p95": 1842.3,
+        "max": 6642.0,
+        "sum": 754395.0
+      },
+      {
+        "variable": "review_length_words",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 3,
+        "mean": 77.8321,
+        "median": 11.0,
+        "std": 178.4577,
+        "min": 0.0,
+        "p10": 1.0,
+        "p25": 2.0,
+        "p50": 11.0,
+        "p75": 62.0,
+        "p90": 215.6,
+        "p95": 387.0,
+        "max": 1506.0,
+        "sum": 141888.0
+      },
+      {
+        "variable": "review_length_lines",
+        "count_non_null": 1820,
+        "count_null": 3,
+        "count_zero": 0,
+        "mean": 4.4022,
+        "median": 1.0,
+        "std": 8.4573,
+        "min": 1.0,
+        "p10": 1.0,
+        "p25": 1.0,
+        "p50": 1.0,
+        "p75": 4.0,
+        "p90": 12.0,
+        "p95": 18.0,
+        "max": 108.0,
+        "sum": 8012.0
+      }
+    ],
+    "temporal_interval_summary": [
+      {
+        "variable": "days_between_creation_and_update",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 1482,
+        "mean": 13.4706,
+        "median": 0.0,
+        "std": 75.1999,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "p50": 0.0,
+        "p75": 0.0,
+        "p90": 2.9828,
+        "p95": 25.0213,
+        "max": 866.971,
+        "sum": 24556.843
+      },
+      {
+        "variable": "days_between_review_and_last_played",
+        "count_non_null": 1823,
+        "count_null": 0,
+        "count_zero": 37,
+        "mean": 124.334,
+        "median": 6.509,
+        "std": 230.0078,
+        "min": -619.364,
+        "p10": -0.0876,
+        "p25": -0.002,
+        "p50": 6.509,
+        "p75": 169.305,
+        "p90": 513.9726,
+        "p95": 667.0724,
+        "max": 883.356,
+        "sum": 226660.933
+      },
+      {
+        "variable": "days_to_developer_response",
+        "count_non_null": 4,
+        "count_null": 1819,
+        "count_zero": 0,
+        "mean": 26.916,
+        "median": 25.924,
+        "std": 26.273,
+        "min": 3.986,
+        "p10": 4.1249,
+        "p25": 4.3332,
+        "p50": 25.924,
+        "p75": 48.5067,
+        "p90": 50.5007,
+        "p95": 51.1653,
+        "max": 51.83,
+        "sum": 107.664
+      }
+    ],
+    "purchase_and_access_summary": [
+      {
+        "metric": "steam_purchase_true",
+        "count_true": 1650,
+        "percentage_true": 90.5101
+      },
+      {
+        "metric": "free_copy_true",
+        "count_true": 17,
+        "percentage_true": 0.9325
+      },
+      {
+        "metric": "early_access_review_true",
+        "count_true": 0,
+        "percentage_true": 0.0
+      },
+      {
+        "metric": "primarily_steam_deck_true",
+        "count_true": 61,
+        "percentage_true": 3.3461
+      },
+      {
+        "metric": "developer_response_true",
+        "count_true": 4,
+        "percentage_true": 0.2194
+      },
+      {
+        "metric": "played_after_review_true",
+        "count_true": 1225,
+        "percentage_true": 67.1969
+      },
+      {
+        "metric": "review_updated_after_creation_true",
+        "count_true": 352,
+        "percentage_true": 19.3088
+      },
+      {
+        "metric": "recent_playtime_recorded_true",
+        "count_true": 62,
+        "percentage_true": 3.401
+      },
+      {
+        "metric": "used_steam_deck_at_review_true",
+        "count_true": 99,
+        "percentage_true": 5.4306
+      }
+    ],
+    "missingness_summary": [
+      {
+        "column": "days_to_developer_response",
+        "row_count": 1823,
+        "non_null_count": 4,
+        "null_count": 1819,
+        "null_percentage": 99.7806
+      },
+      {
+        "column": "developer_responded_date",
+        "row_count": 1823,
+        "non_null_count": 4,
+        "null_count": 1819,
+        "null_percentage": 99.7806
+      },
+      {
+        "column": "developer_responded_datetime_utc",
+        "row_count": 1823,
+        "non_null_count": 4,
+        "null_count": 1819,
+        "null_percentage": 99.7806
+      },
+      {
+        "column": "developer_response",
+        "row_count": 1823,
+        "non_null_count": 4,
+        "null_count": 1819,
+        "null_percentage": 99.7806
+      },
+      {
+        "column": "timestamp_dev_responded",
+        "row_count": 1823,
+        "non_null_count": 4,
+        "null_count": 1819,
+        "null_percentage": 99.7806
+      },
+      {
+        "column": "deck_playtime_at_review",
+        "row_count": 1823,
+        "non_null_count": 99,
+        "null_count": 1724,
+        "null_percentage": 94.5694
+      },
+      {
+        "column": "used_steam_deck_at_review",
+        "row_count": 1823,
+        "non_null_count": 99,
+        "null_count": 1724,
+        "null_percentage": 94.5694
+      },
+      {
+        "column": "review",
+        "row_count": 1823,
+        "non_null_count": 1820,
+        "null_count": 3,
+        "null_percentage": 0.1646
+      },
+      {
+        "column": "review_length_lines",
+        "row_count": 1823,
+        "non_null_count": 1820,
+        "null_count": 3,
+        "null_percentage": 0.1646
+      },
+      {
+        "column": "app_id",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "comment_count",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "days_between_creation_and_update",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "days_between_review_and_last_played",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "game_slug",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "game_title",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "has_comments",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "has_developer_response",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "has_funny_votes",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "has_helpful_votes",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "has_text_review",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "is_early_access_review",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "is_free_copy",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "is_negative",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "is_positive",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "is_primarily_steam_deck",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "is_steam_purchase",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "language",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "last_played",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "last_played_date",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "last_played_datetime_utc",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "num_games_owned",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "num_games_owned_band",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "num_reviews",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "num_reviews_band",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "played_after_review",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "playtime_at_review",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "playtime_at_review_band",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "playtime_forever",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "playtime_last_two_weeks",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "playtime_post_review",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "primarily_steam_deck",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "received_for_free",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "recent_playtime_recorded",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "recommendationid",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "review_created_date",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "review_created_datetime_utc",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "review_created_month",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "review_created_year",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "review_created_year_month",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "review_length_chars",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "review_length_chars_no_spaces",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "review_length_words",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "review_length_words_band",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "review_updated_after_creation",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "review_updated_date",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "review_updated_datetime_utc",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "steam_purchase",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "steamid",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "timestamp_created",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "timestamp_updated",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "voted_up",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "votes_funny",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "votes_up",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "weighted_vote_score",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "column": "written_during_early_access",
+        "row_count": 1823,
+        "non_null_count": 1823,
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ],
+    "concentration_summary": [
+      {
+        "variable": "votes_up",
+        "sum_total": 7860.0,
+        "share_top_1_percent": 28.3588,
+        "share_top_5_percent": 55.4326,
+        "share_top_10_percent": 69.313
+      },
+      {
+        "variable": "votes_funny",
+        "sum_total": 891.0,
+        "share_top_1_percent": 33.67,
+        "share_top_5_percent": 62.8507,
+        "share_top_10_percent": 80.1347
+      },
+      {
+        "variable": "comment_count",
+        "sum_total": 164.0,
+        "share_top_1_percent": 57.3171,
+        "share_top_5_percent": 100.0,
+        "share_top_10_percent": 100.0
+      },
+      {
+        "variable": "playtime_forever",
+        "sum_total": 4577935.0,
+        "share_top_1_percent": 17.2313,
+        "share_top_5_percent": 33.7652,
+        "share_top_10_percent": 44.2326
+      },
+      {
+        "variable": "review_length_words",
+        "sum_total": 141888.0,
+        "share_top_1_percent": 16.2713,
+        "share_top_5_percent": 46.7651,
+        "share_top_10_percent": 65.4086
+      }
+    ],
+    "cross_tab_polarity_by_language": [
+      {
+        "language": "brazilian",
+        "false": 19,
+        "true": 99,
+        "False_percentage_of_total": 1.0422,
+        "True_percentage_of_total": 5.4306
+      },
+      {
+        "language": "czech",
+        "false": 1,
+        "true": 3,
+        "False_percentage_of_total": 0.0549,
+        "True_percentage_of_total": 0.1646
+      },
+      {
+        "language": "danish",
+        "false": 0,
+        "true": 1,
+        "False_percentage_of_total": 0.0,
+        "True_percentage_of_total": 0.0549
+      },
+      {
+        "language": "dutch",
+        "false": 0,
+        "true": 1,
+        "False_percentage_of_total": 0.0,
+        "True_percentage_of_total": 0.0549
+      },
+      {
+        "language": "english",
+        "false": 217,
+        "true": 526,
+        "False_percentage_of_total": 11.9035,
+        "True_percentage_of_total": 28.8535
+      },
+      {
+        "language": "finnish",
+        "false": 0,
+        "true": 2,
+        "False_percentage_of_total": 0.0,
+        "True_percentage_of_total": 0.1097
+      },
+      {
+        "language": "french",
+        "false": 6,
+        "true": 12,
+        "False_percentage_of_total": 0.3291,
+        "True_percentage_of_total": 0.6583
+      },
+      {
+        "language": "german",
+        "false": 12,
+        "true": 10,
+        "False_percentage_of_total": 0.6583,
+        "True_percentage_of_total": 0.5485
+      },
+      {
+        "language": "hungarian",
+        "false": 0,
+        "true": 2,
+        "False_percentage_of_total": 0.0,
+        "True_percentage_of_total": 0.1097
+      },
+      {
+        "language": "italian",
+        "false": 3,
+        "true": 8,
+        "False_percentage_of_total": 0.1646,
+        "True_percentage_of_total": 0.4388
+      },
+      {
+        "language": "japanese",
+        "false": 25,
+        "true": 20,
+        "False_percentage_of_total": 1.3714,
+        "True_percentage_of_total": 1.0971
+      },
+      {
+        "language": "koreana",
+        "false": 18,
+        "true": 14,
+        "False_percentage_of_total": 0.9874,
+        "True_percentage_of_total": 0.768
+      },
+      {
+        "language": "latam",
+        "false": 1,
+        "true": 8,
+        "False_percentage_of_total": 0.0549,
+        "True_percentage_of_total": 0.4388
+      },
+      {
+        "language": "polish",
+        "false": 2,
+        "true": 15,
+        "False_percentage_of_total": 0.1097,
+        "True_percentage_of_total": 0.8228
+      },
+      {
+        "language": "portuguese",
+        "false": 1,
+        "true": 2,
+        "False_percentage_of_total": 0.0549,
+        "True_percentage_of_total": 0.1097
+      },
+      {
+        "language": "russian",
+        "false": 49,
+        "true": 90,
+        "False_percentage_of_total": 2.6879,
+        "True_percentage_of_total": 4.9369
+      },
+      {
+        "language": "schinese",
+        "false": 289,
+        "true": 226,
+        "False_percentage_of_total": 15.853,
+        "True_percentage_of_total": 12.3971
+      },
+      {
+        "language": "spanish",
+        "false": 11,
+        "true": 59,
+        "False_percentage_of_total": 0.6034,
+        "True_percentage_of_total": 3.2364
+      },
+      {
+        "language": "tchinese",
+        "false": 17,
+        "true": 24,
+        "False_percentage_of_total": 0.9325,
+        "True_percentage_of_total": 1.3165
+      },
+      {
+        "language": "thai",
+        "false": 5,
+        "true": 3,
+        "False_percentage_of_total": 0.2743,
+        "True_percentage_of_total": 0.1646
+      },
+      {
+        "language": "turkish",
+        "false": 5,
+        "true": 6,
+        "False_percentage_of_total": 0.2743,
+        "True_percentage_of_total": 0.3291
+      },
+      {
+        "language": "ukrainian",
+        "false": 0,
+        "true": 9,
+        "False_percentage_of_total": 0.0,
+        "True_percentage_of_total": 0.4937
+      },
+      {
+        "language": "vietnamese",
+        "false": 1,
+        "true": 1,
+        "False_percentage_of_total": 0.0549,
+        "True_percentage_of_total": 0.0549
+      }
+    ],
+    "cross_tab_polarity_by_playtime_band": [
+      {
+        "playtime_at_review_band": "100h+",
+        "false": 4,
+        "true": 36,
+        "False_percentage_of_total": 0.2194,
+        "True_percentage_of_total": 1.9748
+      },
+      {
+        "playtime_at_review_band": "10h-24h59m",
+        "false": 223,
+        "true": 350,
+        "False_percentage_of_total": 12.2326,
+        "True_percentage_of_total": 19.1991
+      },
+      {
+        "playtime_at_review_band": "25h-49h59m",
+        "false": 112,
+        "true": 264,
+        "False_percentage_of_total": 6.1437,
+        "True_percentage_of_total": 14.4816
+      },
+      {
+        "playtime_at_review_band": "2h-9h59m",
+        "false": 219,
+        "true": 329,
+        "False_percentage_of_total": 12.0132,
+        "True_percentage_of_total": 18.0472
+      },
+      {
+        "playtime_at_review_band": "30m-1h59m",
+        "false": 62,
+        "true": 51,
+        "False_percentage_of_total": 3.401,
+        "True_percentage_of_total": 2.7976
+      },
+      {
+        "playtime_at_review_band": "50h-99h59m",
+        "false": 25,
+        "true": 90,
+        "False_percentage_of_total": 1.3714,
+        "True_percentage_of_total": 4.9369
+      },
+      {
+        "playtime_at_review_band": "<30m",
+        "false": 37,
+        "true": 21,
+        "False_percentage_of_total": 2.0296,
+        "True_percentage_of_total": 1.1519
+      }
+    ],
+    "cross_tab_polarity_by_reviewer_activity_band": [
+      {
+        "num_reviews_band": "1",
+        "false": 36,
+        "true": 45,
+        "False_percentage_of_total": 1.9748,
+        "True_percentage_of_total": 2.4685
+      },
+      {
+        "num_reviews_band": "10+",
+        "false": 452,
+        "true": 767,
+        "False_percentage_of_total": 24.7943,
+        "True_percentage_of_total": 42.0735
+      },
+      {
+        "num_reviews_band": "2-4",
+        "false": 93,
+        "true": 159,
+        "False_percentage_of_total": 5.1015,
+        "True_percentage_of_total": 8.7219
+      },
+      {
+        "num_reviews_band": "5-9",
+        "false": 101,
+        "true": 170,
+        "False_percentage_of_total": 5.5403,
+        "True_percentage_of_total": 9.3253
+      }
+    ],
+    "cross_tab_polarity_by_library_size_band": [
+      {
+        "num_games_owned_band": "0-9",
+        "false": 283,
+        "true": 552,
+        "False_percentage_of_total": 15.5239,
+        "True_percentage_of_total": 30.2798
+      },
+      {
+        "num_games_owned_band": "10-49",
+        "false": 17,
+        "true": 48,
+        "False_percentage_of_total": 0.9325,
+        "True_percentage_of_total": 2.633
+      },
+      {
+        "num_games_owned_band": "100-499",
+        "false": 243,
+        "true": 302,
+        "False_percentage_of_total": 13.3297,
+        "True_percentage_of_total": 16.5661
+      },
+      {
+        "num_games_owned_band": "50-99",
+        "false": 50,
+        "true": 93,
+        "False_percentage_of_total": 2.7427,
+        "True_percentage_of_total": 5.1015
+      },
+      {
+        "num_games_owned_band": "500+",
+        "false": 89,
+        "true": 146,
+        "False_percentage_of_total": 4.8821,
+        "True_percentage_of_total": 8.0088
+      }
+    ],
+    "monthly_review_volume": [
+      {
+        "review_created_year_month": "2023-11",
+        "review_count": 394,
+        "positive_reviews": 249,
+        "negative_reviews": 145,
+        "positive_percentage": 63.198,
+        "negative_percentage": 36.802
+      },
+      {
+        "review_created_year_month": "2023-12",
+        "review_count": 107,
+        "positive_reviews": 66,
+        "negative_reviews": 41,
+        "positive_percentage": 61.6822,
+        "negative_percentage": 38.3178
+      },
+      {
+        "review_created_year_month": "2024-01",
+        "review_count": 78,
+        "positive_reviews": 56,
+        "negative_reviews": 22,
+        "positive_percentage": 71.7949,
+        "negative_percentage": 28.2051
+      },
+      {
+        "review_created_year_month": "2024-02",
+        "review_count": 23,
+        "positive_reviews": 19,
+        "negative_reviews": 4,
+        "positive_percentage": 82.6087,
+        "negative_percentage": 17.3913
+      },
+      {
+        "review_created_year_month": "2024-03",
+        "review_count": 90,
+        "positive_reviews": 55,
+        "negative_reviews": 35,
+        "positive_percentage": 61.1111,
+        "negative_percentage": 38.8889
+      },
+      {
+        "review_created_year_month": "2024-04",
+        "review_count": 30,
+        "positive_reviews": 19,
+        "negative_reviews": 11,
+        "positive_percentage": 63.3333,
+        "negative_percentage": 36.6667
+      },
+      {
+        "review_created_year_month": "2024-05",
+        "review_count": 156,
+        "positive_reviews": 93,
+        "negative_reviews": 63,
+        "positive_percentage": 59.6154,
+        "negative_percentage": 40.3846
+      },
+      {
+        "review_created_year_month": "2024-06",
+        "review_count": 45,
+        "positive_reviews": 31,
+        "negative_reviews": 14,
+        "positive_percentage": 68.8889,
+        "negative_percentage": 31.1111
+      },
+      {
+        "review_created_year_month": "2024-07",
+        "review_count": 82,
+        "positive_reviews": 48,
+        "negative_reviews": 34,
+        "positive_percentage": 58.5366,
+        "negative_percentage": 41.4634
+      },
+      {
+        "review_created_year_month": "2024-08",
+        "review_count": 37,
+        "positive_reviews": 26,
+        "negative_reviews": 11,
+        "positive_percentage": 70.2703,
+        "negative_percentage": 29.7297
+      },
+      {
+        "review_created_year_month": "2024-09",
+        "review_count": 22,
+        "positive_reviews": 13,
+        "negative_reviews": 9,
+        "positive_percentage": 59.0909,
+        "negative_percentage": 40.9091
+      },
+      {
+        "review_created_year_month": "2024-10",
+        "review_count": 22,
+        "positive_reviews": 16,
+        "negative_reviews": 6,
+        "positive_percentage": 72.7273,
+        "negative_percentage": 27.2727
+      },
+      {
+        "review_created_year_month": "2024-11",
+        "review_count": 33,
+        "positive_reviews": 18,
+        "negative_reviews": 15,
+        "positive_percentage": 54.5455,
+        "negative_percentage": 45.4545
+      },
+      {
+        "review_created_year_month": "2024-12",
+        "review_count": 91,
+        "positive_reviews": 50,
+        "negative_reviews": 41,
+        "positive_percentage": 54.9451,
+        "negative_percentage": 45.0549
+      },
+      {
+        "review_created_year_month": "2025-01",
+        "review_count": 55,
+        "positive_reviews": 32,
+        "negative_reviews": 23,
+        "positive_percentage": 58.1818,
+        "negative_percentage": 41.8182
+      },
+      {
+        "review_created_year_month": "2025-02",
+        "review_count": 79,
+        "positive_reviews": 53,
+        "negative_reviews": 26,
+        "positive_percentage": 67.0886,
+        "negative_percentage": 32.9114
+      },
+      {
+        "review_created_year_month": "2025-03",
+        "review_count": 62,
+        "positive_reviews": 37,
+        "negative_reviews": 25,
+        "positive_percentage": 59.6774,
+        "negative_percentage": 40.3226
+      },
+      {
+        "review_created_year_month": "2025-04",
+        "review_count": 26,
+        "positive_reviews": 14,
+        "negative_reviews": 12,
+        "positive_percentage": 53.8462,
+        "negative_percentage": 46.1538
+      },
+      {
+        "review_created_year_month": "2025-05",
+        "review_count": 22,
+        "positive_reviews": 12,
+        "negative_reviews": 10,
+        "positive_percentage": 54.5455,
+        "negative_percentage": 45.4545
+      },
+      {
+        "review_created_year_month": "2025-06",
+        "review_count": 25,
+        "positive_reviews": 18,
+        "negative_reviews": 7,
+        "positive_percentage": 72.0,
+        "negative_percentage": 28.0
+      },
+      {
+        "review_created_year_month": "2025-07",
+        "review_count": 54,
+        "positive_reviews": 33,
+        "negative_reviews": 21,
+        "positive_percentage": 61.1111,
+        "negative_percentage": 38.8889
+      },
+      {
+        "review_created_year_month": "2025-08",
+        "review_count": 23,
+        "positive_reviews": 17,
+        "negative_reviews": 6,
+        "positive_percentage": 73.913,
+        "negative_percentage": 26.087
+      },
+      {
+        "review_created_year_month": "2025-09",
+        "review_count": 38,
+        "positive_reviews": 25,
+        "negative_reviews": 13,
+        "positive_percentage": 65.7895,
+        "negative_percentage": 34.2105
+      },
+      {
+        "review_created_year_month": "2025-10",
+        "review_count": 33,
+        "positive_reviews": 18,
+        "negative_reviews": 15,
+        "positive_percentage": 54.5455,
+        "negative_percentage": 45.4545
+      },
+      {
+        "review_created_year_month": "2025-11",
+        "review_count": 23,
+        "positive_reviews": 8,
+        "negative_reviews": 15,
+        "positive_percentage": 34.7826,
+        "negative_percentage": 65.2174
+      },
+      {
+        "review_created_year_month": "2025-12",
+        "review_count": 35,
+        "positive_reviews": 25,
+        "negative_reviews": 10,
+        "positive_percentage": 71.4286,
+        "negative_percentage": 28.5714
+      },
+      {
+        "review_created_year_month": "2026-01",
+        "review_count": 54,
+        "positive_reviews": 31,
+        "negative_reviews": 23,
+        "positive_percentage": 57.4074,
+        "negative_percentage": 42.5926
+      },
+      {
+        "review_created_year_month": "2026-02",
+        "review_count": 36,
+        "positive_reviews": 24,
+        "negative_reviews": 12,
+        "positive_percentage": 66.6667,
+        "negative_percentage": 33.3333
+      },
+      {
+        "review_created_year_month": "2026-03",
+        "review_count": 39,
+        "positive_reviews": 30,
+        "negative_reviews": 9,
+        "positive_percentage": 76.9231,
+        "negative_percentage": 23.0769
+      },
+      {
+        "review_created_year_month": "2026-04",
+        "review_count": 9,
+        "positive_reviews": 5,
+        "negative_reviews": 4,
+        "positive_percentage": 55.5556,
+        "negative_percentage": 44.4444
+      }
+    ]
+  }
+}
