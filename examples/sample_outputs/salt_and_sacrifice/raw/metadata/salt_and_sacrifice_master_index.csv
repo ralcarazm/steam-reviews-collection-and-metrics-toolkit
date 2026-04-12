@@ -1,0 +1,3 @@
+﻿chunk_number,json_file,csv_file,record_count,cumulative_records
+1,salt_and_sacrifice_reviews_part_0001.json,salt_and_sacrifice_reviews_part_0001.csv,1000,1000
+2,salt_and_sacrifice_reviews_part_0002.json,salt_and_sacrifice_reviews_part_0002.csv,823,1823
