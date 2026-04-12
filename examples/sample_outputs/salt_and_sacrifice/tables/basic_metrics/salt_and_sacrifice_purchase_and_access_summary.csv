@@ -1,0 +1,10 @@
+﻿metric,count_true,percentage_true
+steam_purchase_true,1650,90.5101
+free_copy_true,17,0.9325
+early_access_review_true,0,0.0
+primarily_steam_deck_true,61,3.3461
+developer_response_true,4,0.2194
+played_after_review_true,1225,67.1969
+review_updated_after_creation_true,352,19.3088
+recent_playtime_recorded_true,62,3.401
+used_steam_deck_at_review_true,99,5.4306
