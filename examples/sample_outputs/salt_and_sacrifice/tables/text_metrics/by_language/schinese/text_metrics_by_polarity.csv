@@ -1,0 +1,4 @@
+﻿segment,review_count,total_tokens,unique_tokens,type_token_ratio,mean_review_length_words,median_review_length_words,mean_review_length_chars,median_review_length_chars
+overall,500,6545,6167,0.942246,3.38,1.0,152.168,42.0
+positive,218,2966,2842,0.958193,3.2936,1.0,162.4312,41.0
+negative,282,3579,3370,0.941604,3.4468,1.0,144.234,43.0
