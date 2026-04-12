@@ -1,0 +1,8 @@
+﻿playtime_at_review_band,review_count,total_tokens,unique_tokens,type_token_ratio,mean_review_length_words,median_review_length_words
+100h+,2,149,138,0.926174,28.5,28.5
+10h-24h59m,14,245,245,1.0,8.0714,4.0
+25h-49h59m,11,232,230,0.991379,9.3636,7.0
+2h-9h59m,7,41,41,1.0,3.7143,3.0
+30m-1h59m,2,48,48,1.0,7.0,7.0
+50h-99h59m,3,102,102,1.0,5.6667,8.0
+<30m,1,2,2,1.0,2.0,2.0
