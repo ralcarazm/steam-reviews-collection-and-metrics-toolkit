@@ -1,0 +1,13 @@
+2026-04-12 08:58:34,456 | INFO | Starting review preparation.
+2026-04-12 08:58:34,456 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:34,456 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:34,457 | INFO | App ID: 1437400
+2026-04-12 08:58:34,457 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:34,483 | INFO | Raw rows loaded: 1823
+2026-04-12 08:58:34,483 | INFO | Raw columns loaded: 24
+2026-04-12 08:58:34,674 | INFO | Cleaned rows prepared: 1823
+2026-04-12 08:58:34,674 | INFO | Cleaned columns prepared: 61
+2026-04-12 08:58:34,739 | INFO | Cleaned CSV written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_reviews_cleaned.csv
+2026-04-12 08:58:34,943 | INFO | Cleaned JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_reviews_cleaned.json
+2026-04-12 08:58:34,945 | INFO | Preparation metadata written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\cleaned\salt_and_sacrifice_preparation_metadata.json
+2026-04-12 08:58:34,945 | INFO | Preparation complete.
