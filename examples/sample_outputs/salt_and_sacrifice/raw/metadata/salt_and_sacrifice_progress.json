@@ -1,0 +1,18 @@
+{
+  "app_id": 1437400,
+  "game_slug": "salt_and_sacrifice",
+  "game_title": "Salt and Sacrifice",
+  "pages_downloaded_in_current_run": 20,
+  "chunks_exported": 2,
+  "records_exported": 1823,
+  "final_total_unique_reviews": 1823,
+  "final_cursor": "AoJ4wvm31IsDft+EuwQ=",
+  "last_query_summary": {
+    "num_reviews": 0
+  },
+  "last_non_empty_query_summary": {
+    "num_reviews": 23
+  },
+  "collection_finished": true,
+  "updated_at_utc": "2026-04-12T06:58:33.933759+00:00"
+}
