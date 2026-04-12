@@ -1,0 +1,32 @@
+{
+  "app_id": 123456,
+  "game_slug": "example_game",
+  "game_title": "Example Game",
+  "language": "all",
+  "filter": "updated",
+  "review_type": "all",
+  "purchase_type": "all",
+  "num_per_page": 100,
+  "filter_offtopic_activity": 0,
+  "chunk_size": 1000,
+  "sleep_seconds": 1.2,
+  "request_timeout": 60,
+  "max_consecutive_errors": 5,
+  "user_agent": "Mozilla/5.0 (compatible; AcademicResearchBot/1.0; +research use)",
+  "emotion_metrics": {
+    "lexicon_path": "resources/lexicons/nrc/NRC-Emotion-Lexicon-Wordlevel-v0.92.txt",
+    "target_language": "english",
+    "min_token_length": 2,
+    "remove_stopwords": true,
+    "export_review_level_enriched_csv": true,
+    "top_n_emotion_terms": 100
+  },
+  "theme_metrics": {
+    "dictionary_path": "resources/dictionaries/themes/general_game_themes.json",
+    "target_language": "english",
+    "min_token_length": 2,
+    "remove_stopwords": true,
+    "export_review_level_enriched_csv": true,
+    "count_multiple_hits_per_theme": true
+  }
+}
