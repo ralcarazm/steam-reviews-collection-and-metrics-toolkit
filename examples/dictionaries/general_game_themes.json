@@ -1,0 +1,136 @@
+{
+  "difficulty": [
+    "difficult",
+    "difficulty",
+    "hard",
+    "harder",
+    "hardest",
+    "challenging",
+    "challenge",
+    "punishing",
+    "punishingly",
+    "brutal",
+    "unforgiving"
+  ],
+  "combat": [
+    "combat",
+    "fight",
+    "fights",
+    "fighting",
+    "battle",
+    "battles",
+    "enemy",
+    "enemies",
+    "weapon",
+    "weapons",
+    "build",
+    "builds"
+  ],
+  "bosses": [
+    "boss",
+    "bosses",
+    "bossfight",
+    "boss fight",
+    "boss fights"
+  ],
+  "exploration": [
+    "exploration",
+    "explore",
+    "exploring",
+    "discover",
+    "discovery",
+    "world",
+    "map",
+    "areas",
+    "secrets"
+  ],
+  "story": [
+    "story",
+    "plot",
+    "narrative",
+    "lore",
+    "writing",
+    "characters",
+    "character"
+  ],
+  "worldbuilding": [
+    "worldbuilding",
+    "atmosphere",
+    "atmospheric",
+    "setting",
+    "environment",
+    "environments"
+  ],
+  "music_audio": [
+    "music",
+    "soundtrack",
+    "audio",
+    "sound",
+    "sounds",
+    "voice",
+    "voices"
+  ],
+  "graphics_visuals": [
+    "graphics",
+    "visuals",
+    "art",
+    "artstyle",
+    "art style",
+    "design",
+    "animation",
+    "animations"
+  ],
+  "performance_technical": [
+    "performance",
+    "optimisation",
+    "optimization",
+    "fps",
+    "frame",
+    "frames",
+    "stutter",
+    "stuttering",
+    "lag",
+    "crash",
+    "crashes",
+    "bug",
+    "bugs"
+  ],
+  "controls_gamefeel": [
+    "controls",
+    "control",
+    "responsive",
+    "responsiveness",
+    "movement",
+    "input",
+    "camera"
+  ],
+  "replayability_builds": [
+    "replayability",
+    "replayable",
+    "replay",
+    "build",
+    "builds",
+    "classes",
+    "class",
+    "variety"
+  ],
+  "price_value": [
+    "price",
+    "value",
+    "worth",
+    "worth it",
+    "priced",
+    "money"
+  ],
+  "bugs_issues": [
+    "bug",
+    "bugs",
+    "issue",
+    "issues",
+    "glitch",
+    "glitches",
+    "broken",
+    "fix",
+    "fixed"
+  ]
+}
