@@ -1,0 +1,117 @@
+2026-04-12 08:57:57,355 | INFO | Starting Steam review collection.
+2026-04-12 08:57:57,355 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:57:57,355 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:57:57,355 | INFO | App ID: 1437400
+2026-04-12 08:57:57,355 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:57:57,355 | INFO | Downloading page 1 for 'Salt and Sacrifice'...
+2026-04-12 08:57:58,412 | INFO | Reviews received on this page: 100
+2026-04-12 08:57:58,414 | INFO | New reviews added on this page: 100
+2026-04-12 08:57:58,414 | INFO | Reviews currently in memory chunk: 100
+2026-04-12 08:57:58,414 | INFO | Unique reviews collected so far: 100
+2026-04-12 08:57:59,614 | INFO | Downloading page 2 for 'Salt and Sacrifice'...
+2026-04-12 08:58:00,231 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:00,232 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:00,232 | INFO | Reviews currently in memory chunk: 200
+2026-04-12 08:58:00,233 | INFO | Unique reviews collected so far: 200
+2026-04-12 08:58:01,439 | INFO | Downloading page 3 for 'Salt and Sacrifice'...
+2026-04-12 08:58:02,284 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:02,285 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:02,285 | INFO | Reviews currently in memory chunk: 300
+2026-04-12 08:58:02,285 | INFO | Unique reviews collected so far: 300
+2026-04-12 08:58:03,486 | INFO | Downloading page 4 for 'Salt and Sacrifice'...
+2026-04-12 08:58:04,203 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:04,204 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:04,204 | INFO | Reviews currently in memory chunk: 400
+2026-04-12 08:58:04,204 | INFO | Unique reviews collected so far: 400
+2026-04-12 08:58:05,405 | INFO | Downloading page 5 for 'Salt and Sacrifice'...
+2026-04-12 08:58:06,071 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:06,073 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:06,073 | INFO | Reviews currently in memory chunk: 500
+2026-04-12 08:58:06,073 | INFO | Unique reviews collected so far: 500
+2026-04-12 08:58:07,274 | INFO | Downloading page 6 for 'Salt and Sacrifice'...
+2026-04-12 08:58:07,842 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:07,843 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:07,843 | INFO | Reviews currently in memory chunk: 600
+2026-04-12 08:58:07,843 | INFO | Unique reviews collected so far: 600
+2026-04-12 08:58:09,043 | INFO | Downloading page 7 for 'Salt and Sacrifice'...
+2026-04-12 08:58:09,727 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:09,728 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:09,728 | INFO | Reviews currently in memory chunk: 700
+2026-04-12 08:58:09,728 | INFO | Unique reviews collected so far: 700
+2026-04-12 08:58:10,928 | INFO | Downloading page 8 for 'Salt and Sacrifice'...
+2026-04-12 08:58:11,520 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:11,522 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:11,523 | INFO | Reviews currently in memory chunk: 800
+2026-04-12 08:58:11,523 | INFO | Unique reviews collected so far: 800
+2026-04-12 08:58:12,723 | INFO | Downloading page 9 for 'Salt and Sacrifice'...
+2026-04-12 08:58:13,447 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:13,449 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:13,449 | INFO | Reviews currently in memory chunk: 900
+2026-04-12 08:58:13,449 | INFO | Unique reviews collected so far: 900
+2026-04-12 08:58:14,649 | INFO | Downloading page 10 for 'Salt and Sacrifice'...
+2026-04-12 08:58:15,226 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:15,284 | INFO | Chunk 1 exported with 1000 reviews. Total exported: 1000
+2026-04-12 08:58:15,285 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:15,285 | INFO | Reviews currently in memory chunk: 0
+2026-04-12 08:58:15,285 | INFO | Unique reviews collected so far: 1000
+2026-04-12 08:58:16,486 | INFO | Downloading page 11 for 'Salt and Sacrifice'...
+2026-04-12 08:58:17,118 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:17,119 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:17,119 | INFO | Reviews currently in memory chunk: 100
+2026-04-12 08:58:17,119 | INFO | Unique reviews collected so far: 1100
+2026-04-12 08:58:18,320 | INFO | Downloading page 12 for 'Salt and Sacrifice'...
+2026-04-12 08:58:19,248 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:19,249 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:19,250 | INFO | Reviews currently in memory chunk: 200
+2026-04-12 08:58:19,250 | INFO | Unique reviews collected so far: 1200
+2026-04-12 08:58:20,450 | INFO | Downloading page 13 for 'Salt and Sacrifice'...
+2026-04-12 08:58:21,119 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:21,120 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:21,120 | INFO | Reviews currently in memory chunk: 300
+2026-04-12 08:58:21,120 | INFO | Unique reviews collected so far: 1300
+2026-04-12 08:58:22,321 | INFO | Downloading page 14 for 'Salt and Sacrifice'...
+2026-04-12 08:58:22,944 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:22,945 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:22,946 | INFO | Reviews currently in memory chunk: 400
+2026-04-12 08:58:22,946 | INFO | Unique reviews collected so far: 1400
+2026-04-12 08:58:24,146 | INFO | Downloading page 15 for 'Salt and Sacrifice'...
+2026-04-12 08:58:24,856 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:24,857 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:24,857 | INFO | Reviews currently in memory chunk: 500
+2026-04-12 08:58:24,857 | INFO | Unique reviews collected so far: 1500
+2026-04-12 08:58:26,058 | INFO | Downloading page 16 for 'Salt and Sacrifice'...
+2026-04-12 08:58:26,630 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:26,631 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:26,631 | INFO | Reviews currently in memory chunk: 600
+2026-04-12 08:58:26,631 | INFO | Unique reviews collected so far: 1600
+2026-04-12 08:58:27,832 | INFO | Downloading page 17 for 'Salt and Sacrifice'...
+2026-04-12 08:58:28,626 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:28,627 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:28,627 | INFO | Reviews currently in memory chunk: 700
+2026-04-12 08:58:28,627 | INFO | Unique reviews collected so far: 1700
+2026-04-12 08:58:29,828 | INFO | Downloading page 18 for 'Salt and Sacrifice'...
+2026-04-12 08:58:30,416 | INFO | Reviews received on this page: 100
+2026-04-12 08:58:30,418 | INFO | New reviews added on this page: 100
+2026-04-12 08:58:30,418 | INFO | Reviews currently in memory chunk: 800
+2026-04-12 08:58:30,418 | INFO | Unique reviews collected so far: 1800
+2026-04-12 08:58:31,619 | INFO | Downloading page 19 for 'Salt and Sacrifice'...
+2026-04-12 08:58:32,112 | INFO | Reviews received on this page: 23
+2026-04-12 08:58:32,112 | INFO | New reviews added on this page: 23
+2026-04-12 08:58:32,112 | INFO | Reviews currently in memory chunk: 823
+2026-04-12 08:58:32,112 | INFO | Unique reviews collected so far: 1823
+2026-04-12 08:58:33,312 | INFO | Downloading page 20 for 'Salt and Sacrifice'...
+2026-04-12 08:58:33,810 | INFO | Reviews received on this page: 0
+2026-04-12 08:58:33,810 | INFO | No more reviews returned. Pagination finished.
+2026-04-12 08:58:33,853 | INFO | Final chunk 2 exported with 823 reviews. Final exported total: 1823
+2026-04-12 08:58:33,883 | INFO | Combined CSV written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\combined\salt_and_sacrifice_reviews_all.csv
+2026-04-12 08:58:33,933 | INFO | Combined JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\combined\salt_and_sacrifice_reviews_all.json
+2026-04-12 08:58:33,934 | INFO | Collection complete.
+2026-04-12 08:58:33,934 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:33,934 | INFO | App ID: 1437400
+2026-04-12 08:58:33,934 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:33,934 | INFO | Total unique reviews exported: 1823
+2026-04-12 08:58:33,934 | INFO | Chunks directory: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\chunks
+2026-04-12 08:58:33,934 | INFO | Combined CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\combined\salt_and_sacrifice_reviews_all.csv
+2026-04-12 08:58:33,934 | INFO | Combined JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\combined\salt_and_sacrifice_reviews_all.json
+2026-04-12 08:58:33,934 | INFO | Master index CSV: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\metadata\salt_and_sacrifice_master_index.csv
+2026-04-12 08:58:33,934 | INFO | Progress JSON: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\raw\steam_reviews\salt_and_sacrifice\metadata\salt_and_sacrifice_progress.json
