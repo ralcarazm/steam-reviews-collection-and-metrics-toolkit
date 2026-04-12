@@ -1,0 +1,25 @@
+2026-04-12 08:58:35,498 | INFO | Starting basic metrics computation.
+2026-04-12 08:58:35,499 | INFO | Configuration file: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\config\games\game_03.json
+2026-04-12 08:58:35,499 | INFO | Game title: Salt and Sacrifice
+2026-04-12 08:58:35,499 | INFO | App ID: 1437400
+2026-04-12 08:58:35,499 | INFO | Game slug: salt_and_sacrifice
+2026-04-12 08:58:35,555 | INFO | Rows loaded: 1823
+2026-04-12 08:58:35,555 | INFO | Columns loaded: 65
+2026-04-12 08:58:35,646 | INFO | Exported table: salt_and_sacrifice_dataset_overview.csv
+2026-04-12 08:58:35,648 | INFO | Exported table: salt_and_sacrifice_polarity_summary.csv
+2026-04-12 08:58:35,649 | INFO | Exported table: salt_and_sacrifice_language_distribution.csv
+2026-04-12 08:58:35,650 | INFO | Exported table: salt_and_sacrifice_reviewer_profile_summary.csv
+2026-04-12 08:58:35,651 | INFO | Exported table: salt_and_sacrifice_playtime_summary.csv
+2026-04-12 08:58:35,651 | INFO | Exported table: salt_and_sacrifice_interaction_summary.csv
+2026-04-12 08:58:35,652 | INFO | Exported table: salt_and_sacrifice_text_summary.csv
+2026-04-12 08:58:35,653 | INFO | Exported table: salt_and_sacrifice_temporal_interval_summary.csv
+2026-04-12 08:58:35,654 | INFO | Exported table: salt_and_sacrifice_purchase_and_access_summary.csv
+2026-04-12 08:58:35,654 | INFO | Exported table: salt_and_sacrifice_missingness_summary.csv
+2026-04-12 08:58:35,655 | INFO | Exported table: salt_and_sacrifice_concentration_summary.csv
+2026-04-12 08:58:35,656 | INFO | Exported table: salt_and_sacrifice_cross_tab_polarity_by_language.csv
+2026-04-12 08:58:35,657 | INFO | Exported table: salt_and_sacrifice_cross_tab_polarity_by_playtime_band.csv
+2026-04-12 08:58:35,658 | INFO | Exported table: salt_and_sacrifice_cross_tab_polarity_by_reviewer_activity_band.csv
+2026-04-12 08:58:35,658 | INFO | Exported table: salt_and_sacrifice_cross_tab_polarity_by_library_size_band.csv
+2026-04-12 08:58:35,660 | INFO | Exported table: salt_and_sacrifice_monthly_review_volume.csv
+2026-04-12 08:58:35,675 | INFO | Summary JSON written to: C:\laragon\www\steam-reviews-collection-and-metrics-toolkit\data\processed\steam_reviews\salt_and_sacrifice\metrics\salt_and_sacrifice_basic_metrics_summary.json
+2026-04-12 08:58:35,675 | INFO | Basic metrics computation complete.
