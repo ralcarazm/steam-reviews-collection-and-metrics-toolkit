@@ -1,0 +1,16 @@
+﻿metric,value
+scope,by_language
+app_id,1437400
+game_slug,salt_and_sacrifice
+game_title,Salt and Sacrifice
+language,english
+reviews_with_text,729
+positive_review_count,514
+negative_review_count,215
+total_tokens,55501
+total_unique_tokens,7212
+type_token_ratio,0.129944
+average_review_length_words,132.6132
+median_review_length_words,43.0
+average_review_length_chars,733.2181
+median_review_length_chars,240.0
