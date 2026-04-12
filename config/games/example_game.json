@@ -28,5 +28,20 @@
     "remove_stopwords": true,
     "export_review_level_enriched_csv": true,
     "count_multiple_hits_per_theme": true
-  }
+  },
+  "word_cloud": {
+  "target_language": "english",
+  "min_token_length": 2,
+  "remove_stopwords": true,
+  "max_words_unigrams": 200,
+  "max_words_bigrams": 150,
+  "max_words_trigrams": 100,
+  "min_frequency_unigrams": 2,
+  "min_frequency_bigrams": 2,
+  "min_frequency_trigrams": 2,
+  "width": 1800,
+  "height": 1200,
+  "background_colour": "white",
+  "collocations": false
+}
 }
