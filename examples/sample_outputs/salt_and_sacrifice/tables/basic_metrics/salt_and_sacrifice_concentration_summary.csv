@@ -1,0 +1,6 @@
+variable,sum_total,share_top_1_percent,share_top_5_percent,share_top_10_percent
+votes_up,7860.0,28.3588,55.4326,69.313
+votes_funny,891.0,33.67,62.8507,80.1347
+comment_count,164.0,57.3171,100.0,100.0
+playtime_forever,4577935.0,17.2313,33.7652,44.2326
+review_length_words,141888.0,16.2713,46.7651,65.4086
