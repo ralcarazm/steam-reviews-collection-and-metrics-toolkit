@@ -34,13 +34,13 @@ config/games/
 Example:
 
 ```text
-config/games/game_02.json
+config/games/example_game.json
 ```
 
 ### 5. Easiest option: run the full pipeline
 
 ```bash
-python scripts/run_pipeline.py --config config/games/game_02.json
+python scripts/run_pipeline.py --config config/games/example_game.json
 ```
 
 This runs everything in order:
@@ -63,32 +63,32 @@ Examples:
 Skip collection:
 
 ```bash
-python scripts/run_pipeline.py --config config/games/game_02.json --skip-collection
+python scripts/run_pipeline.py --config config/games/example_game.json --skip-collection
 ```
 
 Skip figures and word clouds:
 
 ```bash
-python scripts/run_pipeline.py --config config/games/game_02.json --skip-figures --skip-wordcloud
+python scripts/run_pipeline.py --config config/games/example_game.json --skip-figures --skip-wordcloud
 ```
 
 Skip validation:
 
 ```bash
-python scripts/run_pipeline.py --config config/games/game_02.json --skip-validation
+python scripts/run_pipeline.py --config config/games/example_game.json --skip-validation
 ```
 
 Continue even if one stage fails:
 
 ```bash
-python scripts/run_pipeline.py --config config/games/game_02.json --continue-on-error
+python scripts/run_pipeline.py --config config/games/example_game.json --continue-on-error
 ```
 
 ### 7. If you want to run scripts one by one
 
 #### Collection
 ```bash
-python scripts/01_data_collection/collect_steam_reviews.py --config config/games/game_02.json
+python scripts/01_data_collection/collect_steam_reviews.py --config config/games/example_game.json
 ```
 
 Generates:
@@ -99,7 +99,7 @@ Generates:
 
 #### Preparation
 ```bash
-python scripts/02_data_preparation/prepare_reviews.py --config config/games/game_02.json
+python scripts/02_data_preparation/prepare_reviews.py --config config/games/example_game.json
 ```
 
 Generates:
@@ -107,7 +107,7 @@ Generates:
 
 #### Basic metrics
 ```bash
-python scripts/03_analysis/compute_basic_metrics.py --config config/games/game_02.json
+python scripts/03_analysis/compute_basic_metrics.py --config config/games/example_game.json
 ```
 
 Generates:
@@ -117,7 +117,7 @@ Generates:
 
 #### Temporal metrics
 ```bash
-python scripts/03_analysis/compute_temporal_metrics.py --config config/games/game_02.json
+python scripts/03_analysis/compute_temporal_metrics.py --config config/games/example_game.json
 ```
 
 Generates:
@@ -127,7 +127,7 @@ Generates:
 
 #### Text metrics
 ```bash
-python scripts/03_analysis/compute_text_metrics.py --config config/games/game_02.json
+python scripts/03_analysis/compute_text_metrics.py --config config/games/example_game.json
 ```
 
 Generates:
@@ -137,7 +137,7 @@ Generates:
 
 #### Emotion metrics
 ```bash
-python scripts/03_analysis/compute_emotion_metrics.py --config config/games/game_02.json
+python scripts/03_analysis/compute_emotion_metrics.py --config config/games/example_game.json
 ```
 
 Generates:
@@ -148,7 +148,7 @@ Generates:
 
 #### Theme metrics
 ```bash
-python scripts/03_analysis/compute_theme_metrics.py --config config/games/game_02.json
+python scripts/03_analysis/compute_theme_metrics.py --config config/games/example_game.json
 ```
 
 Generates:
@@ -159,7 +159,7 @@ Generates:
 
 #### Excel figures
 ```bash
-python scripts/04_visualisation/create_excel_figures.py --config config/games/game_02.json
+python scripts/04_visualisation/create_excel_figures.py --config config/games/example_game.json
 ```
 
 Generates:
@@ -170,8 +170,7 @@ Generates:
 
 #### Word clouds
 ```bash
-python scripts/04_visualisation/create_word_clouds.py --config config/games/game_02.json
-```
+python scripts/04_visualisation/create_word_clouds.py --config config/games/example_game.json
 
 Generates:
 - unigram, bigram, and trigram PNG word clouds
@@ -181,7 +180,7 @@ Generates:
 
 #### Validation
 ```bash
-python scripts/validate_outputs.py --config config/games/game_02.json
+python scripts/validate_outputs.py --config config/games/example_game.json
 ```
 
 Generates:
@@ -235,13 +234,13 @@ config/games/
 Ejemplo:
 
 ```text
-config/games/game_02.json
+config/games/example_game.json
 ```
 
 ### 5. Opción más fácil: ejecutar el pipeline completo
 
 ```bash
-python scripts/run_pipeline.py --config config/games/game_02.json
+python scripts/run_pipeline.py --config config/games/example_game.json
 ```
 
 Esto ejecuta todo en este orden:
@@ -264,32 +263,32 @@ Ejemplos:
 Saltar la recolección:
 
 ```bash
-python scripts/run_pipeline.py --config config/games/game_02.json --skip-collection
+python scripts/run_pipeline.py --config config/games/example_game.json --skip-collection
 ```
 
 Saltar figuras y nubes de etiquetas:
 
 ```bash
-python scripts/run_pipeline.py --config config/games/game_02.json --skip-figures --skip-wordcloud
+python scripts/run_pipeline.py --config config/games/example_game.json --skip-figures --skip-wordcloud
 ```
 
 Saltar la validación:
 
 ```bash
-python scripts/run_pipeline.py --config config/games/game_02.json --skip-validation
+python scripts/run_pipeline.py --config config/games/example_game.json --skip-validation
 ```
 
 Continuar aunque falle una fase:
 
 ```bash
-python scripts/run_pipeline.py --config config/games/game_02.json --continue-on-error
+python scripts/run_pipeline.py --config config/games/example_game.json --continue-on-error
 ```
 
 ### 7. Si quieres ejecutar los scripts uno por uno
 
 #### Recolección
 ```bash
-python scripts/01_data_collection/collect_steam_reviews.py --config config/games/game_02.json
+python scripts/01_data_collection/collect_steam_reviews.py --config config/games/example_game.json
 ```
 
 Genera:
@@ -300,7 +299,7 @@ Genera:
 
 #### Preparación
 ```bash
-python scripts/02_data_preparation/prepare_reviews.py --config config/games/game_02.json
+python scripts/02_data_preparation/prepare_reviews.py --config config/games/example_game.json
 ```
 
 Genera:
@@ -308,7 +307,7 @@ Genera:
 
 #### Métricas básicas
 ```bash
-python scripts/03_analysis/compute_basic_metrics.py --config config/games/game_02.json
+python scripts/03_analysis/compute_basic_metrics.py --config config/games/example_game.json
 ```
 
 Genera:
@@ -318,7 +317,7 @@ Genera:
 
 #### Métricas temporales
 ```bash
-python scripts/03_analysis/compute_temporal_metrics.py --config config/games/game_02.json
+python scripts/03_analysis/compute_temporal_metrics.py --config config/games/example_game.json
 ```
 
 Genera:
@@ -328,7 +327,7 @@ Genera:
 
 #### Métricas textuales
 ```bash
-python scripts/03_analysis/compute_text_metrics.py --config config/games/game_02.json
+python scripts/03_analysis/compute_text_metrics.py --config config/games/example_game.json
 ```
 
 Genera:
@@ -338,7 +337,7 @@ Genera:
 
 #### Métricas emocionales
 ```bash
-python scripts/03_analysis/compute_emotion_metrics.py --config config/games/game_02.json
+python scripts/03_analysis/compute_emotion_metrics.py --config config/games/example_game.json
 ```
 
 Genera:
@@ -349,7 +348,7 @@ Genera:
 
 #### Métricas temáticas
 ```bash
-python scripts/03_analysis/compute_theme_metrics.py --config config/games/game_02.json
+python scripts/03_analysis/compute_theme_metrics.py --config config/games/example_game.json
 ```
 
 Genera:
@@ -360,7 +359,7 @@ Genera:
 
 #### Figuras Excel
 ```bash
-python scripts/04_visualisation/create_excel_figures.py --config config/games/game_02.json
+python scripts/04_visualisation/create_excel_figures.py --config config/games/example_game.json
 ```
 
 Genera:
@@ -371,7 +370,7 @@ Genera:
 
 #### Nubes de etiquetas
 ```bash
-python scripts/04_visualisation/create_word_clouds.py --config config/games/game_02.json
+python scripts/04_visualisation/create_word_clouds.py --config config/games/example_game.json
 ```
 
 Genera:
@@ -382,7 +381,7 @@ Genera:
 
 #### Validación
 ```bash
-python scripts/validate_outputs.py --config config/games/game_02.json
+python scripts/validate_outputs.py --config config/games/example_game.json
 ```
 
 Genera:
