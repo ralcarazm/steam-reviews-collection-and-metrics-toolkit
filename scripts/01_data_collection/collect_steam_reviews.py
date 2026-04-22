@@ -36,9 +36,9 @@ import json
 import logging
 import sys
 import time
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, fields
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, Iterable, List, Optional, Set, Tuple
 
 import pandas as pd
 import requests
@@ -96,9 +96,13 @@ class ReviewRecord:
     primarily_steam_deck: Optional[bool]
 
 
+REVIEW_FIELDNAMES: List[str] = [field.name for field in fields(ReviewRecord)]
+
+
 # ============================================================================
 # ARGUMENT PARSING
 # ============================================================================
+
 
 def parse_arguments() -> argparse.Namespace:
     """Parse command-line arguments."""
@@ -126,6 +130,7 @@ def parse_arguments() -> argparse.Namespace:
 # ============================================================================
 # CONFIGURATION LOADING
 # ============================================================================
+
 
 def load_game_config(config_path: Path) -> GameConfig:
     """Load and validate the game configuration file."""
@@ -169,12 +174,14 @@ def load_game_config(config_path: Path) -> GameConfig:
 # PATH MANAGEMENT
 # ============================================================================
 
+
 def get_repository_root() -> Path:
     """
     Resolve the repository root assuming this file lives at:
     scripts/01_data_collection/collect_steam_reviews.py
     """
     return Path(__file__).resolve().parents[2]
+
 
 
 def build_paths(repository_root: Path, game_slug: str) -> Dict[str, Path]:
@@ -207,6 +214,7 @@ def build_paths(repository_root: Path, game_slug: str) -> Dict[str, Path]:
     return paths
 
 
+
 def ensure_directories(paths: Dict[str, Path]) -> None:
     """Create all required directories for the game."""
     directory_keys = [
@@ -224,9 +232,36 @@ def ensure_directories(paths: Dict[str, Path]) -> None:
         paths[key].mkdir(parents=True, exist_ok=True)
 
 
+
+def cleanup_previous_collection_outputs(paths: Dict[str, Path]) -> None:
+    """Remove prior raw collection outputs for a fresh non-resume run."""
+    removable_patterns = {
+        "chunks_dir": ["*_reviews_part_*.csv", "*_reviews_part_*.json"],
+        "combined_dir": ["*.csv", "*.json"],
+        "metadata_dir": ["*_progress.json", "*_master_index.csv"],
+    }
+
+    removed_count = 0
+    for directory_key, patterns in removable_patterns.items():
+        directory = paths[directory_key]
+        if not directory.exists():
+            continue
+        for pattern in patterns:
+            for file_path in directory.glob(pattern):
+                try:
+                    file_path.unlink()
+                    removed_count += 1
+                except OSError as exc:
+                    logging.warning("Could not remove old file %s: %s", file_path, exc)
+
+    if removed_count > 0:
+        logging.info("Removed %s stale output files before fresh collection.", removed_count)
+
+
 # ============================================================================
 # LOGGING
 # ============================================================================
+
 
 def configure_logging(log_file: Path) -> None:
     """Configure console and file logging."""
@@ -245,6 +280,7 @@ def configure_logging(log_file: Path) -> None:
 # HELPER CONVERSIONS
 # ============================================================================
 
+
 def as_int(value: Any) -> Optional[int]:
     """Safely convert a value to integer."""
     if value is None or value == "":
@@ -255,11 +291,13 @@ def as_int(value: Any) -> Optional[int]:
         return None
 
 
+
 def as_str(value: Any) -> Optional[str]:
     """Safely convert a value to string."""
     if value is None:
         return None
     return str(value)
+
 
 
 def as_bool(value: Any) -> Optional[bool]:
@@ -275,9 +313,11 @@ def as_bool(value: Any) -> Optional[bool]:
 # API REQUESTS
 # ============================================================================
 
+
 def build_base_url(app_id: int) -> str:
     """Build the Steam reviews endpoint URL for a given application ID."""
     return f"https://store.steampowered.com/appreviews/{app_id}"
+
 
 
 def fetch_steam_reviews(base_url: str, config: GameConfig, cursor: str) -> Dict[str, Any]:
@@ -315,6 +355,7 @@ def fetch_steam_reviews(base_url: str, config: GameConfig, cursor: str) -> Dict[
 # NORMALISATION
 # ============================================================================
 
+
 def normalise_review(review: Dict[str, Any]) -> ReviewRecord:
     """Normalise a raw Steam review into the repository schema."""
     author = review.get("author", {}) or {}
@@ -351,6 +392,7 @@ def normalise_review(review: Dict[str, Any]) -> ReviewRecord:
 # PROGRESS AND RESUME
 # ============================================================================
 
+
 def read_progress(progress_json: Path) -> Dict[str, Any]:
     """Read the saved progress file if it exists."""
     if not progress_json.exists():
@@ -358,6 +400,7 @@ def read_progress(progress_json: Path) -> Dict[str, Any]:
 
     with progress_json.open("r", encoding="utf-8") as handle:
         return json.load(handle)
+
 
 
 def write_progress(progress_json: Path, payload: Dict[str, Any]) -> None:
@@ -370,9 +413,11 @@ def write_progress(progress_json: Path, payload: Dict[str, Any]) -> None:
 # EXPORT UTILITIES
 # ============================================================================
 
+
 def build_chunk_base_name(game_slug: str, chunk_number: int) -> str:
     """Build a zero-padded chunk file stem."""
     return f"{game_slug}_reviews_part_{chunk_number:04d}"
+
 
 
 def export_chunk(
@@ -405,6 +450,7 @@ def export_chunk(
     }
 
 
+
 def write_master_index(master_index_csv: Path, rows: List[Dict[str, Any]]) -> None:
     """Write the master index CSV."""
     if not rows:
@@ -417,100 +463,99 @@ def write_master_index(master_index_csv: Path, rows: List[Dict[str, Any]]) -> No
         writer.writerows(rows)
 
 
-def export_combined_dataset(
-    all_records: List[Dict[str, Any]],
+
+def discover_chunk_csv_paths(chunks_dir: Path) -> List[Path]:
+    """Return chunk CSV paths in numeric order."""
+    return sorted(
+        chunks_dir.glob("*_reviews_part_*.csv"),
+        key=lambda path: int(path.stem.split("_")[-1]),
+    )
+
+
+
+def stream_chunk_rows(chunk_csv_paths: Iterable[Path]) -> Iterable[Dict[str, Any]]:
+    """Yield rows from chunk CSV files in order."""
+    for chunk_path in chunk_csv_paths:
+        with chunk_path.open("r", encoding="utf-8-sig", newline="") as handle:
+            reader = csv.DictReader(handle)
+            for row in reader:
+                yield row
+
+
+
+def export_combined_dataset_from_chunks(
+    chunks_dir: Path,
     combined_csv: Path,
     combined_json: Path,
     write_json: bool = True,
-) -> None:
-    """Export the final combined dataset."""
-    if not all_records:
-        logging.warning("No combined dataset was exported because no records were collected.")
-        return
+) -> Tuple[int, int]:
+    """
+    Rebuild the final combined dataset from chunk CSV files.
 
-    df = pd.DataFrame(all_records)
-    df.to_csv(combined_csv, index=False, encoding="utf-8-sig")
-    logging.info("Combined CSV written to: %s", combined_csv)
+    Returns:
+        (row_count_written, duplicate_rows_skipped)
+    """
+    chunk_csv_paths = discover_chunk_csv_paths(chunks_dir)
+    if not chunk_csv_paths:
+        logging.warning("No chunk CSV files found. Combined dataset was not rebuilt.")
+        return 0, 0
 
+    seen_ids: Set[str] = set()
+    rows_written = 0
+    duplicate_rows_skipped = 0
+
+    with combined_csv.open("w", encoding="utf-8-sig", newline="") as csv_handle:
+        writer = csv.DictWriter(csv_handle, fieldnames=REVIEW_FIELDNAMES)
+        writer.writeheader()
+
+        json_handle = None
+        first_json_row = True
+        if write_json:
+            json_handle = combined_json.open("w", encoding="utf-8")
+            json_handle.write("[\n")
+
+        try:
+            for row in stream_chunk_rows(chunk_csv_paths):
+                recommendation_id = str(row.get("recommendationid", "")).strip()
+                if not recommendation_id:
+                    duplicate_rows_skipped += 1
+                    continue
+                if recommendation_id in seen_ids:
+                    duplicate_rows_skipped += 1
+                    continue
+
+                seen_ids.add(recommendation_id)
+
+                normalised_row = {field: row.get(field, "") for field in REVIEW_FIELDNAMES}
+                writer.writerow(normalised_row)
+                rows_written += 1
+
+                if json_handle is not None:
+                    if not first_json_row:
+                        json_handle.write(",\n")
+                    json.dump(normalised_row, json_handle, ensure_ascii=False)
+                    first_json_row = False
+        finally:
+            if json_handle is not None:
+                json_handle.write("\n]\n")
+                json_handle.close()
+
+    logging.info("Combined CSV rebuilt from chunks: %s", combined_csv)
     if write_json:
-        with combined_json.open("w", encoding="utf-8") as handle:
-            json.dump(all_records, handle, ensure_ascii=False, indent=2)
-        logging.info("Combined JSON written to: %s", combined_json)
+        logging.info("Combined JSON rebuilt from chunks: %s", combined_json)
+    logging.info("Combined dataset rows written: %s", rows_written)
+    if duplicate_rows_skipped > 0:
+        logging.warning(
+            "Duplicate or empty recommendation IDs skipped while rebuilding combined dataset: %s",
+            duplicate_rows_skipped,
+        )
+
+    return rows_written, duplicate_rows_skipped
 
 
 # ============================================================================
 # EXISTING DATA HELPERS FOR RESUME
 # ============================================================================
-
-def load_existing_recommendation_ids(combined_csv: Path) -> Set[str]:
-    """
-    Load existing recommendation IDs from the combined CSV if it exists.
-    This supports safer resume behaviour.
-    """
-    if not combined_csv.exists():
-        return set()
-
-    try:
-        df = pd.read_csv(combined_csv, dtype={"recommendationid": "string"})
-    except Exception as exc:
-        logging.warning("Could not read existing combined CSV for resume: %s", exc)
-        return set()
-
-    if "recommendationid" not in df.columns:
-        return set()
-
-    values = df["recommendationid"].dropna().astype(str).str.strip()
-    return set(value for value in values if value)
-
-
-def load_existing_records(combined_csv: Path) -> List[Dict[str, Any]]:
-    """Load existing combined CSV records if available."""
-    if not combined_csv.exists():
-        return []
-
-    try:
-        df = pd.read_csv(combined_csv)
-        return df.to_dict(orient="records")
-    except Exception as exc:
-        logging.warning("Could not load existing combined CSV records: %s", exc)
-        return []
-
-
-# ============================================================================
-# CORE COLLECTION LOGIC
-# ============================================================================
-
-def initialise_resume_state(
-    resume: bool,
-    paths: Dict[str, Path],
-) -> Tuple[str, int, int, List[Dict[str, Any]], Set[str]]:
-    """
-    Initialise resume state.
-
-    Returns:
-        cursor,
-        starting_chunk_number,
-        existing_total_records,
-        existing_records,
-        seen_recommendation_ids
-    """
-    if not resume:
-        return "*", 1, 0, [], set()
-
-    progress = read_progress(paths["progress_json"])
-    existing_records = load_existing_records(paths["combined_csv"])
-    seen_recommendation_ids = load_existing_recommendation_ids(paths["combined_csv"])
-
-    cursor = str(progress.get("final_cursor") or progress.get("current_cursor") or "*")
-    next_chunk_number = infer_next_chunk_number(paths["chunks_dir"])
-    existing_total_records = len(existing_records)
-
-    logging.info("Resume mode enabled.")
-    logging.info("Loaded %s existing records from combined CSV.", existing_total_records)
-    logging.info("Resuming from cursor: %s", cursor)
-    logging.info("Next chunk number will be: %s", next_chunk_number)
-
-    return cursor, next_chunk_number, existing_total_records, existing_records, seen_recommendation_ids
 
 
 def infer_next_chunk_number(chunks_dir: Path) -> int:
@@ -531,6 +576,133 @@ def infer_next_chunk_number(chunks_dir: Path) -> int:
     return max(existing_numbers) + 1
 
 
+
+def load_existing_master_index(master_index_csv: Path) -> List[Dict[str, Any]]:
+    """Load an existing master index CSV if present."""
+    if not master_index_csv.exists():
+        return []
+
+    try:
+        df = pd.read_csv(master_index_csv)
+        return df.to_dict(orient="records")
+    except Exception as exc:
+        logging.warning("Could not load existing master index CSV: %s", exc)
+        return []
+
+
+
+def load_existing_state_from_chunks(paths: Dict[str, Path]) -> Tuple[Set[str], int, List[Dict[str, Any]]]:
+    """
+    Load seen recommendation IDs and chunk metadata from existing chunk CSV files.
+
+    This is the source of truth for resume mode.
+    """
+    chunk_csv_paths = discover_chunk_csv_paths(paths["chunks_dir"])
+    if not chunk_csv_paths:
+        return set(), 0, load_existing_master_index(paths["master_index_csv"])
+
+    seen_ids: Set[str] = set()
+    total_rows = 0
+
+    for chunk_path in chunk_csv_paths:
+        try:
+            df = pd.read_csv(chunk_path, dtype={"recommendationid": "string"}, low_memory=False)
+        except Exception as exc:
+            logging.warning("Could not read chunk file during resume initialisation: %s | %s", chunk_path, exc)
+            continue
+
+        if "recommendationid" not in df.columns:
+            logging.warning("Chunk file missing recommendationid column: %s", chunk_path)
+            continue
+
+        ids = (
+            df["recommendationid"]
+            .dropna()
+            .astype(str)
+            .str.strip()
+        )
+        ids = [value for value in ids.tolist() if value]
+        seen_ids.update(ids)
+        total_rows += len(ids)
+
+    master_index_rows = load_existing_master_index(paths["master_index_csv"])
+    return seen_ids, total_rows, master_index_rows
+
+
+
+def initialise_resume_state(
+    resume: bool,
+    paths: Dict[str, Path],
+) -> Tuple[str, int, int, Set[str], List[Dict[str, Any]]]:
+    """
+    Initialise resume state.
+
+    Returns:
+        cursor,
+        starting_chunk_number,
+        existing_total_records,
+        seen_recommendation_ids,
+        master_index_rows
+    """
+    if not resume:
+        return "*", 1, 0, set(), []
+
+    progress = read_progress(paths["progress_json"])
+    cursor = str(progress.get("current_cursor") or progress.get("final_cursor") or "*")
+    next_chunk_number = infer_next_chunk_number(paths["chunks_dir"])
+    seen_recommendation_ids, existing_total_records, master_index_rows = load_existing_state_from_chunks(paths)
+
+    logging.info("Resume mode enabled.")
+    logging.info("Loaded %s previously exported recommendation IDs from chunk files.", existing_total_records)
+    logging.info("Resuming from cursor: %s", cursor)
+    logging.info("Next chunk number will be: %s", next_chunk_number)
+
+    return cursor, next_chunk_number, existing_total_records, seen_recommendation_ids, master_index_rows
+
+
+# ============================================================================
+# CORE COLLECTION LOGIC
+# ============================================================================
+
+
+def build_progress_payload(
+    config: GameConfig,
+    page: int,
+    master_index_rows: List[Dict[str, Any]],
+    total_exported: int,
+    current_cursor: str,
+    last_query_summary: Dict[str, Any],
+    last_non_empty_query_summary: Dict[str, Any],
+    collection_finished: bool,
+    expected_total_reviews: Optional[int],
+    final_total_unique_reviews: Optional[int] = None,
+) -> Dict[str, Any]:
+    """Build a consistent progress payload."""
+    payload: Dict[str, Any] = {
+        "app_id": config.app_id,
+        "game_slug": config.game_slug,
+        "game_title": config.game_title,
+        "pages_downloaded_in_current_run": page,
+        "chunks_exported": len(master_index_rows),
+        "records_exported": total_exported,
+        "current_cursor": current_cursor,
+        "last_query_summary": last_query_summary,
+        "last_non_empty_query_summary": last_non_empty_query_summary,
+        "expected_total_reviews_from_api": expected_total_reviews,
+        "collection_finished": collection_finished,
+        "updated_at_utc": pd.Timestamp.utcnow().isoformat(),
+    }
+
+    if final_total_unique_reviews is not None:
+        payload["final_total_unique_reviews"] = final_total_unique_reviews
+        payload["final_cursor"] = current_cursor
+        if expected_total_reviews is not None:
+            payload["difference_vs_api_total_reviews"] = final_total_unique_reviews - expected_total_reviews
+
+    return payload
+
+
+
 def collect_reviews(
     config: GameConfig,
     paths: Dict[str, Path],
@@ -540,26 +712,19 @@ def collect_reviews(
     """Collect all accessible reviews for the selected game."""
     base_url = build_base_url(config.app_id)
 
-    cursor, chunk_number, existing_total, all_records, seen_recommendation_ids = initialise_resume_state(
+    cursor, chunk_number, existing_total, seen_recommendation_ids, master_index_rows = initialise_resume_state(
         resume=resume,
         paths=paths,
     )
 
     current_chunk: List[Dict[str, Any]] = []
-    master_index_rows: List[Dict[str, Any]] = []
     previous_cursor: Optional[str] = None
     page = 0
     total_exported = existing_total
     consecutive_errors = 0
     last_query_summary: Dict[str, Any] = {}
     last_non_empty_query_summary: Dict[str, Any] = {}
-
-    if paths["master_index_csv"].exists():
-        try:
-            existing_master_index = pd.read_csv(paths["master_index_csv"])
-            master_index_rows = existing_master_index.to_dict(orient="records")
-        except Exception as exc:
-            logging.warning("Could not load existing master index CSV: %s", exc)
+    expected_total_reviews: Optional[int] = None
 
     while True:
         page += 1
@@ -588,6 +753,11 @@ def collect_reviews(
         current_query_summary = data.get("query_summary", {}) or {}
         last_query_summary = current_query_summary
 
+        if expected_total_reviews is None and isinstance(current_query_summary.get("total_reviews"), (int, float, str)):
+            expected_total_reviews = as_int(current_query_summary.get("total_reviews"))
+            if expected_total_reviews is not None:
+                logging.info("API query_summary.total_reviews reported on first page: %s", expected_total_reviews)
+
         if reviews:
             last_non_empty_query_summary = current_query_summary
 
@@ -608,15 +778,12 @@ def collect_reviews(
                 continue
 
             seen_recommendation_ids.add(recommendation_id)
-
             record = asdict(normalise_review(review))
             current_chunk.append(record)
-            all_records.append(record)
             new_this_page += 1
 
             if len(current_chunk) >= config.chunk_size:
                 new_cumulative_total = total_exported + len(current_chunk)
-
                 index_row = export_chunk(
                     game_slug=config.game_slug,
                     chunks_dir=paths["chunks_dir"],
@@ -630,7 +797,7 @@ def collect_reviews(
                 total_exported = new_cumulative_total
 
                 logging.info(
-                    "Chunk %s exported with %s reviews. Total exported: %s",
+                    "Chunk %s exported with %s reviews. Total exported to chunks: %s",
                     chunk_number,
                     len(current_chunk),
                     total_exported,
@@ -638,27 +805,25 @@ def collect_reviews(
 
                 write_progress(
                     paths["progress_json"],
-                    {
-                        "app_id": config.app_id,
-                        "game_slug": config.game_slug,
-                        "game_title": config.game_title,
-                        "pages_downloaded_in_current_run": page,
-                        "chunks_exported": len(master_index_rows),
-                        "records_exported": total_exported,
-                        "current_cursor": cursor,
-                        "last_query_summary": last_query_summary,
-                        "last_non_empty_query_summary": last_non_empty_query_summary,
-                        "collection_finished": False,
-                        "updated_at_utc": pd.Timestamp.utcnow().isoformat(),
-                    },
+                    build_progress_payload(
+                        config=config,
+                        page=page,
+                        master_index_rows=master_index_rows,
+                        total_exported=total_exported,
+                        current_cursor=cursor,
+                        last_query_summary=last_query_summary,
+                        last_non_empty_query_summary=last_non_empty_query_summary,
+                        collection_finished=False,
+                        expected_total_reviews=expected_total_reviews,
+                    ),
                 )
 
                 current_chunk = []
                 chunk_number += 1
 
-        logging.info("New reviews added on this page: %s", new_this_page)
+        logging.info("New unique reviews added on this page: %s", new_this_page)
         logging.info("Reviews currently in memory chunk: %s", len(current_chunk))
-        logging.info("Unique reviews collected so far: %s", len(all_records))
+        logging.info("Unique reviews known so far: %s", len(seen_recommendation_ids))
 
         next_cursor = data.get("cursor")
         if not isinstance(next_cursor, str) or not next_cursor.strip():
@@ -676,7 +841,6 @@ def collect_reviews(
 
     if current_chunk:
         new_cumulative_total = total_exported + len(current_chunk)
-
         index_row = export_chunk(
             game_slug=config.game_slug,
             chunks_dir=paths["chunks_dir"],
@@ -686,18 +850,17 @@ def collect_reviews(
         )
         master_index_rows.append(index_row)
         write_master_index(paths["master_index_csv"], master_index_rows)
-
         total_exported = new_cumulative_total
 
         logging.info(
-            "Final chunk %s exported with %s reviews. Final exported total: %s",
+            "Final chunk %s exported with %s reviews. Final chunk-export total: %s",
             chunk_number,
             len(current_chunk),
             total_exported,
         )
 
-    export_combined_dataset(
-        all_records=all_records,
+    final_total_unique_reviews, duplicate_rows_skipped = export_combined_dataset_from_chunks(
+        chunks_dir=paths["chunks_dir"],
         combined_csv=paths["combined_csv"],
         combined_json=paths["combined_json"],
         write_json=write_combined_json,
@@ -705,27 +868,33 @@ def collect_reviews(
 
     write_progress(
         paths["progress_json"],
-        {
-            "app_id": config.app_id,
-            "game_slug": config.game_slug,
-            "game_title": config.game_title,
-            "pages_downloaded_in_current_run": page,
-            "chunks_exported": len(master_index_rows),
-            "records_exported": len(all_records),
-            "final_total_unique_reviews": len(all_records),
-            "final_cursor": cursor,
-            "last_query_summary": last_query_summary,
-            "last_non_empty_query_summary": last_non_empty_query_summary,
-            "collection_finished": True,
-            "updated_at_utc": pd.Timestamp.utcnow().isoformat(),
-        },
+        build_progress_payload(
+            config=config,
+            page=page,
+            master_index_rows=master_index_rows,
+            total_exported=final_total_unique_reviews,
+            current_cursor=cursor,
+            last_query_summary=last_query_summary,
+            last_non_empty_query_summary=last_non_empty_query_summary,
+            collection_finished=True,
+            expected_total_reviews=expected_total_reviews,
+            final_total_unique_reviews=final_total_unique_reviews,
+        ),
     )
 
     logging.info("Collection complete.")
     logging.info("Game title: %s", config.game_title)
     logging.info("App ID: %s", config.app_id)
     logging.info("Game slug: %s", config.game_slug)
-    logging.info("Total unique reviews exported: %s", len(all_records))
+    logging.info("Total unique reviews exported: %s", final_total_unique_reviews)
+    logging.info("Duplicates skipped while rebuilding combined dataset: %s", duplicate_rows_skipped)
+    if expected_total_reviews is not None:
+        logging.info(
+            "API query_summary.total_reviews: %s | final combined rows: %s | difference: %s",
+            expected_total_reviews,
+            final_total_unique_reviews,
+            final_total_unique_reviews - expected_total_reviews,
+        )
     logging.info("Chunks directory: %s", paths["chunks_dir"])
     logging.info("Combined CSV: %s", paths["combined_csv"])
     logging.info("Combined JSON: %s", paths["combined_json"])
@@ -737,6 +906,7 @@ def collect_reviews(
 # MAIN
 # ============================================================================
 
+
 def main() -> None:
     """Main entry point."""
     args = parse_arguments()
@@ -747,7 +917,6 @@ def main() -> None:
     repository_root = get_repository_root()
     paths = build_paths(repository_root=repository_root, game_slug=config.game_slug)
     ensure_directories(paths)
-
     configure_logging(paths["log_file"])
 
     logging.info("Starting Steam review collection.")
@@ -755,6 +924,12 @@ def main() -> None:
     logging.info("Game title: %s", config.game_title)
     logging.info("App ID: %s", config.app_id)
     logging.info("Game slug: %s", config.game_slug)
+
+    if args.resume:
+        logging.info("Collection mode: resume")
+    else:
+        logging.info("Collection mode: fresh run")
+        cleanup_previous_collection_outputs(paths)
 
     collect_reviews(
         config=config,
