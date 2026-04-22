@@ -28,12 +28,11 @@ from __future__ import annotations
 import argparse
 import json
 import logging
-import math
 import sys
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Set
 
 import pandas as pd
 
@@ -54,6 +53,7 @@ class GameConfig:
 # ARGUMENT PARSING
 # ============================================================================
 
+
 def parse_arguments() -> argparse.Namespace:
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(
@@ -70,6 +70,7 @@ def parse_arguments() -> argparse.Namespace:
 # ============================================================================
 # CONFIGURATION LOADING
 # ============================================================================
+
 
 def load_game_config(config_path: Path) -> GameConfig:
     """Load and validate the game configuration file."""
@@ -97,12 +98,14 @@ def load_game_config(config_path: Path) -> GameConfig:
 # PATH MANAGEMENT
 # ============================================================================
 
+
 def get_repository_root() -> Path:
     """
     Resolve the repository root assuming this file lives at:
     scripts/validate_outputs.py
     """
     return Path(__file__).resolve().parents[1]
+
 
 
 def build_paths(repository_root: Path, config: GameConfig) -> Dict[str, Path]:
@@ -115,12 +118,17 @@ def build_paths(repository_root: Path, config: GameConfig) -> Dict[str, Path]:
     return {
         "repository_root": repository_root,
         "raw_root": raw_root,
+        "raw_chunks_dir": raw_root / "chunks",
+        "raw_combined_dir": raw_root / "combined",
+        "raw_metadata_dir": raw_root / "metadata",
         "processed_root": processed_root,
         "results_root": results_root,
         "metrics_dir": metrics_dir,
         "validation_log": metrics_dir / f"{config.game_slug}_validation.log",
         "validation_summary_json": metrics_dir / f"{config.game_slug}_validation_summary.json",
         "raw_combined_csv": raw_root / "combined" / f"{config.game_slug}_reviews_all.csv",
+        "raw_progress_json": raw_root / "metadata" / f"{config.game_slug}_progress.json",
+        "raw_master_index_csv": raw_root / "metadata" / f"{config.game_slug}_master_index.csv",
         "cleaned_csv": processed_root / "cleaned" / f"{config.game_slug}_reviews_cleaned.csv",
         "figure_index_csv": results_root / "figures" / f"{config.game_slug}_figure_index.csv",
         "wordcloud_dir": results_root / "figures" / "word_cloud",
@@ -130,6 +138,7 @@ def build_paths(repository_root: Path, config: GameConfig) -> Dict[str, Path]:
 # ============================================================================
 # LOGGING
 # ============================================================================
+
 
 def configure_logging(log_file: Path) -> None:
     """Configure console and file logging."""
@@ -149,14 +158,29 @@ def configure_logging(log_file: Path) -> None:
 # HELPERS
 # ============================================================================
 
+
 def utc_now_iso() -> str:
     """Return current UTC timestamp as ISO 8601 string."""
     return datetime.now(timezone.utc).isoformat()
 
 
-def safe_read_csv(path: Path) -> pd.DataFrame:
+
+def safe_read_csv(path: Path, **kwargs: Any) -> pd.DataFrame:
     """Read a CSV safely."""
-    return pd.read_csv(path, encoding="utf-8-sig", low_memory=False)
+    default_kwargs = {"encoding": "utf-8-sig", "low_memory": False}
+    default_kwargs.update(kwargs)
+    return pd.read_csv(path, **default_kwargs)
+
+
+
+def safe_read_json(path: Path) -> Dict[str, Any]:
+    """Read a JSON file safely and return a dictionary."""
+    with path.open("r", encoding="utf-8") as handle:
+        payload = json.load(handle)
+    if not isinstance(payload, dict):
+        raise ValueError(f"JSON file does not contain an object: {path}")
+    return payload
+
 
 
 def make_check(
@@ -176,6 +200,7 @@ def make_check(
     }
 
 
+
 def file_exists_check(path: Path, check_id: str, severity: str = "error") -> Dict[str, Any]:
     """Create a file-existence check."""
     exists = path.exists()
@@ -186,6 +211,7 @@ def file_exists_check(path: Path, check_id: str, severity: str = "error") -> Dic
         message=f"{'Found' if exists else 'Missing'}: {path}",
         details={"path": str(path)},
     )
+
 
 
 def required_columns_check(
@@ -212,6 +238,7 @@ def required_columns_check(
             "missing_columns": missing,
         },
     )
+
 
 
 def worksheet_presence_check(
@@ -262,9 +289,19 @@ def worksheet_presence_check(
     )
 
 
+
+def discover_chunk_csv_paths(chunks_dir: Path) -> List[Path]:
+    """Return chunk CSV paths in numeric order."""
+    return sorted(
+        chunks_dir.glob("*_reviews_part_*.csv"),
+        key=lambda path: int(path.stem.split("_")[-1]),
+    )
+
+
 # ============================================================================
 # VALIDATION RULES
 # ============================================================================
+
 
 def validate_required_files(paths: Dict[str, Path], config: GameConfig) -> List[Dict[str, Any]]:
     """Validate required key files."""
@@ -274,6 +311,8 @@ def validate_required_files(paths: Dict[str, Path], config: GameConfig) -> List[
 
     checks = [
         file_exists_check(paths["raw_combined_csv"], "required_raw_combined_csv"),
+        file_exists_check(paths["raw_progress_json"], "required_raw_progress_json", severity="warning"),
+        file_exists_check(paths["raw_master_index_csv"], "required_raw_master_index_csv", severity="warning"),
         file_exists_check(paths["cleaned_csv"], "required_cleaned_csv"),
         file_exists_check(processed_metrics / f"{game_slug}_basic_metrics_summary.json", "required_basic_metrics_summary"),
         file_exists_check(processed_metrics / f"{game_slug}_temporal_metrics_summary.json", "required_temporal_metrics_summary"),
@@ -289,6 +328,221 @@ def validate_required_files(paths: Dict[str, Path], config: GameConfig) -> List[
         file_exists_check(results_tables / "theme_metrics" / f"{game_slug}_theme_by_polarity.csv", "required_theme_by_polarity_csv"),
     ]
     return checks
+
+
+
+def validate_raw_collection_integrity(paths: Dict[str, Path]) -> List[Dict[str, Any]]:
+    """Validate chunk-level integrity of the raw collection outputs."""
+    checks: List[Dict[str, Any]] = []
+    chunk_paths = discover_chunk_csv_paths(paths["raw_chunks_dir"])
+
+    checks.append(
+        make_check(
+            check_id="raw_chunk_csv_files_exist",
+            passed=len(chunk_paths) > 0,
+            severity="warning",
+            message=(
+                "Raw chunk CSV files found"
+                if len(chunk_paths) > 0
+                else "No raw chunk CSV files were found"
+            ),
+            details={"chunk_count": len(chunk_paths), "path": str(paths["raw_chunks_dir"])} ,
+        )
+    )
+
+    if not chunk_paths:
+        return checks
+
+    combined_exists = paths["raw_combined_csv"].exists()
+    combined_df = safe_read_csv(paths["raw_combined_csv"], dtype={"recommendationid": "string"}) if combined_exists else pd.DataFrame()
+
+    combined_required_columns = ["recommendationid"]
+    if combined_exists:
+        checks.append(
+            required_columns_check(
+                df=combined_df,
+                required_columns=combined_required_columns,
+                check_id="raw_combined_required_columns",
+                table_path=paths["raw_combined_csv"],
+                severity="warning",
+            )
+        )
+
+    master_index_rows: List[Dict[str, Any]] = []
+    if paths["raw_master_index_csv"].exists():
+        master_index_df = safe_read_csv(paths["raw_master_index_csv"])
+        checks.append(
+            required_columns_check(
+                df=master_index_df,
+                required_columns=["chunk_number", "csv_file", "record_count", "cumulative_records"],
+                check_id="raw_master_index_required_columns",
+                table_path=paths["raw_master_index_csv"],
+                severity="warning",
+            )
+        )
+        master_index_rows = master_index_df.to_dict(orient="records")
+
+    chunk_row_total = 0
+    chunk_unique_ids: Set[str] = set()
+    duplicate_ids_across_chunks = 0
+
+    for chunk_path in chunk_paths:
+        df = safe_read_csv(chunk_path, dtype={"recommendationid": "string"})
+        checks.append(
+            required_columns_check(
+                df=df,
+                required_columns=["recommendationid"],
+                check_id=f"chunk_required_columns_{chunk_path.stem}",
+                table_path=chunk_path,
+                severity="warning",
+            )
+        )
+
+        if "recommendationid" not in df.columns:
+            continue
+
+        ids = (
+            df["recommendationid"]
+            .dropna()
+            .astype(str)
+            .str.strip()
+        )
+        ids = [value for value in ids.tolist() if value]
+        chunk_row_total += len(ids)
+
+        before = len(chunk_unique_ids)
+        chunk_unique_ids.update(ids)
+        duplicate_ids_across_chunks += len(ids) - (len(chunk_unique_ids) - before)
+
+    checks.append(
+        make_check(
+            check_id="raw_chunks_cross_file_uniqueness",
+            passed=duplicate_ids_across_chunks == 0,
+            severity="warning",
+            message=(
+                "No duplicated recommendation IDs across chunk CSV files"
+                if duplicate_ids_across_chunks == 0
+                else f"Found duplicated recommendation IDs across chunk CSV files: {duplicate_ids_across_chunks}"
+            ),
+            details={
+                "chunk_row_total": chunk_row_total,
+                "chunk_unique_recommendationids": len(chunk_unique_ids),
+                "duplicate_ids_across_chunks": duplicate_ids_across_chunks,
+            },
+        )
+    )
+
+    if combined_exists and "recommendationid" in combined_df.columns:
+        combined_ids = (
+            combined_df["recommendationid"]
+            .dropna()
+            .astype(str)
+            .str.strip()
+        )
+        combined_ids = [value for value in combined_ids.tolist() if value]
+        combined_unique_ids = len(set(combined_ids))
+
+        checks.append(
+            make_check(
+                check_id="raw_combined_vs_chunks_unique_count",
+                passed=combined_unique_ids == len(chunk_unique_ids),
+                severity="warning",
+                message=(
+                    "Combined raw CSV unique recommendation ID count matches chunk files"
+                    if combined_unique_ids == len(chunk_unique_ids)
+                    else "Combined raw CSV unique recommendation ID count does not match chunk files"
+                ),
+                details={
+                    "combined_unique_ids": combined_unique_ids,
+                    "chunk_unique_ids": len(chunk_unique_ids),
+                },
+            )
+        )
+
+    if master_index_rows:
+        try:
+            master_index_total = int(master_index_rows[-1].get("cumulative_records", 0))
+        except Exception:
+            master_index_total = -1
+
+        checks.append(
+            make_check(
+                check_id="raw_master_index_cumulative_matches_chunks",
+                passed=master_index_total == len(chunk_unique_ids),
+                severity="warning",
+                message=(
+                    "Master index cumulative total matches chunk files"
+                    if master_index_total == len(chunk_unique_ids)
+                    else "Master index cumulative total does not match chunk files"
+                ),
+                details={
+                    "master_index_cumulative_records": master_index_total,
+                    "chunk_unique_ids": len(chunk_unique_ids),
+                },
+            )
+        )
+
+    if paths["raw_progress_json"].exists():
+        try:
+            progress = safe_read_json(paths["raw_progress_json"])
+        except Exception as exc:
+            checks.append(
+                make_check(
+                    check_id="raw_progress_json_readable",
+                    passed=False,
+                    severity="warning",
+                    message=f"Could not read progress JSON: {exc}",
+                    details={"path": str(paths['raw_progress_json'])},
+                )
+            )
+        else:
+            final_total = progress.get("final_total_unique_reviews")
+            if isinstance(final_total, (int, float, str)):
+                try:
+                    final_total_int = int(final_total)
+                except (TypeError, ValueError):
+                    final_total_int = None
+                if final_total_int is not None:
+                    checks.append(
+                        make_check(
+                            check_id="raw_progress_final_total_matches_chunks",
+                            passed=final_total_int == len(chunk_unique_ids),
+                            severity="warning",
+                            message=(
+                                "Progress JSON final total matches chunk files"
+                                if final_total_int == len(chunk_unique_ids)
+                                else "Progress JSON final total does not match chunk files"
+                            ),
+                            details={
+                                "progress_final_total_unique_reviews": final_total_int,
+                                "chunk_unique_ids": len(chunk_unique_ids),
+                            },
+                        )
+                    )
+
+            expected_total = progress.get("expected_total_reviews_from_api")
+            if isinstance(expected_total, (int, float, str)):
+                try:
+                    expected_total_int = int(expected_total)
+                except (TypeError, ValueError):
+                    expected_total_int = None
+                if expected_total_int is not None:
+                    checks.append(
+                        make_check(
+                            check_id="raw_progress_api_total_delta_reported",
+                            passed=True,
+                            severity="warning",
+                            message="Progress JSON contains API total reviews reference for manual comparison",
+                            details={
+                                "expected_total_reviews_from_api": expected_total_int,
+                                "chunk_unique_ids": len(chunk_unique_ids),
+                                "difference": len(chunk_unique_ids) - expected_total_int,
+                            },
+                        )
+                    )
+
+    return checks
+
 
 
 def validate_cleaned_csv(paths: Dict[str, Path]) -> List[Dict[str, Any]]:
@@ -337,6 +591,7 @@ def validate_cleaned_csv(paths: Dict[str, Path]) -> List[Dict[str, Any]]:
         )
 
     return checks
+
 
 
 def validate_basic_metrics(paths: Dict[str, Path], config: GameConfig) -> List[Dict[str, Any]]:
@@ -390,6 +645,7 @@ def validate_basic_metrics(paths: Dict[str, Path], config: GameConfig) -> List[D
     return checks
 
 
+
 def validate_temporal_metrics(paths: Dict[str, Path], config: GameConfig) -> List[Dict[str, Any]]:
     """Validate temporal metrics structure."""
     checks: List[Dict[str, Any]] = []
@@ -432,6 +688,7 @@ def validate_temporal_metrics(paths: Dict[str, Path], config: GameConfig) -> Lis
     return checks
 
 
+
 def validate_text_metrics(paths: Dict[str, Path]) -> List[Dict[str, Any]]:
     """Validate text metrics structure."""
     checks: List[Dict[str, Any]] = []
@@ -461,6 +718,7 @@ def validate_text_metrics(paths: Dict[str, Path]) -> List[Dict[str, Any]]:
             )
 
     return checks
+
 
 
 def validate_emotion_metrics(paths: Dict[str, Path], config: GameConfig) -> List[Dict[str, Any]]:
@@ -503,6 +761,7 @@ def validate_emotion_metrics(paths: Dict[str, Path], config: GameConfig) -> List
     return checks
 
 
+
 def validate_theme_metrics(paths: Dict[str, Path], config: GameConfig) -> List[Dict[str, Any]]:
     """Validate theme metrics structure."""
     checks: List[Dict[str, Any]] = []
@@ -541,6 +800,7 @@ def validate_theme_metrics(paths: Dict[str, Path], config: GameConfig) -> List[D
     )
 
     return checks
+
 
 
 def validate_figures(paths: Dict[str, Path], config: GameConfig) -> List[Dict[str, Any]]:
@@ -624,6 +884,7 @@ def validate_figures(paths: Dict[str, Path], config: GameConfig) -> List[Dict[st
     return checks
 
 
+
 def validate_wordcloud_outputs(paths: Dict[str, Path], config: GameConfig) -> List[Dict[str, Any]]:
     """Validate word-cloud outputs."""
     checks: List[Dict[str, Any]] = []
@@ -688,6 +949,7 @@ def validate_wordcloud_outputs(paths: Dict[str, Path], config: GameConfig) -> Li
 # MAIN
 # ============================================================================
 
+
 def main() -> None:
     """Main entry point."""
     args = parse_arguments()
@@ -712,6 +974,7 @@ def main() -> None:
 
     checks: List[Dict[str, Any]] = []
     checks.extend(validate_required_files(paths, config))
+    checks.extend(validate_raw_collection_integrity(paths))
     checks.extend(validate_cleaned_csv(paths))
     checks.extend(validate_basic_metrics(paths, config))
     checks.extend(validate_temporal_metrics(paths, config))
