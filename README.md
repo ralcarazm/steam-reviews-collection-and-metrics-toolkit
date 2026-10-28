@@ -2,6 +2,10 @@
 
 A reproducible Python toolkit for collecting Steam user reviews and preparing datasets and metrics for **multiple games**, one title at a time.
 
+## Important limitations
+
+> **Steam review collection endpoint.** The collection scripts in this repository use the legacy `store.steampowered.com/appreviews/<appid>?json=1` endpoint ([archived Steamworks documentation](https://web.archive.org/web/20260429063642/https://partner.steamgames.com/doc/store/getreviews)). Steamworks announced on **2 October 2026** that this endpoint would be disabled on **22 October 2026** ([announcement](https://steamcommunity.com/groups/steamworks/announcements/detail/676258795703241581)). Its replacement is [`IUserReviewsService/GetAppReviews`](https://partner.steamgames.com/doc/webapi/IUserReviewsService#GetAppReviews); see the [migration guide](https://partner.steamgames.com/doc/webapi/IUserReviewsService#migrating). The collection scripts have not been migrated and therefore need updating before they can be used for new review collection.
+
 ## Author
 
 **Rubén Alcaraz Martínez**
